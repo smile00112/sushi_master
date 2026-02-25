@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import HeroBlock from '@/components/HeroBlock.vue'
 
 const router = useRouter()
 const cities = ref([])
@@ -49,10 +50,7 @@ function selectCity(city) {
       </div>
     </div>
 
-    <div class="hero-block">
-      <img src="/images/hero-cat.png" alt="" class="hero-image" />
-      <p class="hero-caption">Ваш город?</p>
-    </div>
+    <HeroBlock caption="Ваш город?" />
   </div>
 </template>
 
@@ -61,18 +59,18 @@ function selectCity(city) {
   padding-top: 16px;
 }
 .greeting {
-  font-family: 'Evolventa', system-ui, sans-serif;
+  font-family: var(--font-family-base);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.33;
-  color: #2e2d31;
+  color: var(--color-text-primary);
   margin: 0 0 20px;
 }
 .select-block {
   position: relative;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  background: #fff;
+  border: 1px solid var(--color-input-border);
+  border-radius: var(--radius-input);
+  background: var(--color-bg-card);
   margin-bottom: 24px;
 }
 .select-trigger {
@@ -85,7 +83,7 @@ function selectCity(city) {
   border: none;
   font-family: inherit;
   font-size: 16px;
-  color: #6d6d6d;
+  color: var(--color-text-secondary);
   cursor: pointer;
   text-align: left;
 }
@@ -98,7 +96,7 @@ function selectCity(city) {
 .chevron {
   flex-shrink: 0;
   transition: transform 0.2s;
-  color: #6d6d6d;
+  color: var(--color-text-secondary);
 }
 .select-block.open .chevron {
   transform: rotate(180deg);
@@ -110,9 +108,9 @@ function selectCity(city) {
   right: 0;
   z-index: 10;
   margin-top: -1px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--color-input-border);
   border-top: none;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 var(--radius-input) var(--radius-input);
   padding: 4px;
   background: #fafafa;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -123,39 +121,20 @@ function selectCity(city) {
   padding: 10px 12px;
   border: none;
   border-radius: 3px;
-  background: #fff;
+  background: var(--color-bg-card);
   font-family: inherit;
   font-size: 16px;
-  color: #6d6d6d;
+  color: var(--color-text-secondary);
   text-align: left;
   cursor: pointer;
   margin-bottom: 2px;
+  transition: background 0.2s, color 0.2s;
 }
 .city-item:last-child {
   margin-bottom: 0;
 }
 .city-item:hover {
-  background: #e8f4fc;
-}
-.hero-block {
-  position: relative;
-  margin-top: 24px;
-  text-align: right;
-}
-.hero-image {
-  width: 100%;
-  max-width: 383px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  border-radius: 8px;
-}
-.hero-caption {
-  font-family: 'Caveat', cursive;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.26;
-  color: #2e2d31;
-  margin: 8px 0 0;
+  background: var(--color-dropdown-hover);
+  color: var(--color-dropdown-hover-text);
 }
 </style>

@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import HeroBlock from '@/components/HeroBlock.vue'
 
 const reviewSites = ref([])
 
@@ -35,10 +36,7 @@ onMounted(async () => {
         {{ site.name }}
       </a>
     </div>
-    <div class="hero-block">
-      <img src="/images/hero-cat.png" alt="" class="hero-image" />
-      <p class="hero-caption">а отзыв?</p>
-    </div>
+    <HeroBlock caption="а отзыв?" />
   </div>
 </template>
 
@@ -47,22 +45,22 @@ onMounted(async () => {
   padding-top: 16px;
 }
 .review-title {
-  font-family: 'Evolventa', system-ui, sans-serif;
+  font-family: var(--font-family-base);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.33;
-  color: #2e2d31;
+  color: var(--color-text-primary);
   margin: 0 0 16px;
 }
 .review-text-block {
   margin-bottom: 20px;
 }
 .review-text {
-  font-family: 'Evolventa', system-ui, sans-serif;
+  font-family: var(--font-family-base);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.33;
-  color: #6d6d6d;
+  color: var(--color-text-secondary);
   margin: 0;
 }
 .review-links {
@@ -77,38 +75,18 @@ onMounted(async () => {
   justify-content: center;
   min-height: 56px;
   padding: 16px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  background: #fff;
+  border: 1px solid var(--color-input-border);
+  border-radius: var(--radius-input);
+  background: var(--color-bg-card);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  color: #2979A6;
+  color: var(--color-link);
   text-decoration: none;
   transition: background 0.2s, border-color 0.2s;
 }
 .review-link-card:hover {
-  background: #e8f4fc;
-  border-color: #2979A6;
-}
-.hero-block {
-  margin-top: 24px;
-  text-align: right;
-}
-.hero-image {
-  width: 100%;
-  max-width: 383px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  border-radius: 8px;
-}
-.hero-caption {
-  font-family: 'Caveat', cursive;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.26;
-  color: #2e2d31;
-  margin: 8px 0 0;
+  background: var(--color-dropdown-hover);
+  border-color: var(--color-link);
 }
 </style>

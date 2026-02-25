@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import HeroBlock from '@/components/HeroBlock.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -95,10 +96,7 @@ function goToChooseMap(establishment) {
       </div>
     </div>
 
-    <div class="hero-block">
-      <img src="/images/hero-cat.png" alt="" class="hero-image" />
-      <p class="hero-caption">а ресторан?</p>
-    </div>
+    <HeroBlock caption="а ресторан?" />
   </div>
 </template>
 
@@ -107,11 +105,11 @@ function goToChooseMap(establishment) {
   padding-top: 16px;
 }
 .greeting {
-  font-family: 'Evolventa', system-ui, sans-serif;
+  font-family: var(--font-family-base);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.33;
-  color: #2e2d31;
+  color: var(--color-text-primary);
   margin: 0 0 20px;
 }
 .cards-row {
@@ -122,9 +120,9 @@ function goToChooseMap(establishment) {
 }
 .select-block {
   position: relative;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  background: #fff;
+  border: 1px solid var(--color-input-border);
+  border-radius: var(--radius-input);
+  background: var(--color-bg-card);
 }
 .select-trigger {
   width: 100%;
@@ -136,7 +134,7 @@ function goToChooseMap(establishment) {
   border: none;
   font-family: inherit;
   font-size: 16px;
-  color: #6d6d6d;
+  color: var(--color-text-secondary);
   cursor: pointer;
   text-align: left;
 }
@@ -149,7 +147,7 @@ function goToChooseMap(establishment) {
 .chevron {
   flex-shrink: 0;
   transition: transform 0.2s;
-  color: #6d6d6d;
+  color: var(--color-text-secondary);
 }
 .select-block.open .chevron {
   transform: rotate(180deg);
@@ -161,9 +159,9 @@ function goToChooseMap(establishment) {
   right: 0;
   z-index: 10;
   margin-top: -1px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--color-input-border);
   border-top: none;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 var(--radius-input) var(--radius-input);
   padding: 4px;
   background: #fafafa;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -174,38 +172,20 @@ function goToChooseMap(establishment) {
   padding: 10px 12px;
   border: none;
   border-radius: 3px;
-  background: #fff;
+  background: var(--color-bg-card);
   font-family: inherit;
   font-size: 16px;
-  color: #6d6d6d;
+  color: var(--color-text-secondary);
   text-align: left;
   cursor: pointer;
   margin-bottom: 2px;
+  transition: background 0.2s, color 0.2s;
 }
 .city-item:last-child {
   margin-bottom: 0;
 }
 .city-item:hover {
-  background: #e8f4fc;
-}
-.hero-block {
-  margin-top: 24px;
-  text-align: right;
-}
-.hero-image {
-  width: 100%;
-  max-width: 383px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  border-radius: 8px;
-}
-.hero-caption {
-  font-family: 'Caveat', cursive;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.26;
-  color: #2e2d31;
-  margin: 8px 0 0;
+  background: var(--color-dropdown-hover);
+  color: var(--color-dropdown-hover-text);
 }
 </style>

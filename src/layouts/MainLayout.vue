@@ -1,9 +1,11 @@
 <script setup>
 import AppHeader from '@/components/AppHeader.vue'
+import ThemeSwitcher from '@/components/ThemeSwitcher.vue'
 </script>
 
 <template>
   <div class="main-layout">
+    <ThemeSwitcher />
     <main class="main-content">
       <AppHeader />
       <div class="main-body">
@@ -18,7 +20,7 @@ import AppHeader from '@/components/AppHeader.vue'
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #e8e4e0;
+  background: var(--color-bg-page-mobile);
 }
 .main-content {
   flex: 1;
@@ -27,9 +29,9 @@ import AppHeader from '@/components/AppHeader.vue'
   width: 100%;
   padding: 16px 16px 24px;
   box-sizing: border-box;
-  background: #f5f5f5;
-  border-radius: 20px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
 }
 .main-body {
   padding: 0;
@@ -37,7 +39,6 @@ import AppHeader from '@/components/AppHeader.vue'
 @media (min-width: 768px) {
   .main-content {
     max-width: 720px;
-    border-radius: 20px;
   }
 }
 @media (min-width: 992px) {
@@ -47,14 +48,14 @@ import AppHeader from '@/components/AppHeader.vue'
 }
 @media (min-width: 1200px) {
   .main-layout {
-    background: #e8e4e0 url(/images/hero-bg-desktop.png) no-repeat center center;
+    background: var(--desktop-bg);
     background-size: cover;
   }
   .main-content {
     max-width: 494px;
     margin-top: 48px;
     margin-bottom: 48px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-card-desktop);
   }
 }
 </style>

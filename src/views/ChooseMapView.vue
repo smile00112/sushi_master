@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import HeroBlock from '@/components/HeroBlock.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -69,10 +70,7 @@ function open2gis() {
       </button>
     </div>
 
-    <div class="hero-block">
-      <img src="/images/hero-cat.png" alt="" class="hero-image" />
-      <p class="hero-caption">куда открыть?</p>
-    </div>
+    <HeroBlock caption="куда открыть?" />
   </div>
 </template>
 
@@ -81,24 +79,24 @@ function open2gis() {
   padding-top: 16px;
 }
 .greeting {
-  font-family: 'Evolventa', system-ui, sans-serif;
+  font-family: var(--font-family-base);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.33;
-  color: #2e2d31;
+  color: var(--color-text-primary);
   margin: 0 0 20px;
 }
 .establishment-name {
-  font-family: 'Evolventa', system-ui, sans-serif;
+  font-family: var(--font-family-base);
   font-size: 18px;
   font-weight: 500;
-  color: #2e2d31;
+  color: var(--color-text-primary);
   margin: 0 0 8px;
 }
 .choose-label {
-  font-family: 'Evolventa', system-ui, sans-serif;
+  font-family: var(--font-family-base);
   font-size: 16px;
-  color: #6d6d6d;
+  color: var(--color-text-secondary);
   margin: 0 0 16px;
 }
 .map-links {
@@ -113,42 +111,22 @@ function open2gis() {
   justify-content: center;
   min-height: 56px;
   padding: 16px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  background: #fff;
+  border: 1px solid var(--color-input-border);
+  border-radius: var(--radius-input);
+  background: var(--color-bg-card);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  color: #2979A6;
+  color: var(--color-link);
   cursor: pointer;
   transition: background 0.2s, border-color 0.2s;
 }
 .map-link-card:hover:not(:disabled) {
-  background: #e8f4fc;
-  border-color: #2979A6;
+  background: var(--color-dropdown-hover);
+  border-color: var(--color-link);
 }
 .map-link-card:disabled {
   opacity: 0.6;
   cursor: not-allowed;
-}
-.hero-block {
-  margin-top: 24px;
-  text-align: right;
-}
-.hero-image {
-  width: 100%;
-  max-width: 383px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  border-radius: 8px;
-}
-.hero-caption {
-  font-family: 'Caveat', cursive;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.26;
-  color: #2e2d31;
-  margin: 8px 0 0;
 }
 </style>
