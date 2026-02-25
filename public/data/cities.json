@@ -1,0 +1,68 @@
+{
+  "cities": [
+    {
+      "id": "barnaul",
+      "name": "Барнаул",
+      "establishments": [
+        {
+          "name": "Суши Мастер, ул. Ленина",
+          "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Барнаул Ленина",
+          "link2gis": "https://2gis.ru/barnaul"
+        },
+        {
+          "name": "Суши Мастер, пр. Космонавтов",
+          "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Барнаул Космонавтов",
+          "link2gis": "https://2gis.ru/barnaul"
+        }
+      ]
+    },
+    {
+      "id": "beloyarskiy",
+      "name": "Белоярский",
+      "establishments": [
+        {
+          "name": "Суши Мастер, центр",
+          "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Белоярский",
+          "link2gis": "https://2gis.ru"
+        }
+      ]
+    },
+    {
+      "id": "berezniki",
+      "name": "Березники",
+      "establishments": [
+        {
+          "name": "Суши Мастер, ул. Пятилетки",
+          "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Березники",
+          "link2gis": "https://2gis.ru/berezniki"
+        }
+      ]
+    },
+    {
+      "id": "blagoveshchensk",
+      "name": "Благовещенск",
+      "establishments": [
+        {
+          "name": "Суши Мастер, ул. Ленина",
+          "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Благовещенск",
+          "link2gis": "https://2gis.ru/blagoveshchensk"
+        }
+      ]
+    },
+    {
+      "id": "verhnyaya-pyshma",
+      "name": "Верхняя Пышма",
+      "establishments": [
+        {
+          "name": "Суши Мастер, пр. Успенский",
+          "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Верхняя Пышма",
+          "link2gis": "https://2gis.ru/verhnyaya_pyshma"
+        }
+      ]
+    }
+  ],
+  "reviewSites": [
+    { "name": "2GIS", "url": "https://2gis.ru" },
+    { "name": "Google", "url": "https://www.google.com/maps" }
+  ]
+}
