@@ -3,23 +3,15 @@
 
 <template>
   <header class="app-header">
-    <div class="header-inner">
-      <img src="/images/logo.png" alt="Логотип" class="logo" />
-      <div class="header-line" />
-      <h1 class="header-title">Центр оценки качества ресторанов Суши Мастер</h1>
-    </div>
+    <img src="/images/logo.png" alt="Логотип" class="logo" />
+    <div class="header-line" />
+    <h1 class="header-title">Центр оценки качества ресторанов Суши Мастер</h1>
   </header>
 </template>
 
 <style scoped>
 .app-header {
-  background: #fff;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
-}
-.header-inner {
-  max-width: 390px;
-  margin: 0 auto;
-  padding: 12px 16px 16px;
+  padding: 12px 0 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -42,20 +34,5 @@
   line-height: 1.33;
   color: #6d6d6d;
   margin: 0;
-}
-@media (min-width: 768px) {
-  .header-inner {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .header-inner {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .header-inner {
-    max-width: 494px;
-  }
 }
 </style>

@@ -121,10 +121,10 @@ function goToChooseMap(establishment) {
   margin-bottom: 24px;
 }
 .select-block {
+  position: relative;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   background: #fff;
-  overflow: hidden;
 }
 .select-trigger {
   width: 100%;
@@ -155,9 +155,18 @@ function goToChooseMap(establishment) {
   transform: rotate(180deg);
 }
 .select-dropdown {
-  border-top: 1px solid #e0e0e0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: -1px;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
   padding: 4px;
   background: #fafafa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .city-item {
   display: block;

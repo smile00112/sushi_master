@@ -4,9 +4,11 @@ import AppHeader from '@/components/AppHeader.vue'
 
 <template>
   <div class="main-layout">
-    <AppHeader />
     <main class="main-content">
-      <RouterView />
+      <AppHeader />
+      <div class="main-body">
+        <RouterView />
+      </div>
     </main>
   </div>
 </template>
@@ -23,11 +25,14 @@ import AppHeader from '@/components/AppHeader.vue'
   max-width: 390px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 16px 24px;
+  padding: 16px 16px 24px;
   box-sizing: border-box;
   background: #f5f5f5;
   border-radius: 20px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+.main-body {
+  padding: 0;
 }
 @media (min-width: 768px) {
   .main-content {
@@ -47,6 +52,8 @@ import AppHeader from '@/components/AppHeader.vue'
   }
   .main-content {
     max-width: 494px;
+    margin-top: 48px;
+    margin-bottom: 48px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
   }
 }
