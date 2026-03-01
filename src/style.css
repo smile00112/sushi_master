@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'Adigiana Extreme';
+  src:
+    local('Adigiana Extreme'),
+    url('/fonts/Adigiana-Extreme.woff2') format('woff2'),
+    url('/fonts/Adigiana-Extreme.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src:
+    local('Gotham Pro'),
+    url('/fonts/GothamPro-Regular.woff2') format('woff2'),
+    url('/fonts/GothamPro-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Colors (default theme fallbacks) */
   --color-brand-primary: #f5f5f5;
@@ -60,6 +82,10 @@ button {
 
 button,
 a,
-[role="button"] {
+[role="button"],
+[type="button"],
+.select-trigger,
+.select-block
+ {
   -webkit-tap-highlight-color: transparent;
 }

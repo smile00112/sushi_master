@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue'
 import { applyTheme } from '@/config/theme'
 
 const themes = [
@@ -8,6 +9,7 @@ const themes = [
   { id: 'mir-sushi', label: 'Mir Sushi' },
   { id: 'sushi_world', label: 'Sushi World' },
 ]
+const isOpen = ref(true)
 
 function selectTheme(id) {
   applyTheme(id)
@@ -20,18 +22,28 @@ function selectTheme(id) {
 </script>
 
 <template>
-  <div class="theme-switcher">
-    <span class="theme-switcher__label">Тема:</span>
-    <div class="theme-switcher__buttons">
-      <button
-        v-for="t in themes"
-        :key="t.id"
-        type="button"
-        class="theme-switcher__btn"
-        @click="selectTheme(t.id)"
-      >
-        {{ t.label }}
-      </button>
+  <div class="theme-switcher" :class="{ 'is-collapsed': !isOpen }">
+    <button
+      type="button"
+      class="theme-switcher__toggle"
+      @click="isOpen = !isOpen"
+    >
+      {{ isOpen ? 'Скрыть темы' : 'Показать темы' }}
+    </button>
+
+    <div v-show="isOpen" class="theme-switcher__content">
+      <span class="theme-switcher__label">Тема:</span>
+      <div class="theme-switcher__buttons">
+        <button
+          v-for="t in themes"
+          :key="t.id"
+          type="button"
+          class="theme-switcher__btn"
+          @click="selectTheme(t.id)"
+        >
+          {{ t.label }}
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -51,6 +63,29 @@ function selectTheme(id) {
   border-radius: 12px;
   font-size: 12px;
   font-family: system-ui, sans-serif;
+}
+.theme-switcher.is-collapsed {
+  padding: 8px;
+}
+
+.theme-switcher__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.theme-switcher__toggle {
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  color: inherit;
+  cursor: pointer;
+  font-size: 11px;
+  transition: background 0.15s;
+}
+.theme-switcher__toggle:hover {
+  background: rgba(255, 255, 255, 0.35);
 }
 
 .theme-switcher__label {

@@ -51,7 +51,7 @@ const themes = {
     },
     typography: {
       fontFamilyBase: "'Evolventa', system-ui, -apple-system, sans-serif",
-      fontFamilyCaption: "'Caveat', cursive",
+      fontFamilyCaption: "'Evolventa', system-ui, -apple-system, sans-serif",
     },
     components: {
       borderRadiusCard: '20px',
@@ -69,34 +69,32 @@ const themes = {
       textSecondary: '#6d6d6d',
       link: '#2979A6',
       bgPageMobile: '#fff',
-      bgCard: '#fff',
-      dropdownHover: '#FF9800',
+      bgCard: '#FFFCF4',
+      dropdownHover: '#EA651D',
+      dropdownChevron: '#EA651D',
       dropdownHoverText: '#fff',
-      inputBorder: '#e0e0e0',
-      headerBg: '#ffffff',
+      inputBorder: '#83BB43',
+      headerBg: '#4CAF50',
 
     },
     header: {
       style: 'colored_bar',
+      height: '44px',
       brandColor: '#4CAF50',
       textColor: '#fff',
       logoUrl: '/images/spoke_logo.png',
-      brandTitle: 'ЦЕНТР ОЦЕНКИ КАЧЕСТВА РЕСТОРАНОВ СПОКЕ',
+      brandTitle: 'Центр оценки качества ресторанов Споке',
     },
     desktop: {
       bgType: 'image',
       bgColor: '#e8e4e0',
-      bgImage: '/images/hero-bg-desktop.png',
+      bgImage: '/images/theme-spoke/spoke-bg.png',
       bgGradient: '',
       bgOverlay: 'none',
-      text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Мир Суши' ,
+      text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Споке' ,
       textFinish: 'Оставьте отзыв\nо нашей работе ' 
-
     },
     hero: {
-      imageUrl: '/images/theme-spoke/hero-screen1.png',
-      imageUrlScreen2: '/images/theme-spoke/hero-screen2.png',
-      imageUrlScreen3: '/images/theme-spoke/hero-screen3.png',
       imageWidth: '383px',
       imageLeft: 'unset',
       imagetranslateX : 'unset',
@@ -109,14 +107,16 @@ const themes = {
       show: true,
     },
     typography: {
-      fontFamilyBase: "'Evolventa', system-ui, -apple-system, sans-serif",
-      fontFamilyCaption: "'Caveat', cursive",
+      fontFamilyBase: "'Gotham Pro', 'Evolventa', system-ui, -apple-system, sans-serif",
+      fontFamilyCaption: "'Adigiana Extreme', 'Caveat', cursive",
     },
     components: {
-      borderRadiusCard: '20px',
-      borderRadiusInput: '8px',
+      cardBorder: '0.8px solid #83BB43',
+      borderRadiusCard: '30px',
+      borderRadiusInput: '28px',
       shadowCard: '0 0 0 1px rgba(0, 0, 0, 0.05)',
       shadowCardDesktop: '0 4px 24px rgba(0, 0, 0, 0.15)',
+      SelectItemBorderRadius: '20px',
     },
   },
   'sushi-gallery': {
@@ -205,8 +205,9 @@ const themes = {
       textFinish: 'Оставьте отзыв\nо нашей работе ' 
     },
     hero: {
-      imageUrl: '/images/hero-shark.png',
-      imageWaitingUrl: '/images/hero-shark-waiting.png',
+      imageUrl: '/images/theme-spoke/hero-screen1.png',
+      imageUrlScreen2: '/images/theme-spoke/hero-screen2.png',
+      imageUrlScreen3: '/images/theme-spoke/hero-screen3.png',
       imageWidth: '383px',
       imageLeft: '50%',
       imagetranslateX : 'translateX(-50%)',
@@ -225,59 +226,7 @@ const themes = {
       shadowCard: '0 0 0 1px rgba(0, 0, 0, 0.05)',
       shadowCardDesktop: '0 4px 24px rgba(0, 0, 0, 0.15)',
     },
-  },
-  sushi_world: {
-    colors: {
-      brandPrimary: '#2979A6',
-      brandAccent: '#FF9800',
-      headerText: '#fff',
-      textPrimary: '#2e2d31',
-      textSecondary: '#6d6d6d',
-      link: '#2979A6',
-      bgPageMobile: '#f5f5f5',
-      bgCard: '#fff',
-      dropdownHover: '#FF9800',
-      dropdownHoverText: '#fff',
-      inputBorder: '#e0e0e0',
-      headerBg: '#ffffff',
-    },
-    header: {
-      style: 'colored_bar',
-      brandColor: '#2979A6',
-      textColor: '#fff',
-      logoUrl: '/images/logo.png',
-      brandTitle: 'ЦЕНТР ОЦЕНКИ КАЧЕСТВА РЕСТОРАНОВ МИР СУШИ',
-    },
-    desktop: {
-      bgType: 'solid',
-      bgColor: '#ADD8E6',
-      bgImage: '',
-      bgGradient: '',
-      bgOverlay: 'none',
-    },
-    hero: {
-      imageUrl: '/images/theme-sushi_world/hero-screen1.png',
-      imageUrlScreen2: '/images/theme-sushi_world/hero-screen2.png',
-      imageUrlScreen3: '/images/theme-sushi_world/hero-screen3.png',
-      imageWidth: '383px',
-      imageLeft: '50%',
-      imagetranslateX : 'translateX(-50%)',
-      imageRight: 'unset',
-      captionFont: 'Caveat',
-      captionText: '',
-      show: true,
-    },
-    typography: {
-      fontFamilyBase: "'Evolventa', system-ui, -apple-system, sans-serif",
-      fontFamilyCaption: "'Caveat', cursive",
-    },
-    components: {
-      borderRadiusCard: '20px',
-      borderRadiusInput: '30px',
-      shadowCard: '0 0 0 1px rgba(0, 0, 0, 0.05)',
-      shadowCardDesktop: '0 4px 24px rgba(0, 0, 0, 0.15)',
-    },
-  },
+  }
 }
 
 /**
@@ -293,12 +242,16 @@ export function applyTheme(themeId = 'default') {
   root.style.setProperty('--color-brand-accent', theme.colors.brandAccent)
   root.style.setProperty('--color-header-text', theme.colors.headerText)
   root.style.setProperty('--color-header-bg', theme.colors.headerBg)
+  root.style.setProperty('--color-header-height', theme.header?.height || '27px')
+
   root.style.setProperty('--color-text-primary', theme.colors.textPrimary)
   root.style.setProperty('--color-text-secondary', theme.colors.textSecondary)
   root.style.setProperty('--color-link', theme.colors.link)
   root.style.setProperty('--color-bg-page-mobile', theme.colors.bgPageMobile)
   root.style.setProperty('--color-bg-card', theme.colors.bgCard)
   root.style.setProperty('--color-dropdown-hover', theme.colors.dropdownHover)
+  root.style.setProperty('--color-dropdown-chewron', theme.colors?.dropdownChevron || theme.colors.textSecondary)
+
   root.style.setProperty('--color-dropdown-hover-text', theme.colors.dropdownHoverText)
   root.style.setProperty('--color-input-border', theme.colors.inputBorder)
 
@@ -308,9 +261,11 @@ export function applyTheme(themeId = 'default') {
 
   // Components
   root.style.setProperty('--radius-card', theme.components.borderRadiusCard)
+  root.style.setProperty('--border-card', theme.components?.cardBorder || 'none')  
   root.style.setProperty('--radius-input', theme.components.borderRadiusInput)
   root.style.setProperty('--shadow-card', theme.components.shadowCard)
   root.style.setProperty('--shadow-card-desktop', theme.components.shadowCardDesktop)
+  root.style.setProperty('--select-item-border-radius', theme.components?.SelectItemBorderRadius || '3px') //радиус элемента выподающего списка
 
   //Hero
   root.style.setProperty('--hero-image-width', theme.hero.imageWidth)

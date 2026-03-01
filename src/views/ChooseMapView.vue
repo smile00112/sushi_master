@@ -84,7 +84,7 @@ function open2gis() {
   /* padding-top: 16px; */
 }
 .greeting {
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-caption);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.33;

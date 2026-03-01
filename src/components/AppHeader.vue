@@ -38,20 +38,25 @@ onMounted(() => {
   align-items: center;
   padding: 21px 24px;
   background-color: var(--color-header-bg);
-
+  
 }
 
-.app-header.header-colored {
+@media (min-width: 500px) {
+  .app-header {
+    border-radius: var(--radius-card) var(--radius-card) 0 0;
+  }
+}
+/* .app-header.header-colored {
   margin: -16px -16px 0 -16px;
   padding: 12px 16px 16px;
   background: var(--color-brand-primary);
   color: var(--color-header-text);
-  border-radius: var(--radius-card) var(--radius-card) 0 0;
+  
 }
 
 .app-header.header-colored .header-line {
   border-color: rgba(255, 255, 255, 0.4);
-}
+} */
 
 .app-header.header-colored .header-title {
   color: var(--color-header-text);
@@ -59,7 +64,7 @@ onMounted(() => {
 
 .logo {
   width: 86.9px;
-  height: 27px;
+  height: var(--color-header-height);
   object-fit: contain;
 }
 
@@ -76,7 +81,7 @@ onMounted(() => {
 
 .header-title {
   font-family: var(--font-family-base);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.33;
   color: var(--color-header-text);

@@ -2,6 +2,7 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import HeroBlock from '@/components/HeroBlock.vue'
+import { getTheme } from '@/config/theme'
 
 const route = useRoute()
 const router = useRouter()
@@ -17,6 +18,8 @@ onMounted(async () => {
   const res = await fetch('/data/cities.json')
   const data = await res.json()
   cities.value = data.cities || []
+  const theme = getTheme()
+  greeting.value = theme.desktop.text
 })
 
 watch([city, cities], ([c]) => {
@@ -40,8 +43,7 @@ function goToChooseMap(establishment) {
 <template>
   <div class="screen screen-2">
     <p class="greeting">
-      Здравствуйте!<br />
-      Вы на странице оценки качества ресторанов Суши Мастер
+      {{ greeting }}
     </p>
 
     <div class="cards-row">
@@ -105,26 +107,27 @@ function goToChooseMap(establishment) {
   /* padding-top: 16px; */
 }
 .greeting {
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-caption);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.33;
   color: var(--color-text-primary);
   margin: 49px 0 32px 0;
-  padding: 0;
   white-space: pre-line;
-}
-.cards-row {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 24px;
+
 }
 .select-block {
   position: relative;
-  border: 1px solid var(--color-input-border);
   border-radius: var(--radius-input);
   background: var(--color-bg-card);
+  margin-bottom: 24px;
+}
+.select-block .select-trigger{
+  border: 1px solid var(--color-input-border);
+}
+
+.select-block.open .select-trigger{
+  border-radius: var(--radius-input) var(--radius-input) 0 0;
 }
 
 .select-trigger {
@@ -140,9 +143,16 @@ function goToChooseMap(establishment) {
   color: var(--color-text-secondary);
   cursor: pointer;
   text-align: left;
+  border-radius: inherit;
+  transition: background 0.2s ease;
+  background-color: #ffffff;
 }
 .select-trigger:hover {
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
+}
+.select-block.open .select-trigger {
+  border-radius: calc(var(--radius-input) - 1px) calc(var(--radius-input) - 1px) 0 0;
+  border-bottom-width: 0;
 }
 .select-label {
   flex: 1;
@@ -150,7 +160,7 @@ function goToChooseMap(establishment) {
 .chevron {
   flex-shrink: 0;
   transition: transform 0.2s;
-  color: var(--color-text-secondary);
+  color: var(--color-dropdown-chewron);
 }
 .select-block.open .chevron {
   transform: rotate(180deg);
@@ -165,9 +175,11 @@ function goToChooseMap(establishment) {
   border: 1px solid var(--color-input-border);
   border-top: none;
   border-radius: 0 0 var(--radius-input) var(--radius-input);
-  padding: 4px;
-  background: #fafafa;
+  /* padding: 4px; */
+  background: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: var(--border-card);
+  border-top-width: 0;
 }
 .city-item {
   display: block;
@@ -175,19 +187,22 @@ function goToChooseMap(establishment) {
   padding: 10px 12px;
   border: none;
   border-radius: 3px;
-  background: var(--color-bg-card);
+  /* background: var(--color-bg-card); */
+  background-color: #ffffff;
   font-family: inherit;
   font-size: 16px;
   color: var(--color-text-secondary);
   text-align: left;
   cursor: pointer;
-  margin-bottom: 2px;
+  /* margin-bottom: 2px; */
   transition: background 0.2s, color 0.2s;
 }
 .city-item:last-child {
   margin-bottom: 0;
+  border-radius: 0 0 var(--radius-input) var(--radius-input);
+
 }
-.city-item:hover, .city-item:active {
+.city-item:hover {
   background: var(--color-dropdown-hover);
   color: var(--color-dropdown-hover-text);
 }
