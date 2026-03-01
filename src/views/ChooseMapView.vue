@@ -85,7 +85,7 @@ function open2gis() {
 }
 .greeting {
   font-family: var(--font-family-caption);
-  font-size: 20px;
+  font-size: var(--greeting-text-size);
   font-weight: 400;
   line-height: 1.33;
   color: var(--color-text-primary);
@@ -106,6 +106,7 @@ function open2gis() {
   font-size: 16px;
   color: var(--color-text-secondary);
   margin: 0 0 51px;
+  line-height: 1;
   /* max-width: 350px; */
 }
 .map-links {
@@ -113,6 +114,10 @@ function open2gis() {
     gap: 24px;
     justify-content: flex-start;
     flex-wrap: wrap;
+}
+.map-a-card{
+    max-width: 45%;
+    height: auto;
 }
 .map-link-card {
   /* display: flex;
@@ -133,10 +138,10 @@ function open2gis() {
   padding: 0;
   box-shadow: 0px 4px 20.2px 0px #BFCFFF33;
   box-shadow: 1px 4px 6.9px 0px #BFCFFF40;
-
+    width: 100%;  
 }
  .map-link-card:hover:not(:disabled) {
-  background: var(--color-dropdown-hover);
+  /* background: var(--color-dropdown-hover); */
   border-color: var(--color-link);
   box-shadow: 1px 4px 6.9px 0px #fc1fa740;
 } 

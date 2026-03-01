@@ -7,7 +7,6 @@ const themes = [
   { id: 'spoke', label: 'Spoke' },
   { id: 'sushi-gallery', label: 'Sushi Gallery' },
   { id: 'mir-sushi', label: 'Mir Sushi' },
-  { id: 'sushi_world', label: 'Sushi World' },
 ]
 const isOpen = ref(true)
 

@@ -7,6 +7,7 @@ import { getTheme } from '@/config/theme'
 const route = useRoute()
 const router = useRouter()
 const cities = ref([])
+const greeting = ref('')
 const city = computed(() => {
   const id = route.params.cityId
   return cities.value.find((c) => c.id === id) || null
@@ -107,23 +108,23 @@ function goToChooseMap(establishment) {
   /* padding-top: 16px; */
 }
 .greeting {
-  font-family: var(--font-family-caption);
-  font-size: 20px;
+  font-family: var(--font-family-caption); /* Декоративный шрифт приветствия из темы */
+  font-size: var(--greeting-text-size);
   font-weight: 400;
   line-height: 1.33;
-  color: var(--color-text-primary);
+  color: var(--color-text-primary); /* Основной цвет текста */
   margin: 49px 0 32px 0;
   white-space: pre-line;
 
 }
 .select-block {
   position: relative;
-  border-radius: var(--radius-input);
-  background: var(--color-bg-card);
+  border-radius: var(--radius-input); /* Скругление полей выбора */
+  background: var(--color-bg-card); /* Фон карточки/селекта */
   margin-bottom: 24px;
 }
 .select-block .select-trigger{
-  border: 1px solid var(--color-input-border);
+  border: 1px solid var(--color-input-border); /* Граница инпута/селекта */
 }
 
 .select-block.open .select-trigger{
@@ -140,7 +141,7 @@ function goToChooseMap(establishment) {
   border: none;
   font-family: inherit;
   font-size: 16px;
-  color: var(--color-text-secondary);
+  color: var(--color-text-secondary); /* Вторичный цвет текста */
   cursor: pointer;
   text-align: left;
   border-radius: inherit;
@@ -160,7 +161,7 @@ function goToChooseMap(establishment) {
 .chevron {
   flex-shrink: 0;
   transition: transform 0.2s;
-  color: var(--color-dropdown-chewron);
+  color: var(--color-dropdown-chewron); /* Цвет стрелки выпадающего списка */
 }
 .select-block.open .chevron {
   transform: rotate(180deg);
@@ -172,13 +173,13 @@ function goToChooseMap(establishment) {
   right: 0;
   z-index: 10;
   margin-top: -1px;
-  border: 1px solid var(--color-input-border);
+  border: 1px solid var(--color-input-border); /* Базовая граница контейнера списка */
   border-top: none;
-  border-radius: 0 0 var(--radius-input) var(--radius-input);
+  border-radius: 0 0 var(--radius-input) var(--radius-input); /* Скругление нижней части списка */
   /* padding: 4px; */
   background: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border: var(--border-card);
+  border: var(--border-card); /* Тематическая рамка карточки (если задана) */
   border-top-width: 0;
 }
 .city-item {
@@ -191,7 +192,7 @@ function goToChooseMap(establishment) {
   background-color: #ffffff;
   font-family: inherit;
   font-size: 16px;
-  color: var(--color-text-secondary);
+  color: var(--color-text-secondary); /* Вторичный цвет пункта */
   text-align: left;
   cursor: pointer;
   /* margin-bottom: 2px; */
@@ -199,11 +200,11 @@ function goToChooseMap(establishment) {
 }
 .city-item:last-child {
   margin-bottom: 0;
-  border-radius: 0 0 var(--radius-input) var(--radius-input);
+  border-radius: 0 0 var(--radius-input) var(--radius-input); /* Скругление последнего пункта */
 
 }
 .city-item:hover {
-  background: var(--color-dropdown-hover);
-  color: var(--color-dropdown-hover-text);
+  background: var(--color-dropdown-hover); /* Фон пункта при наведении */
+  color: var(--color-dropdown-hover-text); /* Текст пункта при наведении */
 }
 </style>

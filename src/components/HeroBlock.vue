@@ -57,6 +57,7 @@ onMounted(() => {
   display: block;  
   border-radius: var(--radius-input);
   width: var(--hero-width);
+  max-width: 100vw;
 }
 .hero-caption {
   display: none;

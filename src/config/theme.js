@@ -50,8 +50,8 @@ const themes = {
       show: true,
     },
     typography: {
-      fontFamilyBase: "'Evolventa', system-ui, -apple-system, sans-serif",
-      fontFamilyCaption: "'Evolventa', system-ui, -apple-system, sans-serif",
+      fontFamilyBase: "Evolventa",
+      fontFamilyCaption: "Evolventa",
     },
     components: {
       borderRadiusCard: '20px',
@@ -65,7 +65,7 @@ const themes = {
       brandPrimary: '#4CAF50',
       brandAccent: '#FF9800',
       headerText: '#fff',
-      textPrimary: '#2e2d31',
+      textPrimary: '#7E7E7E',//2e2d31
       textSecondary: '#6d6d6d',
       link: '#2979A6',
       bgPageMobile: '#fff',
@@ -107,8 +107,8 @@ const themes = {
       show: true,
     },
     typography: {
-      fontFamilyBase: "'Gotham Pro', 'Evolventa', system-ui, -apple-system, sans-serif",
-      fontFamilyCaption: "'Adigiana Extreme', 'Caveat', cursive",
+      fontFamilyBase: "Gotham Pro",
+      fontFamilyCaption: "Adigiana Extreme",
     },
     components: {
       cardBorder: '0.8px solid #83BB43',
@@ -117,6 +117,7 @@ const themes = {
       shadowCard: '0 0 0 1px rgba(0, 0, 0, 0.05)',
       shadowCardDesktop: '0 4px 24px rgba(0, 0, 0, 0.15)',
       SelectItemBorderRadius: '20px',
+      greetingTextSize: '28px',
     },
   },
   'sushi-gallery': {
@@ -130,6 +131,7 @@ const themes = {
       bgPageMobile: '#e0e0e0',
       bgCard: '#fff',
       dropdownHover: '#E91E63',
+      dropdownChevron: '#E91E63',
       dropdownHoverText: '#fff',
       inputBorder: '#e0e0e0',
       headerBg: '#ffffff',
@@ -138,20 +140,19 @@ const themes = {
       style: 'white_minimal',
       brandColor: 'transparent',
       textColor: '#2e2d31',
-      logoUrl: '/images/logo.png',
+      logoUrl: '/images/sushi-gallery_logo.png',
       brandTitle: 'Центр оценки качества ресторанов Галерея Суши',
     },
     desktop: {
-      bgType: 'gradient',
+      bgType: 'image',
       bgColor: '#e0e0e0',
-      bgImage: '',
+      bgImage: '/images/theme-sushi-gallery/sushi-gallery-bg.webp',
       bgGradient: 'linear-gradient(90deg, #ffc8dd 0%, #b8e0d2 100%)',
       bgOverlay: 'none',
-      text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Споке' ,
+      text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Галерея Суши' ,
       textFinish: 'Оставьте отзыв\nо нашей работе' 
     },
     hero: {
-      imageUrl: '/images/hero-cat.png',
       imageWidth: '383px',
       imageLeft: '50%',
       imagetranslateX : 'translateX(-50%)',
@@ -163,14 +164,16 @@ const themes = {
       show: true,
     },
     typography: {
-      fontFamilyBase: "'Evolventa', system-ui, -apple-system, sans-serif",
-      fontFamilyCaption: "'Caveat', cursive",
+      fontFamilyBase: "Evolventa",
+      fontFamilyCaption: "Evolventa",
     },
     components: {
-      borderRadiusCard: '20px',
-      borderRadiusInput: '8px',
+      borderRadiusCard: '30px',
+      borderRadiusInput: '28px',
       shadowCard: '0 0 0 1px rgba(0, 0, 0, 0.05)',
       shadowCardDesktop: '0 4px 24px rgba(0, 0, 0, 0.15)',
+      SelectItemBorderRadius: '20px',
+
     },
   },
   'mir-sushi': {
@@ -184,47 +187,49 @@ const themes = {
       bgPageMobile: '#f5f5f5',
       bgCard: '#fff',
       dropdownHover: '#FF9800',
+      dropdownChevron: '#FF9800',
       dropdownHoverText: '#fff',
       inputBorder: '#e0e0e0',
-      headerBg: '#ffffff',
+      headerBg: '#2979A6',
     },
     header: {
       style: 'colored_bar',
       brandColor: '#2196F3',
       textColor: '#fff',
-      logoUrl: '/images/logo.png',
-      brandTitle: 'ЦЕНТР ОЦЕНКИ КАЧЕСТВА МИР СУШИ',
+      logoUrl: '/images/sushi-world-logo.png',
+      brandTitle: 'Центр оценки качества Мир суши',
     },
     desktop: {
-      bgType: 'solid',
+      bgType: 'image',
       bgColor: '#ADD8E6',
-      bgImage: '',
+      bgImage: '/images/theme-sushi_world/sushi-world-bg.webp',
       bgGradient: '',
       bgOverlay: 'none',
-      text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Галерея сиши' ,
+      text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Мир суши' ,
       textFinish: 'Оставьте отзыв\nо нашей работе ' 
     },
     hero: {
       imageUrl: '/images/theme-spoke/hero-screen1.png',
       imageUrlScreen2: '/images/theme-spoke/hero-screen2.png',
       imageUrlScreen3: '/images/theme-spoke/hero-screen3.png',
-      imageWidth: '383px',
-      imageLeft: '50%',
-      imagetranslateX : 'translateX(-50%)',
-      imageRight: 'unset',
+      imageWidth: '140px',
+      imageLeft: 'unset',
+      imagetranslateX : 'unset',
+      imageRight: '50px',
       captionFont: 'Caveat',
       captionText: '',
       show: true,
     },
     typography: {
-      fontFamilyBase: "'Evolventa', system-ui, -apple-system, sans-serif",
-      fontFamilyCaption: "'Caveat', cursive",
+      fontFamilyBase: "Evolventa",
+      fontFamilyCaption: "Evolventa",
     },
     components: {
-      borderRadiusCard: '20px',
-      borderRadiusInput: '8px',
+      borderRadiusCard: '30px',
+      borderRadiusInput: '28px',
       shadowCard: '0 0 0 1px rgba(0, 0, 0, 0.05)',
       shadowCardDesktop: '0 4px 24px rgba(0, 0, 0, 0.15)',
+            SelectItemBorderRadius: '20px',
     },
   }
 }
@@ -237,41 +242,43 @@ export function applyTheme(themeId = 'default') {
   const theme = themes[themeId] || themes.default
   const root = document.documentElement
 
-  // Colors
+  // Colors (CSS custom properties for component styles)
   root.style.setProperty('--color-brand-primary', theme.colors.brandPrimary)
   root.style.setProperty('--color-brand-accent', theme.colors.brandAccent)
-  root.style.setProperty('--color-header-text', theme.colors.headerText)
-  root.style.setProperty('--color-header-bg', theme.colors.headerBg)
-  root.style.setProperty('--color-header-height', theme.header?.height || '27px')
+  root.style.setProperty('--color-header-text', theme.colors.headerText) // Color of title/divider text in header
+  root.style.setProperty('--color-header-bg', theme.colors.headerBg) // Header background fill
+  root.style.setProperty('--color-header-height', theme.header?.height || '27px') // Logo height in header
 
-  root.style.setProperty('--color-text-primary', theme.colors.textPrimary)
-  root.style.setProperty('--color-text-secondary', theme.colors.textSecondary)
-  root.style.setProperty('--color-link', theme.colors.link)
-  root.style.setProperty('--color-bg-page-mobile', theme.colors.bgPageMobile)
-  root.style.setProperty('--color-bg-card', theme.colors.bgCard)
-  root.style.setProperty('--color-dropdown-hover', theme.colors.dropdownHover)
-  root.style.setProperty('--color-dropdown-chewron', theme.colors?.dropdownChevron || theme.colors.textSecondary)
+  root.style.setProperty('--color-text-primary', theme.colors.textPrimary) // Main text color
+  root.style.setProperty('--color-text-secondary', theme.colors.textSecondary) // Secondary/muted text color
+  root.style.setProperty('--color-link', theme.colors.link) // Link and accent text color
+  root.style.setProperty('--color-bg-page-mobile', theme.colors.bgPageMobile) // Mobile page background
+  root.style.setProperty('--color-bg-card', theme.colors.bgCard) // Cards and controls background
+  root.style.setProperty('--color-dropdown-hover', theme.colors.dropdownHover) // Dropdown option hover background
+  root.style.setProperty('--color-dropdown-chewron', theme.colors?.dropdownChevron || theme.colors.textSecondary) // Dropdown chevron icon color
 
-  root.style.setProperty('--color-dropdown-hover-text', theme.colors.dropdownHoverText)
-  root.style.setProperty('--color-input-border', theme.colors.inputBorder)
+  root.style.setProperty('--color-dropdown-hover-text', theme.colors.dropdownHoverText) // Dropdown option hover text
+  root.style.setProperty('--color-input-border', theme.colors.inputBorder) // Inputs/select borders
 
   // Typography
-  root.style.setProperty('--font-family-base', theme.typography.fontFamilyBase)
-  root.style.setProperty('--font-family-caption', theme.typography.fontFamilyCaption)
+  root.style.setProperty('--font-family-base', theme.typography.fontFamilyBase) // Base UI font
+  root.style.setProperty('--font-family-caption', theme.typography.fontFamilyCaption) // Decorative caption font
 
   // Components
-  root.style.setProperty('--radius-card', theme.components.borderRadiusCard)
-  root.style.setProperty('--border-card', theme.components?.cardBorder || 'none')  
-  root.style.setProperty('--radius-input', theme.components.borderRadiusInput)
-  root.style.setProperty('--shadow-card', theme.components.shadowCard)
-  root.style.setProperty('--shadow-card-desktop', theme.components.shadowCardDesktop)
-  root.style.setProperty('--select-item-border-radius', theme.components?.SelectItemBorderRadius || '3px') //радиус элемента выподающего списка
+  root.style.setProperty('--radius-card', theme.components.borderRadiusCard) // Card corners radius
+  root.style.setProperty('--border-card', theme.components?.cardBorder || 'none') // Card/select border style
+  root.style.setProperty('--radius-input', theme.components.borderRadiusInput) // Input/select corners radius
+  root.style.setProperty('--shadow-card', theme.components.shadowCard) // Card shadow on mobile
+  root.style.setProperty('--shadow-card-desktop', theme.components.shadowCardDesktop) // Card shadow on desktop
+  root.style.setProperty('--select-item-border-radius', theme.components?.SelectItemBorderRadius || '3px') // Dropdown item corners radius
+  root.style.setProperty('--greeting-text-size', theme.components?.greetingTextSize || '20px') // Dropdown item corners radius
 
-  //Hero
-  root.style.setProperty('--hero-image-width', theme.hero.imageWidth)
-  root.style.setProperty('--hero-image-left', theme.hero.imageLeft)
-  root.style.setProperty('--hero-image-translateX', theme.hero.imagetranslateX)
-  root.style.setProperty('--hero-image-right', theme.hero.imageRight)
+  // Hero visual position variables
+  root.style.setProperty('--hero-image-width', theme.hero.imageWidth) // Hero image width
+  root.style.setProperty('--hero-image-left', theme.hero.imageLeft) // Left offset
+  root.style.setProperty('--hero-image-translateX', theme.hero.imagetranslateX) // Horizontal transform
+  root.style.setProperty('--hero-image-right', theme.hero.imageRight) // Right offset
+  root.style.setProperty('--hero-width', theme.hero.imageWidth) // Right offset
 
   // Desktop background (computed for CSS)
   const desktop = theme.desktop
@@ -281,8 +288,8 @@ export function applyTheme(themeId = 'default') {
   } else if (desktop.bgType === 'gradient' && desktop.bgGradient) {
     desktopBg = desktop.bgGradient
   }
-  root.style.setProperty('--desktop-bg', desktopBg)
-  root.style.setProperty('--desktop-bg-overlay', desktop.bgOverlay)
+  root.style.setProperty('--desktop-bg', desktopBg) // Desktop background image/gradient/color
+  root.style.setProperty('--desktop-bg-overlay', desktop.bgOverlay) // Overlay layer over desktop background
 
   // Store full theme for components that need it (header, layout, hero)
   root.dataset.theme = JSON.stringify({
