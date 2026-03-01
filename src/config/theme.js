@@ -1,6 +1,6 @@
 /**
  * Theme configuration for quick design switching.
- * Set themeId to: 'default' | 'spoke' | 'sushi-gallery' | 'mir-sushi'
+ * Set themeId to: 'default' | 'spoke' | 'sushi-gallery' | 'mir-sushi' | 'sushi_world'
  */
 
 const themes = {
@@ -14,9 +14,11 @@ const themes = {
       link: '#2979A6',
       bgPageMobile: '#e8e4e0',
       bgCard: '#f5f5f5',
-      dropdownHover: '#e8f4fc',
+      dropdownHover: '#BFCFFF33',//e8f4fc
       dropdownHoverText: '#6d6d6d',
       inputBorder: '#e0e0e0',
+      headerBg: '#ffffff',
+      
     },
     header: {
       style: 'white_minimal',
@@ -31,11 +33,20 @@ const themes = {
       bgImage: '/images/hero-bg-desktop.png',
       bgGradient: '',
       bgOverlay: 'none',
+      text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Суши Мастер' ,
+      textFinish: 'Оставьте отзыв\nо нашей работе ' 
     },
     hero: {
-      imageUrl: '/images/hero-cat.png',
+      imageUrl: '/images/theme-default/cat1.png',
+      imageUrlScreen2: '/images/theme-default/cat2.png',
+      imageUrlScreen3: '/images/theme-default/cat3.png',
+      imageWidth: '383px',
+      imageLeft: '50%',
+      imagetranslateX : 'translateX(-50%)',
+      imageRight: 'unset',
       imageWaitingUrl: '',
       captionFont: 'Caveat',
+      captionText: '',
       show: true,
     },
     typography: {
@@ -62,12 +73,14 @@ const themes = {
       dropdownHover: '#FF9800',
       dropdownHoverText: '#fff',
       inputBorder: '#e0e0e0',
+      headerBg: '#ffffff',
+
     },
     header: {
       style: 'colored_bar',
       brandColor: '#4CAF50',
       textColor: '#fff',
-      logoUrl: '/images/logo.png',
+      logoUrl: '/images/spoke_logo.png',
       brandTitle: 'ЦЕНТР ОЦЕНКИ КАЧЕСТВА РЕСТОРАНОВ СПОКЕ',
     },
     desktop: {
@@ -76,11 +89,23 @@ const themes = {
       bgImage: '/images/hero-bg-desktop.png',
       bgGradient: '',
       bgOverlay: 'none',
+      text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Мир Суши' ,
+      textFinish: 'Оставьте отзыв\nо нашей работе ' 
+
     },
     hero: {
-      imageUrl: '/images/hero-cat.png',
+      imageUrl: '/images/theme-spoke/hero-screen1.png',
+      imageUrlScreen2: '/images/theme-spoke/hero-screen2.png',
+      imageUrlScreen3: '/images/theme-spoke/hero-screen3.png',
+      imageWidth: '383px',
+      imageLeft: 'unset',
+      imagetranslateX : 'unset',
+      imageRight: '0',
+
       imageWaitingUrl: '',
       captionFont: 'Caveat',
+      captionText: '',
+
       show: true,
     },
     typography: {
@@ -107,6 +132,7 @@ const themes = {
       dropdownHover: '#E91E63',
       dropdownHoverText: '#fff',
       inputBorder: '#e0e0e0',
+      headerBg: '#ffffff',
     },
     header: {
       style: 'white_minimal',
@@ -121,11 +147,19 @@ const themes = {
       bgImage: '',
       bgGradient: 'linear-gradient(90deg, #ffc8dd 0%, #b8e0d2 100%)',
       bgOverlay: 'none',
+      text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Споке' ,
+      textFinish: 'Оставьте отзыв\nо нашей работе' 
     },
     hero: {
       imageUrl: '/images/hero-cat.png',
+      imageWidth: '383px',
+      imageLeft: '50%',
+      imagetranslateX : 'translateX(-50%)',
+      imageRight: 'unset',
       imageWaitingUrl: '',
       captionFont: 'Caveat',
+      captionText: '',
+
       show: true,
     },
     typography: {
@@ -152,6 +186,7 @@ const themes = {
       dropdownHover: '#FF9800',
       dropdownHoverText: '#fff',
       inputBorder: '#e0e0e0',
+      headerBg: '#ffffff',
     },
     header: {
       style: 'colored_bar',
@@ -166,11 +201,18 @@ const themes = {
       bgImage: '',
       bgGradient: '',
       bgOverlay: 'none',
+      text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Галерея сиши' ,
+      textFinish: 'Оставьте отзыв\nо нашей работе ' 
     },
     hero: {
       imageUrl: '/images/hero-shark.png',
       imageWaitingUrl: '/images/hero-shark-waiting.png',
+      imageWidth: '383px',
+      imageLeft: '50%',
+      imagetranslateX : 'translateX(-50%)',
+      imageRight: 'unset',
       captionFont: 'Caveat',
+      captionText: '',
       show: true,
     },
     typography: {
@@ -184,11 +226,63 @@ const themes = {
       shadowCardDesktop: '0 4px 24px rgba(0, 0, 0, 0.15)',
     },
   },
+  sushi_world: {
+    colors: {
+      brandPrimary: '#2979A6',
+      brandAccent: '#FF9800',
+      headerText: '#fff',
+      textPrimary: '#2e2d31',
+      textSecondary: '#6d6d6d',
+      link: '#2979A6',
+      bgPageMobile: '#f5f5f5',
+      bgCard: '#fff',
+      dropdownHover: '#FF9800',
+      dropdownHoverText: '#fff',
+      inputBorder: '#e0e0e0',
+      headerBg: '#ffffff',
+    },
+    header: {
+      style: 'colored_bar',
+      brandColor: '#2979A6',
+      textColor: '#fff',
+      logoUrl: '/images/logo.png',
+      brandTitle: 'ЦЕНТР ОЦЕНКИ КАЧЕСТВА РЕСТОРАНОВ МИР СУШИ',
+    },
+    desktop: {
+      bgType: 'solid',
+      bgColor: '#ADD8E6',
+      bgImage: '',
+      bgGradient: '',
+      bgOverlay: 'none',
+    },
+    hero: {
+      imageUrl: '/images/theme-sushi_world/hero-screen1.png',
+      imageUrlScreen2: '/images/theme-sushi_world/hero-screen2.png',
+      imageUrlScreen3: '/images/theme-sushi_world/hero-screen3.png',
+      imageWidth: '383px',
+      imageLeft: '50%',
+      imagetranslateX : 'translateX(-50%)',
+      imageRight: 'unset',
+      captionFont: 'Caveat',
+      captionText: '',
+      show: true,
+    },
+    typography: {
+      fontFamilyBase: "'Evolventa', system-ui, -apple-system, sans-serif",
+      fontFamilyCaption: "'Caveat', cursive",
+    },
+    components: {
+      borderRadiusCard: '20px',
+      borderRadiusInput: '30px',
+      shadowCard: '0 0 0 1px rgba(0, 0, 0, 0.05)',
+      shadowCardDesktop: '0 4px 24px rgba(0, 0, 0, 0.15)',
+    },
+  },
 }
 
 /**
  * Apply theme to document by setting CSS custom properties.
- * @param {string} themeId - One of: 'default' | 'spoke' | 'sushi-gallery' | 'mir-sushi'
+ * @param {string} themeId - One of: 'default' | 'spoke' | 'sushi-gallery' | 'mir-sushi' | 'sushi_world'
  */
 export function applyTheme(themeId = 'default') {
   const theme = themes[themeId] || themes.default
@@ -198,6 +292,7 @@ export function applyTheme(themeId = 'default') {
   root.style.setProperty('--color-brand-primary', theme.colors.brandPrimary)
   root.style.setProperty('--color-brand-accent', theme.colors.brandAccent)
   root.style.setProperty('--color-header-text', theme.colors.headerText)
+  root.style.setProperty('--color-header-bg', theme.colors.headerBg)
   root.style.setProperty('--color-text-primary', theme.colors.textPrimary)
   root.style.setProperty('--color-text-secondary', theme.colors.textSecondary)
   root.style.setProperty('--color-link', theme.colors.link)
@@ -216,6 +311,12 @@ export function applyTheme(themeId = 'default') {
   root.style.setProperty('--radius-input', theme.components.borderRadiusInput)
   root.style.setProperty('--shadow-card', theme.components.shadowCard)
   root.style.setProperty('--shadow-card-desktop', theme.components.shadowCardDesktop)
+
+  //Hero
+  root.style.setProperty('--hero-image-width', theme.hero.imageWidth)
+  root.style.setProperty('--hero-image-left', theme.hero.imageLeft)
+  root.style.setProperty('--hero-image-translateX', theme.hero.imagetranslateX)
+  root.style.setProperty('--hero-image-right', theme.hero.imageRight)
 
   // Desktop background (computed for CSS)
   const desktop = theme.desktop

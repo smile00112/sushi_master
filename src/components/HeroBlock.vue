@@ -1,14 +1,28 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 import { getTheme } from '@/config/theme'
 
 defineProps({
   caption: { type: String, default: '' },
 })
 
+const route = useRoute()
 const hero = ref({
-  imageUrl: '/images/hero-cat.png',
+  imageUrl: '',
   show: true,
+})
+
+const heroImageUrl = computed(() => {
+  const h = hero.value
+  const routeName = route.name
+  if (routeName === 'city') {
+    return h.imageUrlScreen2 || h.imageUrl
+  }
+  if (routeName === 'choose-map' || routeName === 'review') {
+    return h.imageUrlScreen3 || h.imageUrl
+  }
+  return h.imageUrl
 })
 
 onMounted(() => {
@@ -21,7 +35,7 @@ onMounted(() => {
 
 <template>
   <div v-if="hero.show" class="hero-block">
-    <img :src="hero.imageUrl" alt="" class="hero-image" />
+    <img :src="heroImageUrl" alt="" class="hero-image" />
     <p v-if="caption" class="hero-caption">{{ caption }}</p>
   </div>
 </template>
@@ -30,16 +44,22 @@ onMounted(() => {
 .hero-block {
   margin-top: 24px;
   text-align: right;
+  position: absolute;
+  bottom: 0;
+  left: var(--hero-image-left); /*50%*/
+  transform: var(--hero-image-translateX);/*translateX(-50%);*/
+  right: var(--hero-image-right);
 }
 .hero-image {
   width: 100%;
   max-width: 383px;
   height: auto;
-  display: block;
-  margin-left: auto;
+  display: block;  
   border-radius: var(--radius-input);
+  width: var(--hero-width);
 }
 .hero-caption {
+  display: none;
   font-family: var(--font-family-caption);
   font-size: 20px;
   font-weight: 400;

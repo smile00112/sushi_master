@@ -56,7 +56,7 @@ function selectCity(city) {
 
 <style scoped>
 .screen {
-  padding-top: 16px;
+  /* padding-top: 16px; */
 }
 .greeting {
   font-family: var(--font-family-base);
@@ -64,7 +64,9 @@ function selectCity(city) {
   font-weight: 400;
   line-height: 1.33;
   color: var(--color-text-primary);
-  margin: 0 0 20px;
+  margin: 49px 0 32px 0;
+  white-space: pre-line;
+
 }
 .select-block {
   position: relative;

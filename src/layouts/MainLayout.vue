@@ -24,35 +24,40 @@ import ThemeSwitcher from '@/components/ThemeSwitcher.vue'
 }
 .main-content {
   flex: 1;
-  max-width: 390px;
+  max-width: 490px;
   margin: 0 auto;
   width: 100%;
-  padding: 16px 16px 24px;
+  /* padding: 16px 16px 24px; */
   box-sizing: border-box;
   background: var(--color-bg-card);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
+  position: relative;
 }
 .main-body {
-  padding: 0;
+  padding: 0 24px;
 }
+@media (min-width: 500px) {
+  .main-layout {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), var(--desktop-bg);
+    background-size: cover;
+  }
+}
+
 @media (min-width: 768px) {
   .main-content {
-    max-width: 720px;
+    max-width: 490px;
   }
 }
 @media (min-width: 992px) {
   .main-content {
-    max-width: 960px;
+    max-width: 490px;
   }
 }
 @media (min-width: 1200px) {
-  .main-layout {
-    background: var(--desktop-bg);
-    background-size: cover;
-  }
+
   .main-content {
-    max-width: 494px;
+    max-width: 490px;
     margin-top: 48px;
     margin-bottom: 48px;
     box-shadow: var(--shadow-card-desktop);

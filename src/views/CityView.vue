@@ -102,7 +102,7 @@ function goToChooseMap(establishment) {
 
 <style scoped>
 .screen {
-  padding-top: 16px;
+  /* padding-top: 16px; */
 }
 .greeting {
   font-family: var(--font-family-base);
@@ -110,7 +110,9 @@ function goToChooseMap(establishment) {
   font-weight: 400;
   line-height: 1.33;
   color: var(--color-text-primary);
-  margin: 0 0 20px;
+  margin: 49px 0 32px 0;
+  padding: 0;
+  white-space: pre-line;
 }
 .cards-row {
   display: flex;
@@ -124,6 +126,7 @@ function goToChooseMap(establishment) {
   border-radius: var(--radius-input);
   background: var(--color-bg-card);
 }
+
 .select-trigger {
   width: 100%;
   display: flex;
@@ -184,7 +187,7 @@ function goToChooseMap(establishment) {
 .city-item:last-child {
   margin-bottom: 0;
 }
-.city-item:hover {
+.city-item:hover, .city-item:active {
   background: var(--color-dropdown-hover);
   color: var(--color-dropdown-hover-text);
 }

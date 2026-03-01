@@ -2,10 +2,12 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import HeroBlock from '@/components/HeroBlock.vue'
+import { getTheme } from '@/config/theme'
 
 const route = useRoute()
 const router = useRouter()
 const cities = ref([])
+const textFinish = ref('')
 
 const cityId = computed(() => route.query.cityId || '')
 const establishmentName = computed(() => route.query.establishment || '')
@@ -20,6 +22,9 @@ onMounted(async () => {
   const res = await fetch('/data/cities.json')
   const data = await res.json()
   cities.value = data.cities || []
+  const theme = getTheme()
+  textFinish.value = theme.desktop.textFinish || ''
+
 })
 
 watch([establishment, cities], ([est]) => {
@@ -43,31 +48,31 @@ function open2gis() {
 
 <template>
   <div class="screen choose-map-screen">
-    <p class="greeting">
-      Здравствуйте!<br />
-      Вы на странице оценки качества ресторанов Суши Мастер
+    <p class="greeting" v-if="textFinish">
+      {{ textFinish }}
     </p>
 
     <p v-if="establishment" class="establishment-name">{{ establishment.name }}</p>
-    <p class="choose-label">Выберите сервис карт:</p>
+    <p class="choose-label">Обычно люди не находят времени оставить отзывы, если им все понравилось.<br>А вы нашли. Мы это ценим.<br>Оставьте, пожалуйста, отзыв на любом из сайтов:</p>
 
     <div class="map-links">
-      <button
+      <a
         type="button"
-        class="map-link-card"
+        class="map-a-card"
         :disabled="!establishment?.yandexMaps"
         @click="openYandex"
       >
-        Яндекс Карты
-      </button>
-      <button
-        type="button"
-        class="map-link-card"
+        <img src="/images/yandex-btn.png" class="map-link-card" alt="яндекс карты">
+      </a>
+
+      <a
+        class="map-a-card"
         :disabled="!establishment?.link2gis"
         @click="open2gis"
       >
-        2GIS
-      </button>
+        <img src="/images/2gis-btn.png" class="map-link-card" alt="карты 2GIS">
+        
+    </a>
     </div>
 
     <HeroBlock caption="куда открыть?" />
@@ -76,7 +81,7 @@ function open2gis() {
 
 <style scoped>
 .screen {
-  padding-top: 16px;
+  /* padding-top: 16px; */
 }
 .greeting {
   font-family: var(--font-family-base);
@@ -84,9 +89,12 @@ function open2gis() {
   font-weight: 400;
   line-height: 1.33;
   color: var(--color-text-primary);
-  margin: 0 0 20px;
+  margin: 49px 0 20px;
+  padding: 0;
+  white-space: pre-line;
 }
 .establishment-name {
+  display:none;
   font-family: var(--font-family-base);
   font-size: 18px;
   font-weight: 500;
@@ -97,16 +105,17 @@ function open2gis() {
   font-family: var(--font-family-base);
   font-size: 16px;
   color: var(--color-text-secondary);
-  margin: 0 0 16px;
+  margin: 0 0 51px;
+  /* max-width: 350px; */
 }
 .map-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-bottom: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .map-link-card {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   min-height: 56px;
@@ -119,12 +128,18 @@ function open2gis() {
   font-weight: 500;
   color: var(--color-link);
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s;
+  transition: background 0.2s, border-color 0.2s; */
+  border: unset;
+  padding: 0;
+  box-shadow: 0px 4px 20.2px 0px #BFCFFF33;
+  box-shadow: 1px 4px 6.9px 0px #BFCFFF40;
+
 }
-.map-link-card:hover:not(:disabled) {
+ .map-link-card:hover:not(:disabled) {
   background: var(--color-dropdown-hover);
   border-color: var(--color-link);
-}
+  box-shadow: 1px 4px 6.9px 0px #fc1fa740;
+} 
 .map-link-card:disabled {
   opacity: 0.6;
   cursor: not-allowed;

@@ -30,9 +30,15 @@ onMounted(() => {
 <style scoped>
 .app-header {
   padding: 12px 0 16px;
+
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  gap: 19px;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 21px 24px;
+  background-color: var(--color-header-bg);
+
 }
 
 .app-header.header-colored {
@@ -58,10 +64,14 @@ onMounted(() => {
 }
 
 .header-line {
-  width: 100%;
-  height: 0;
-  border-bottom: 1px solid var(--color-header-text);
-  opacity: 0.5;
+    width: 100%;
+    max-width: 1px;
+    /* transform: rotate(90deg); */
+    height: 26px;
+    border-left: 1px solid var(--color-header-text);
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
 }
 
 .header-title {
@@ -71,5 +81,6 @@ onMounted(() => {
   line-height: 1.33;
   color: var(--color-header-text);
   margin: 0;
+  max-width: 150px;
 }
 </style>

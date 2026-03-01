@@ -57,3 +57,9 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+
+button,
+a,
+[role="button"] {
+  -webkit-tap-highlight-color: transparent;
+}

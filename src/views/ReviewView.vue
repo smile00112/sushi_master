@@ -83,7 +83,7 @@ onMounted(async () => {
   font-weight: 500;
   color: var(--color-link);
   text-decoration: none;
-  transition: background 0.2s, border-color 0.2s;
+  /* transition: background 0.2s, border-color 0.2s; */
 }
 .review-link-card:hover {
   background: var(--color-dropdown-hover);
