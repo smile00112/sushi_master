@@ -68,4 +68,10 @@ onMounted(() => {
   color: var(--color-text-primary);
   margin: 8px 0 0;
 }
+
+@media (max-height: 650px) {
+  .hero-image{
+    max-width: 40vh;
+  }
+}
 </style>

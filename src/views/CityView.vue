@@ -114,27 +114,26 @@ function goToChooseMap(establishment) {
 </template>
 
 <style scoped>
-.screen {
-  /* padding-top: 16px; */
-}
+
 .greeting {
-  font-family: var(--font-family-caption); /* Декоративный шрифт приветствия из темы */
+  font-family: var(--font-family-caption); 
   font-size: var(--greeting-text-size);
   font-weight: 400;
   line-height: 1.33;
-  color: var(--color-text-primary); /* Основной цвет текста */
+  color: var(--color-text-primary); 
   margin: 49px 0 32px 0;
   white-space: pre-line;
 
 }
 .select-block {
   position: relative;
-  border-radius: var(--radius-input); /* Скругление полей выбора */
-  background: var(--color-bg-card); /* Фон карточки/селекта */
+  border-radius: var(--radius-input); 
+  background: var(--color-bg-card); 
   margin-bottom: 24px;
+  box-shadow: var(--select-city-box-shadow);
 }
 .select-block .select-trigger{
-  border: 1px solid var(--color-input-border); /* Граница инпута/селекта */
+  border: var(--color-input-border); 
 }
 
 .select-block.open .select-trigger{
@@ -151,16 +150,14 @@ function goToChooseMap(establishment) {
   border: none;
   font-family: inherit;
   font-size: 16px;
-  color: var(--color-text-secondary); /* Вторичный цвет текста */
+  color: var(--color-text-secondary); 
   cursor: pointer;
   text-align: left;
   border-radius: inherit;
   transition: background 0.2s ease;
   background-color: #ffffff;
 }
-.select-trigger:hover {
-  /* background: #f9f9f9; */
-}
+
 .select-block.open .select-trigger {
   border-radius: calc(var(--radius-input) - 1px) calc(var(--radius-input) - 1px) 0 0;
   border-bottom-width: 0;
@@ -186,18 +183,19 @@ function goToChooseMap(establishment) {
   border: 1px solid var(--color-input-border); /* Базовая граница контейнера списка */
   border-top: none;
   border-radius: 0 0 var(--radius-input) var(--radius-input); /* Скругление нижней части списка */
-  /* padding: 4px; */
   background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--select-city-box-shadow);
   border: var(--border-card); /* Тематическая рамка карточки (если задана) */
   border-top-width: 0;
+  padding: 6px 5px 14px;
+
 }
 .city-item {
   display: block;
   width: 100%;
   padding: 10px 12px;
   border: none;
-  border-radius: 3px;
+  border-radius: var(--select-item-border-radius); /* Скругление элементов в списке */
   /* background: var(--color-bg-card); */
   background-color: #ffffff;
   font-family: inherit;
@@ -210,7 +208,7 @@ function goToChooseMap(establishment) {
 }
 .city-item:last-child {
   margin-bottom: 0;
-  border-radius: 0 0 var(--radius-input) var(--radius-input); /* Скругление последнего пункта */
+  /* border-radius: 0 0 var(--radius-input) var(--radius-input); Скругление последнего пункта */
 
 }
 .city-item:hover {

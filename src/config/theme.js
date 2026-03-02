@@ -13,11 +13,12 @@ const themes = {
       textSecondary: '#6d6d6d',
       link: '#2979A6',
       bgPageMobile: '#e8e4e0',
-      bgCard: '#f5f5f5',
+      bgCard: '#F8F9FC',
       dropdownHover: '#BFCFFF33',//e8f4fc
       dropdownHoverText: '#6d6d6d',
-      inputBorder: '#e0e0e0',
       headerBg: '#ffffff',
+      inputBorder: '0.2px solid #BFCFFF',
+
       
     },
     header: {
@@ -54,10 +55,13 @@ const themes = {
       fontFamilyCaption: "Evolventa",
     },
     components: {
+      cardBorder: '0.2px solid #BFCFFF',
       borderRadiusCard: '20px',
       borderRadiusInput: '8px',
       shadowCard: '0 0 0 1px rgba(0, 0, 0, 0.05)',
       shadowCardDesktop: '0 4px 24px rgba(0, 0, 0, 0.15)',
+      mapButtonBorder: '0.5px solid #BFCFFF',
+      mapButtonBoxShadow: '0px 4px 16.7px 0px #BFCFFF33',
     },
   },
   spoke: {
@@ -73,7 +77,7 @@ const themes = {
       dropdownHover: '#EA651D',
       dropdownChevron: '#EA651D',
       dropdownHoverText: '#fff',
-      inputBorder: '#83BB43',
+      inputBorder: '0.2px solid #83BB43',
       headerBg: '#4CAF50',
 
     },
@@ -111,7 +115,7 @@ const themes = {
       fontFamilyCaption: "Adigiana Extreme",
     },
     components: {
-      cardBorder: '0.8px solid #83BB43',
+      cardBorder: '0.2px solid #83BB43',
       borderRadiusCard: '30px',
       borderRadiusInput: '28px',
       shadowCard: '0 0 0 1px rgba(0, 0, 0, 0.05)',
@@ -120,6 +124,8 @@ const themes = {
       greetingTextSize: '28px',
       finishCommentTextSize: '16px',
       finishCommentTextLineHeight: '100%',
+      mapButtonBorder: '0.8px solid #83BB43',
+      mapButtonBoxShadow: 'unset',
     },
   },
   'sushi-gallery': {
@@ -131,7 +137,7 @@ const themes = {
       textSecondary: '#6d6d6d',
       link: '#E91E63',
       bgPageMobile: '#e0e0e0',
-      bgCard: '#fff',
+      bgCard: '#FFFAFD',
       dropdownHover: '#E91E63',
       dropdownChevron: '#E91E63',
       dropdownHoverText: '#fff',
@@ -175,11 +181,17 @@ const themes = {
       shadowCard: '0 0 0 1px rgba(0, 0, 0, 0.05)',
       shadowCardDesktop: '0 4px 24px rgba(0, 0, 0, 0.15)',
       SelectItemBorderRadius: '20px',
+      mapButtonBorder: 'none',
+      mapButtonBoxShadow: '1px 4px 6.9px 0px #BFCFFF40',
+      cityBoxShadow: '1px 4px 6.9px 0px #BFCFFF40',
 
     },
   },
   'mir-sushi': {
     colors: {
+      // cardBorder: '0.2px solid #83BB43',      
+      // mapButtonBorder: '0.8px solid #83BB43',
+      // mapButtonBoxShadow: 'unset',
       brandPrimary: '#2196F3',
       brandAccent: '#FF9800',
       headerText: '#fff',
@@ -193,6 +205,7 @@ const themes = {
       dropdownHoverText: '#fff',
       inputBorder: '#e0e0e0',
       headerBg: '#2979A6',
+
     },
     header: {
       style: 'colored_bar',
@@ -231,7 +244,10 @@ const themes = {
       borderRadiusInput: '28px',
       shadowCard: '0 0 0 1px rgba(0, 0, 0, 0.05)',
       shadowCardDesktop: '0 4px 24px rgba(0, 0, 0, 0.15)',
-            SelectItemBorderRadius: '20px',
+      SelectItemBorderRadius: '20px',
+      mapButtonBorder: 'none',
+      mapButtonBoxShadow: '0px 4px 20.2px 0px #BFCFFF33',
+      cityBoxShadow: '1px 4px 6.9px 0px #BFCFFF40',
     },
   }
 }
@@ -287,9 +303,13 @@ export function applyTheme(themeId = 'default') {
   root.style.setProperty('--shadow-card', theme.components.shadowCard) // Card shadow on mobile
   root.style.setProperty('--shadow-card-desktop', theme.components.shadowCardDesktop) // Card shadow on desktop
   root.style.setProperty('--select-item-border-radius', theme.components?.SelectItemBorderRadius || '3px') // Dropdown item corners radius
-  root.style.setProperty('--greeting-text-size', theme.components?.greetingTextSize || '20px') // Dropdown item corners radius
-  root.style.setProperty('--finish-comment-text-size', theme.components?.finishCommentTextSize || '14px') // Dropdown item corners radius
-  root.style.setProperty('--finish-comment-line-height', theme.components?.finishCommentTextLineHeight || '1.33') // Dropdown item corners radius
+  root.style.setProperty('--greeting-text-size', theme.components?.greetingTextSize || '20px') //
+  root.style.setProperty('--finish-comment-text-size', theme.components?.finishCommentTextSize || '14px') // 
+  root.style.setProperty('--finish-comment-line-height', theme.components?.finishCommentTextLineHeight || '1.33') //
+  root.style.setProperty('--map-button-border', theme.components?.mapButtonBorder  || 'none') // 
+  root.style.setProperty('--map-button-box-shadow', theme.components?.mapButtonBoxShadow || '1px 4px 6.9px 1px #BFCFFF40') //
+  root.style.setProperty('--select-city-box-shadow', theme.components?.cityBoxShadow || 'unset') //
+
 
   // Hero visual position variables
   root.style.setProperty('--hero-image-width', theme.hero.imageWidth) // Hero image width

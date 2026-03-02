@@ -2,18 +2,50 @@
   "default": {
     "cities": [
       {
+        "id": "almetyevsk",
+        "name": "Альметьевск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Ленина 101",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Альметьевск Ленина 101",
+            "link2gis": "https://go.2gis.com/kiy4o"
+          }
+        ]
+      },
+      {
+        "id": "achinsk",
+        "name": "Ачинск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, мкр 1 37а",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ачинск мкр 1 37а",
+            "link2gis": "https://go.2gis.com/03Obk"
+          }
+        ]
+      },
+      {
         "id": "barnaul",
         "name": "Барнаул",
         "establishments": [
           {
-            "name": "Суши Мастер, ул. Ленина",
-            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Барнаул Ленина",
-            "link2gis": "https://2gis.ru/barnaul"
+            "name": "Суши Мастер, Ленина 113",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Барнаул Ленина 113",
+            "link2gis": "https://go.2gis.com/A0G0Y"
           },
           {
-            "name": "Суши Мастер, пр. Космонавтов",
-            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Барнаул Космонавтов",
-            "link2gis": "https://2gis.ru/barnaul"
+            "name": "Суши Мастер, Ленина 22",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Барнаул Ленина 22",
+            "link2gis": "https://go.2gis.com/jJuza"
+          },
+          {
+            "name": "Суши Мастер, ул. Балтийская, 103",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Барнаул ул. Балтийская, 103",
+            "link2gis": "https://go.2gis.com/AJ5Yh"
+          },
+          {
+            "name": "Суши Мастер, ул. Юрина, 202",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Барнаул ул. Юрина, 202",
+            "link2gis": "https://go.2gis.com/mYhV6"
           }
         ]
       },
@@ -22,16 +54,1058 @@
         "name": "Белоярский",
         "establishments": [
           {
-            "name": "Суши Мастер, центр",
-            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Белоярский",
-            "link2gis": "https://2gis.ru"
+            "name": "Суши Мастер, Мира 1",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Белоярский Мира 1",
+            "link2gis": "https://go.2gis.com/YhiAr"
+          }
+        ]
+      },
+      {
+        "id": "berezniki",
+        "name": "Березники",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Мира 83",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Березники Мира 83",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "blagoveshchensk",
+        "name": "Благовещенск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, ул 50 лет Октября, 24/1",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Благовещенск ул 50 лет Октября, 24/1",
+            "link2gis": "https://go.2gis.com/jYIlG"
+          }
+        ]
+      },
+      {
+        "id": "verkhnyaya-pyshma",
+        "name": "Верхняя Пышма",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Успенский 48",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Верхняя Пышма Успенский 48",
+            "link2gis": "https://go.2gis.com/AsDrk"
+          }
+        ]
+      },
+      {
+        "id": "verkhnyaya-salda",
+        "name": "Верхняя Салда",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Спортивная 2",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Верхняя Салда Спортивная 2",
+            "link2gis": "https://go.2gis.com/aGl5q"
+          }
+        ]
+      },
+      {
+        "id": "gubkinskiy",
+        "name": "Губкинский",
+        "establishments": [
+          {
+            "name": "Суши Мастер, мкр 12 39",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Губкинский мкр 12 39",
+            "link2gis": "https://go.2gis.com/Jevt4"
+          }
+        ]
+      },
+      {
+        "id": "yekaterinburg",
+        "name": "Екатеринбург",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Крауля 69",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Екатеринбург Крауля 69",
+            "link2gis": "https://go.2gis.com/yvH0d"
+          },
+          {
+            "name": "Суши Мастер, Восточная 98",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Екатеринбург Восточная 98",
+            "link2gis": "https://go.2gis.com/0MTiU"
+          },
+          {
+            "name": "Суши Мастер, Челюскинцев 19",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Екатеринбург Челюскинцев 19",
+            "link2gis": "https://go.2gis.com/asew0"
+          },
+          {
+            "name": "Суши Мастер, Титова 12",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Екатеринбург Титова 12",
+            "link2gis": "https://go.2gis.com/UzQ60"
+          },
+          {
+            "name": "Суши Мастер, Вильгельма де Геннина 37",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Екатеринбург Вильгельма де Геннина 37",
+            "link2gis": "https://go.2gis.com/EcLTs"
+          },
+          {
+            "name": "Суши Мастер, Победы 102",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Екатеринбург Победы 102",
+            "link2gis": "https://go.2gis.com/Arbo0"
+          }
+        ]
+      },
+      {
+        "id": "zavodoukovsk",
+        "name": "Заводоуковск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Первомайская 9Б",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Заводоуковск Первомайская 9Б",
+            "link2gis": "https://go.2gis.com/YaVkR"
+          }
+        ]
+      },
+      {
+        "id": "ishim",
+        "name": "Ишим",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Маркса 29",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ишим Маркса 29",
+            "link2gis": "https://go.2gis.com/GztbM"
+          }
+        ]
+      },
+      {
+        "id": "kamensk-uralskiy",
+        "name": "Каменск-Уральский",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Победы 87а",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Каменск-Уральский Победы 87а",
+            "link2gis": "https://go.2gis.com/Ao5VO"
+          },
+          {
+            "name": "Суши Мастер, Алюминевая 75",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Каменск-Уральский Алюминевая 75",
+            "link2gis": "https://go.2gis.com/VAjXr"
+          }
+        ]
+      },
+      {
+        "id": "kemerovo",
+        "name": "Кемерово",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Строителей 42",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Кемерово Строителей 42",
+            "link2gis": "https://go.2gis.com/lHZj2"
+          },
+          {
+            "name": "Суши Мастер, Радищева 4",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Кемерово Радищева 4",
+            "link2gis": "https://go.2gis.com/hoD43"
+          },
+          {
+            "name": "Суши Мастер, проспект Шахтеров 58А",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Кемерово проспект Шахтеров 58А",
+            "link2gis": "https://go.2gis.com/AYkkH"
+          }
+        ]
+      },
+      {
+        "id": "kogalym",
+        "name": "Когалым",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Мира 2",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Когалым Мира 2",
+            "link2gis": "https://go.2gis.com/AmuNB"
+          }
+        ]
+      },
+      {
+        "id": "komsomolsk-na-amure",
+        "name": "Комсомольск-на-Амуре",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Мира 47",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Комсомольск-на-Амуре Мира 47",
+            "link2gis": "https://go.2gis.com/q1Evm"
+          },
+          {
+            "name": "Суши Мастер, Лазо 7",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Комсомольск-на-Амуре Лазо 7",
+            "link2gis": "https://go.2gis.com/clfCL"
+          },
+          {
+            "name": "Суши Мастер, ул Вокзальная 91",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Комсомольск-на-Амуре ул Вокзальная 91",
+            "link2gis": "https://go.2gis.com/En1vu"
+          }
+        ]
+      },
+      {
+        "id": "krasnodar",
+        "name": "Краснодар",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Метальникова 3",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Краснодар Метальникова 3",
+            "link2gis": "https://go.2gis.com/dWg2p"
+          },
+          {
+            "name": "Суши Мастер, Стасова 186",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Краснодар Стасова 186",
+            "link2gis": "https://go.2gis.com/7S5Kw"
+          },
+          {
+            "name": "Суши Мастер, Яна Полуяна 39",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Краснодар Яна Полуяна 39",
+            "link2gis": "https://go.2gis.com/pSoF9"
+          },
+          {
+            "name": "Суши Мастер, Восточно-Кругликовская 24",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Краснодар Восточно-Кругликовская 24",
+            "link2gis": "https://go.2gis.com/tjB8L"
+          },
+          {
+            "name": "Суши Мастер, Западный обход 45 стр.3 пом.1110/1",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Краснодар Западный обход 45 стр.3 пом.1110/1",
+            "link2gis": "https://go.2gis.com/sc7gQ"
+          }
+        ]
+      },
+      {
+        "id": "krasnoyarsk",
+        "name": "Красноярск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Молоково 1 копус 3",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Красноярск Молоково 1 копус 3",
+            "link2gis": "https://go.2gis.com/xbrHO"
+          },
+          {
+            "name": "Суши Мастер, Юности 39",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Красноярск Юности 39",
+            "link2gis": "https://go.2gis.com/gNWte"
+          },
+          {
+            "name": "Суши Мастер, Чернышевского 79",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Красноярск Чернышевского 79",
+            "link2gis": "https://go.2gis.com/DBojO"
+          },
+          {
+            "name": "Суши Мастер, Имени газеты КР 135",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Красноярск Имени газеты КР 135",
+            "link2gis": "https://go.2gis.com/4orOh"
+          }
+        ]
+      },
+      {
+        "id": "labytnangi",
+        "name": "Лабытнанги",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Школьная 25",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Лабытнанги Школьная 25",
+            "link2gis": "https://go.2gis.com/rpeMO"
+          }
+        ]
+      },
+      {
+        "id": "langepas",
+        "name": "Лангепас",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Комсомольская 10А/2",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Лангепас Комсомольская 10А/2",
+            "link2gis": "https://go.2gis.com/w0P7V"
+          }
+        ]
+      },
+      {
+        "id": "lyubertsy",
+        "name": "Люберцы",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Юности 3",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Люберцы Юности 3",
+            "link2gis": "https://go.2gis.com/msFZc"
+          }
+        ]
+      },
+      {
+        "id": "maykop",
+        "name": "Майкоп",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Чкалова 71",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Майкоп Чкалова 71",
+            "link2gis": "https://go.2gis.com/Xu5JX"
+          }
+        ]
+      },
+      {
+        "id": "megion",
+        "name": "Мегион",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Заречная 15/3",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Мегион Заречная 15/3",
+            "link2gis": "https://go.2gis.com/MQUBr"
+          }
+        ]
+      },
+      {
+        "id": "mezhdurechensk",
+        "name": "Междуреченск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Коммунистический 8",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Междуреченск Коммунистический 8",
+            "link2gis": "https://go.2gis.com/TwzFx"
+          }
+        ]
+      },
+      {
+        "id": "miass",
+        "name": "Миасс",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Автозаводцев 32/Б",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Миасс Автозаводцев 32/Б",
+            "link2gis": "https://go.2gis.com/mrfVe"
+          }
+        ]
+      },
+      {
+        "id": "muravlenko",
+        "name": "Муравленко",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Муравленко 12 Б",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Муравленко Муравленко 12 Б",
+            "link2gis": "https://go.2gis.com/mhUN7"
+          }
+        ]
+      },
+      {
+        "id": "nadym",
+        "name": "Надым",
+        "establishments": [
+          {
+            "name": "Суши Мастер, проспект Ленинградский 10",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Надым проспект Ленинградский 10",
+            "link2gis": "https://go.2gis.com/5N9Nh"
+          },
+          {
+            "name": "Суши Мастер, Игоря Шаповалова 8/1",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Надым Игоря Шаповалова 8/1",
+            "link2gis": "https://go.2gis.com/yNxKN"
+          }
+        ]
+      },
+      {
+        "id": "nakhodka",
+        "name": "Находка",
+        "establishments": [
+          {
+            "name": "Суши Мастер, пр. Находкинский 102",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Находка пр. Находкинский 102",
+            "link2gis": "https://go.2gis.com/N8bX1"
+          },
+          {
+            "name": "Суши Мастер, Малиновского 21а",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Находка Малиновского 21а",
+            "link2gis": "https://go.2gis.com/XFLu1"
+          }
+        ]
+      },
+      {
+        "id": "nefteyugansk",
+        "name": "Нефтеюганск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, мкр 16а 62",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Нефтеюганск мкр 16а 62",
+            "link2gis": "https://go.2gis.com/vmqLD"
+          },
+          {
+            "name": "Суши Мастер, Ленина 33",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Нефтеюганск Ленина 33",
+            "link2gis": "https://go.2gis.com/j1i49"
+          }
+        ]
+      },
+      {
+        "id": "nizhnevartovsk",
+        "name": "Нижневартовск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Дзержинского 9/1",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Нижневартовск Дзержинского 9/1",
+            "link2gis": "https://go.2gis.com/ViFCd"
+          },
+          {
+            "name": "Суши Мастер, Мира 93",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Нижневартовск Мира 93",
+            "link2gis": "https://go.2gis.com/a0ITv"
+          }
+        ]
+      },
+      {
+        "id": "nizhnekamsk",
+        "name": "Нижнекамск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Гагарина 24",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Нижнекамск Гагарина 24",
+            "link2gis": "https://go.2gis.com/CzSa5"
+          }
+        ]
+      },
+      {
+        "id": "nizhny-novgorod",
+        "name": "Нижний Новгород",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Кораблестроителей 3",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Нижний Новгород Кораблестроителей 3",
+            "link2gis": "https://go.2gis.com/i2DY9"
+          },
+          {
+            "name": "Суши Мастер, ул. Горького 148",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Нижний Новгород ул. Горького 148",
+            "link2gis": "https://go.2gis.com/RPRpB"
+          },
+          {
+            "name": "Суши Мастер, Комсомольская 9",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Нижний Новгород Комсомольская 9",
+            "link2gis": "https://go.2gis.com/ayKqP"
+          }
+        ]
+      },
+      {
+        "id": "novokuznetsk",
+        "name": "Новокузнецк",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Ленина 35",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Новокузнецк Ленина 35",
+            "link2gis": "https://go.2gis.com/bHJTu"
+          },
+          {
+            "name": "Суши Мастер, Тореза 10",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Новокузнецк Тореза 10",
+            "link2gis": "https://go.2gis.com/Sxxex"
+          },
+          {
+            "name": "Суши Мастер, Кирова 21",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Новокузнецк Кирова 21",
+            "link2gis": "https://go.2gis.com/LifcP"
+          },
+          {
+            "name": "Суши Мастер, Разведчиков 52",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Новокузнецк Разведчиков 52",
+            "link2gis": "https://go.2gis.com/KUeCC"
+          },
+          {
+            "name": "Суши Мастер, Новоселов 23А",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Новокузнецк Новоселов 23А",
+            "link2gis": "https://go.2gis.com/Ht0E4"
+          }
+        ]
+      },
+      {
+        "id": "novy-urengoy",
+        "name": "Новый Уренгой",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Оптимистов 4/1",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Новый Уренгой Оптимистов 4/1",
+            "link2gis": "https://go.2gis.com/txoku"
+          },
+          {
+            "name": "Суши Мастер, Советский 5/3",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Новый Уренгой Советский 5/3",
+            "link2gis": "https://go.2gis.com/ZoZV2"
+          }
+        ]
+      },
+      {
+        "id": "norilsk",
+        "name": "Норильск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Талнахская 74",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Норильск Талнахская 74",
+            "link2gis": "https://go.2gis.com/yDz5x"
+          },
+          {
+            "name": "Суши Мастер, Советская 5",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Норильск Советская 5",
+            "link2gis": "https://go.2gis.com/ybRK8"
+          }
+        ]
+      },
+      {
+        "id": "noyabrsk",
+        "name": "Ноябрьск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Советская 81/2",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ноябрьск Советская 81/2",
+            "link2gis": "https://go.2gis.com/ef6zp"
+          }
+        ]
+      },
+      {
+        "id": "nyagan",
+        "name": "Нягань",
+        "establishments": [
+          {
+            "name": "Суши Мастер, 4 мкр 15 к2",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Нягань 4 мкр 15 к2",
+            "link2gis": "https://go.2gis.com/YY5El"
+          }
+        ]
+      },
+      {
+        "id": "omsk",
+        "name": "Омск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Культуры 7",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Омск Культуры 7",
+            "link2gis": "https://go.2gis.com/1DeGf"
+          },
+          {
+            "name": "Суши Мастер, ул. 70 лет Октября, 24/1",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Омск ул. 70 лет Октября, 24/1",
+            "link2gis": "https://go.2gis.com/M369m"
+          },
+          {
+            "name": "Суши Мастер, ул. Герцена, 12",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Омск ул. Герцена, 12",
+            "link2gis": "https://go.2gis.com/9bztZ"
+          },
+          {
+            "name": "Суши Мастер, ул. Маяковского,85",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Омск ул. Маяковского,85",
+            "link2gis": "https://go.2gis.com/gcufJ"
+          }
+        ]
+      },
+      {
+        "id": "perm",
+        "name": "Пермь",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Рыбалко 113",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Пермь Рыбалко 113",
+            "link2gis": "https://go.2gis.com/yvbb9"
+          },
+          {
+            "name": "Суши Мастер, Революции 2а",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Пермь Революции 2а",
+            "link2gis": "https://go.2gis.com/yHhCc"
+          },
+          {
+            "name": "Суши Мастер, Солдатова 28",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Пермь Солдатова 28",
+            "link2gis": "https://go.2gis.com/gSE8v"
+          },
+          {
+            "name": "Суши Мастер, Мира 51",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Пермь Мира 51",
+            "link2gis": "https://go.2gis.com/dCszi"
+          },
+          {
+            "name": "Суши Мастер, Парковый 33",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Пермь Парковый 33",
+            "link2gis": "https://go.2gis.com/TKwMm"
+          },
+          {
+            "name": "Суши Мастер, Докучаева 42",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Пермь Докучаева 42",
+            "link2gis": "https://go.2gis.com/jv9hx"
+          },
+          {
+            "name": "Суши Мастер, ул. Юрша 84",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Пермь ул. Юрша 84",
+            "link2gis": "https://go.2gis.com/thEYm"
+          }
+        ]
+      },
+      {
+        "id": "prokopyevsk",
+        "name": "Прокопьевск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Гагарина 26",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Прокопьевск Гагарина 26",
+            "link2gis": "https://go.2gis.com/z8yq9"
+          }
+        ]
+      },
+      {
+        "id": "pyt-yakh",
+        "name": "Пыть-Ях",
+        "establishments": [
+          {
+            "name": "Суши Мастер, мкр 2 15",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Пыть-Ях мкр 2 15",
+            "link2gis": "https://go.2gis.com/qcGA8"
+          }
+        ]
+      },
+      {
+        "id": "raduzhny",
+        "name": "Радужный",
+        "establishments": [
+          {
+            "name": "Суши Мастер, мкр 7 12",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Радужный мкр 7 12",
+            "link2gis": "https://go.2gis.com/DEScO"
+          }
+        ]
+      },
+      {
+        "id": "rostov-na-donu",
+        "name": "Ростов-на-Дону",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Металлургическая 117/62",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ростов-на-Дону Металлургическая 117/62",
+            "link2gis": "https://go.2gis.com/l7hyi"
+          },
+          {
+            "name": "Суши Мастер, 339-й Стрелковой Дивизии 5/60Б",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ростов-на-Дону 339-й Стрелковой Дивизии 5/60Б",
+            "link2gis": "https://go.2gis.com/movW4"
+          },
+          {
+            "name": "Суши Мастер, Буденовский 68",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ростов-на-Дону Буденовский 68",
+            "link2gis": "https://go.2gis.com/04kvJ"
+          },
+          {
+            "name": "Суши Мастер, бульвар Комарова 20/1",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ростов-на-Дону бульвар Комарова 20/1",
+            "link2gis": "https://go.2gis.com/l1gHd"
+          }
+        ]
+      },
+      {
+        "id": "salekhard",
+        "name": "Салехард",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Свердлова 41",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Салехард Свердлова 41",
+            "link2gis": "https://go.2gis.com/pqSNP"
+          }
+        ]
+      },
+      {
+        "id": "seversk",
+        "name": "Северск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Коммунистический 50",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Северск Коммунистический 50",
+            "link2gis": "https://go.2gis.com/BI0Wh"
+          }
+        ]
+      },
+      {
+        "id": "serov",
+        "name": "Серов",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Ленина 142",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Серов Ленина 142",
+            "link2gis": "https://go.2gis.com/QXmCI"
+          }
+        ]
+      },
+      {
+        "id": "solikamsk",
+        "name": "Соликамск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Матросова 63",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Соликамск Матросова 63",
+            "link2gis": "https://go.2gis.com/Z8l3a"
+          }
+        ]
+      },
+      {
+        "id": "sochi",
+        "name": "Сочи",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Горького 20а",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Сочи Горького 20а",
+            "link2gis": "https://go.2gis.com/AllxD"
+          }
+        ]
+      },
+      {
+        "id": "adler",
+        "name": "Адлер",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Адлер Ленина 73",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Адлер Ленина 73",
+            "link2gis": "https://go.2gis.com/PL0xP"
+          }
+        ]
+      },
+      {
+        "id": "strezhevoy",
+        "name": "Стрежевой",
+        "establishments": [
+          {
+            "name": "Суши Мастер, мкр 1 176",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Стрежевой мкр 1 176",
+            "link2gis": "https://go.2gis.com/YgXBj"
+          }
+        ]
+      },
+      {
+        "id": "surgut",
+        "name": "Сургут",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Ленина 50",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Сургут Ленина 50",
+            "link2gis": "https://go.2gis.com/Ltt5e"
+          },
+          {
+            "name": "Суши Мастер, 30 лет Победы 41",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Сургут 30 лет Победы 41",
+            "link2gis": "https://go.2gis.com/I4Vq9"
+          },
+          {
+            "name": "Суши Мастер, Геологическая 10",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Сургут Геологическая 10",
+            "link2gis": "https://go.2gis.com/qOuZ9"
+          },
+          {
+            "name": "Суши Мастер, Ленина 66",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Сургут Ленина 66",
+            "link2gis": "https://go.2gis.com/Ne8pQ"
+          },
+          {
+            "name": "Суши Мастер, Тюменский тракт 2",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Сургут Тюменский тракт 2",
+            "link2gis": "https://go.2gis.com/KHWLD"
+          }
+        ]
+      },
+      {
+        "id": "syktyvkar",
+        "name": "Сыктывкар",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Первомайская 85/2",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Сыктывкар Первомайская 85/2",
+            "link2gis": "https://go.2gis.com/hkRZX"
+          }
+        ]
+      },
+      {
+        "id": "tobolsk",
+        "name": "Тобольск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, 7А микрорайон 12А",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тобольск 7А микрорайон 12А",
+            "link2gis": "https://go.2gis.com/a6dy7"
+          },
+          {
+            "name": "Суши Мастер, 8-й микрорайон 8Б",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тобольск 8-й микрорайон 8Б",
+            "link2gis": "https://go.2gis.com/EK3Ql"
+          }
+        ]
+      },
+      {
+        "id": "tomsk",
+        "name": "Томск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Учебная 20",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Томск Учебная 20",
+            "link2gis": "https://go.2gis.com/6oA5h"
+          },
+          {
+            "name": "Суши Мастер, 79 Гвардейской дивизии 24",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Томск 79 Гвардейской дивизии 24",
+            "link2gis": "https://go.2gis.com/Z79CT"
+          },
+          {
+            "name": "Суши Мастер, Иркутский 32",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Томск Иркутский 32",
+            "link2gis": "https://go.2gis.com/6weFd"
+          },
+          {
+            "name": "Суши Мастер, пер. 1905 года 11",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Томск пер. 1905 года 11",
+            "link2gis": "https://go.2gis.com/7qk0u"
+          }
+        ]
+      },
+      {
+        "id": "tyumen",
+        "name": "Тюмень",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Газовиков 61",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень Газовиков 61",
+            "link2gis": "https://go.2gis.com/a9wtz"
+          },
+          {
+            "name": "Суши Мастер, Ямская 102",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень Ямская 102",
+            "link2gis": "https://go.2gis.com/XSbtv"
+          },
+          {
+            "name": "Суши Мастер, Республики 204 корп 7 помещение 4",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень Республики 204 корп 7 помещение 4",
+            "link2gis": "https://go.2gis.com/RN52u"
+          },
+          {
+            "name": "Суши Мастер, Горького 55",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень Горького 55",
+            "link2gis": "https://go.2gis.com/prOtz"
+          },
+          {
+            "name": "Суши Мастер, Червиш тракт 66",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень Червиш тракт 66",
+            "link2gis": "https://go.2gis.com/GQk1W"
+          },
+          {
+            "name": "Суши Мастер, ЗапСиб 22",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень ЗапСиб 22",
+            "link2gis": "https://go.2gis.com/0czcM"
+          },
+          {
+            "name": "Суши Мастер, Артамонова 13",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень Артамонова 13",
+            "link2gis": "https://go.2gis.com/foMNX"
+          },
+          {
+            "name": "Суши Мастер, Беляева 29/1",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень Беляева 29/1",
+            "link2gis": "https://go.2gis.com/dLO26"
+          },
+          {
+            "name": "Суши Мастер, Одесская 29 стр 1 помещ 7",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень Одесская 29 стр 1 помещ 7",
+            "link2gis": "https://go.2gis.com/v2TXY"
+          },
+          {
+            "name": "Суши Мастер, Пермякова 50Б",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень Пермякова 50Б",
+            "link2gis": "https://go.2gis.com/wA50E"
+          },
+          {
+            "name": "Суши Мастер, Монтажников 47",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень Монтажников 47",
+            "link2gis": "https://go.2gis.com/3Di7S"
+          },
+          {
+            "name": "Суши Мастер, Обдорская 1к2 суши",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень Обдорская 1к2 суши",
+            "link2gis": "https://go.2gis.com/6msgo"
+          },
+          {
+            "name": "Суши Мастер, Щербакова 136",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Тюмень Щербакова 136",
+            "link2gis": "https://go.2gis.com/loSb7"
+          }
+        ]
+      },
+      {
+        "id": "uray",
+        "name": "Урай",
+        "establishments": [
+          {
+            "name": "Суши Мастер, мкр 2 61",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Урай мкр 2 61",
+            "link2gis": "https://go.2gis.com/VenVX"
+          }
+        ]
+      },
+      {
+        "id": "usinsk",
+        "name": "Усинск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, 60 лет Октября 5",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Усинск 60 лет Октября 5",
+            "link2gis": "https://go.2gis.com/TvarW"
+          }
+        ]
+      },
+      {
+        "id": "ussuriysk",
+        "name": "Уссурийск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Некрасова 53",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Уссурийск Некрасова 53",
+            "link2gis": "https://go.2gis.com/QwEMg"
+          }
+        ]
+      },
+      {
+        "id": "ukhta",
+        "name": "Ухта",
+        "establishments": [
+          {
+            "name": "Суши Мастер, 30 лет Октября 12",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ухта 30 лет Октября 12",
+            "link2gis": "https://go.2gis.com/m6qVg"
+          }
+        ]
+      },
+      {
+        "id": "khabarovsk",
+        "name": "Хабаровск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Суворова 25/1",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Хабаровск Суворова 25/1",
+            "link2gis": "https://go.2gis.com/ZtH84"
+          },
+          {
+            "name": "Суши Мастер, Ленинградская 28/9",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Хабаровск Ленинградская 28/9",
+            "link2gis": "https://go.2gis.com/BUBNW"
+          },
+          {
+            "name": "Суши Мастер, Карла Маркса 200/1",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Хабаровск Карла Маркса 200/1",
+            "link2gis": "https://go.2gis.com/0xoT2"
+          },
+          {
+            "name": "Суши Мастер, Амурский бульвар 62",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Хабаровск Амурский бульвар 62",
+            "link2gis": "https://go.2gis.com/N0jOH"
+          },
+          {
+            "name": "Суши Мастер, Тихоокеанская 182 б",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Хабаровск Тихоокеанская 182 б",
+            "link2gis": "https://go.2gis.com/MyC6N"
+          }
+        ]
+      },
+      {
+        "id": "khanty-mansiysk",
+        "name": "Ханты-Мансийск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Мира 52",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ханты-Мансийск Мира 52",
+            "link2gis": "https://go.2gis.com/TmNsr"
+          },
+          {
+            "name": "Суши Мастер, Самаровская 1/4",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ханты-Мансийск Самаровская 1/4",
+            "link2gis": "https://go.2gis.com/jfYBm"
+          }
+        ]
+      },
+      {
+        "id": "cheboksary",
+        "name": "Чебоксары",
+        "establishments": [
+          {
+            "name": "Суши Мастер, ул. Пролетарская 21/22",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Чебоксары ул. Пролетарская 21/22",
+            "link2gis": "https://go.2gis.com/FxVIy"
+          },
+          {
+            "name": "Суши Мастер, пр-т Максима Горького 38/2",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Чебоксары пр-т Максима Горького 38/2",
+            "link2gis": "https://go.2gis.com/mW5jz"
+          }
+        ]
+      },
+      {
+        "id": "chita",
+        "name": "Чита",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Бутина 42а",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Чита Бутина 42а",
+            "link2gis": "https://go.2gis.com/v3ffV"
+          }
+        ]
+      },
+      {
+        "id": "chusovoy",
+        "name": "Чусовой",
+        "establishments": [
+          {
+            "name": "Суши Мастер, 50 лет ВЛКСМ 4",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Чусовой 50 лет ВЛКСМ 4",
+            "link2gis": "https://go.2gis.com/zv79b"
+          }
+        ]
+      },
+      {
+        "id": "yugorsk",
+        "name": "Югорск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Ленина 14",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Югорск Ленина 14",
+            "link2gis": "https://go.2gis.com/3M01S"
+          }
+        ]
+      },
+      {
+        "id": "yalutorovsk",
+        "name": "Ялуторовск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Ленина 17",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ялуторовск Ленина 17",
+            "link2gis": "https://go.2gis.com/LxXCI"
+          }
+        ]
+      },
+      {
+        "id": "yaroslavl",
+        "name": "Ярославль",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Большая Федоровская 29",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ярославль Большая Федоровская 29",
+            "link2gis": "https://go.2gis.com/HjE5i"
+          },
+          {
+            "name": "Суши Мастер, Урицкого 65",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ярославль Урицкого 65",
+            "link2gis": "https://go.2gis.com/u1qJf"
+          },
+          {
+            "name": "Суши Мастер, Машиностроителей 30/18",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ярославль Машиностроителей 30/18",
+            "link2gis": "https://go.2gis.com/j1l3B"
+          },
+          {
+            "name": "Суши Мастер, Ньютона 28",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Ярославль Ньютона 28",
+            "link2gis": "https://go.2gis.com/i6rdx"
           }
         ]
       }
     ],
     "reviewSites": [
-      { "name": "2GIS", "url": "https://2gis.ru" },
-      { "name": "Google", "url": "https://www.google.com/maps" }
+      
     ]
   },
   "spoke": {
@@ -72,70 +1146,1781 @@
   "sushi-gallery": {
     "cities": [
       {
-        "id": "krasnoyarsk",
-        "name": "Красноярск",
+        "id": "achinsk",
+        "name": "Ачинск",
         "establishments": [
           {
-            "name": "Галерея Суши, ул. Мира",
-            "yandexMaps": "https://yandex.ru/maps/?text=Галерея Суши Красноярск Мира",
-            "link2gis": "https://2gis.ru/krasnoyarsk"
-          },
-          {
-            "name": "Галерея Суши, ул. Весны",
-            "yandexMaps": "https://yandex.ru/maps/?text=Галерея Суши Красноярск Весны",
-            "link2gis": "https://2gis.ru/krasnoyarsk"
+            "name": "Ачинск-01 мкр 1 37а",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzyP4J",
+            "link2gis": "https://go.2gis.com/qlMyO"
           }
         ]
       },
       {
-        "id": "irkutsk",
-        "name": "Иркутск",
+        "id": "barnaul",
+        "name": "Барнаул",
         "establishments": [
           {
-            "name": "Галерея Суши, ул. Декабрьских Событий",
-            "yandexMaps": "https://yandex.ru/maps/?text=Галерея Суши Иркутск",
-            "link2gis": "https://2gis.ru/irkutsk"
+            "name": "Барнаул-01 Ленина 113",
+            "yandexMaps": "https://yandex.by/maps/-/CLbz5BMP",
+            "link2gis": "https://go.2gis.com/znztd"
+          },
+          {
+            "name": "Барнаул-02 Ленина 22",
+            "yandexMaps": "https://yandex.by/maps/-/CLbz5CIR",
+            "link2gis": "https://go.2gis.com/VD92W"
+          },
+          {
+            "name": "Барнаул-03 ул. Балтийская, 103",
+            "yandexMaps": "https://yandex.by/maps/-/CLbz50~p",
+            "link2gis": "https://go.2gis.com/cItvf"
+          },
+          {
+            "name": "Барнаул-05 ул. Юрина, 202 (НОВАЯ)",
+            "yandexMaps": "https://yandex.by/maps/-/CLbz5T1I",
+            "link2gis": "https://go.2gis.com/9sYSB"
+          }
+        ]
+      },
+      {
+        "id": "beloyarskiy",
+        "name": "Белоярский",
+        "establishments": [
+          {
+            "name": "Белоярский-01 Мира 1",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzBMJ1",
+            "link2gis": "https://go.2gis.com/DCg3n"
+          }
+        ]
+      },
+      {
+        "id": "blagoveshchensk",
+        "name": "Благовещенск",
+        "establishments": [
+          {
+            "name": "Благовещенск-01 ул 50 лет Октября, 24/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzBW6G",
+            "link2gis": "https://go.2gis.com/ZBdPp"
+          }
+        ]
+      },
+      {
+        "id": "gubkinskiy",
+        "name": "Губкинский",
+        "establishments": [
+          {
+            "name": "Губкинский-01 мкр 12 39",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzF0i-",
+            "link2gis": "https://go.2gis.com/Xqyqs"
+          }
+        ]
+      },
+      {
+        "id": "ishim",
+        "name": "Ишим",
+        "establishments": [
+          {
+            "name": "Ишим-01 Маркса 29",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzNEm~",
+            "link2gis": null
+          }
+        ]
+      },
+      {
+        "id": "kemerovo",
+        "name": "Кемерово",
+        "establishments": [
+          {
+            "name": "Кемерово-04 Строителей 42",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzNCym",
+            "link2gis": "https://go.2gis.com/QzgxR"
+          },
+          {
+            "name": "Кемерово-05 Радищева 4",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzNWYX",
+            "link2gis": "https://go.2gis.com/MJQeT"
+          },
+          {
+            "name": "Кемерово-10 проспект Шахтеров 58А",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzNHI7",
+            "link2gis": "https://go.2gis.com/sLY3L"
+          }
+        ]
+      },
+      {
+        "id": "kogalym",
+        "name": "Когалым",
+        "establishments": [
+          {
+            "name": "Когалым-01 Мира 2",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzN-mC",
+            "link2gis": "https://go.2gis.com/ZqdBg"
+          }
+        ]
+      },
+      {
+        "id": "komsomolsk-na-amure",
+        "name": "Комсомольск-на-Амуре",
+        "establishments": [
+          {
+            "name": "Комсомольск-на-Амуре-02 Мира 47",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzRCzZ",
+            "link2gis": "https://go.2gis.com/uxlw4"
+          },
+          {
+            "name": "Комсомольск-на-Амуре-03 Лазо 7",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzRO~b",
+            "link2gis": "https://go.2gis.com/C0VX9"
+          },
+          {
+            "name": "Комсомольск-на-Амуре-04 ул Вокзальная 91",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzRHzv",
+            "link2gis": "https://go.2gis.com/X4NbD"
+          }
+        ]
+      },
+      {
+        "id": "krasnodar",
+        "name": "Краснодар",
+        "establishments": [
+          {
+            "name": "Краснодар-08 Метальникова 3",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzR2ku",
+            "link2gis": "https://go.2gis.com/dPin0"
+          },
+          {
+            "name": "Краснодар-09 Стасова 186",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzVUjZ",
+            "link2gis": "https://go.2gis.com/iRutC"
+          },
+          {
+            "name": "Краснодар-11 Яна Полуяна 39",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzVJke",
+            "link2gis": "https://go.2gis.com/1GcBW"
+          },
+          {
+            "name": "Краснодар-13 Восточно-Кругликовская 24",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzV6ob",
+            "link2gis": "https://go.2gis.com/bxVl6"
+          },
+          {
+            "name": "Краснодар-15 Западный обход 45 стр.3 пом.1110/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzVSIM",
+            "link2gis": "https://go.2gis.com/EQWtY"
+          }
+        ]
+      },
+      {
+        "id": "krasnoyarsk",
+        "name": "Красноярск",
+        "establishments": [
+          {
+            "name": "Красноярск-01 Молоково 1 копус 3",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzV8-8",
+            "link2gis": "https://go.2gis.com/F6so8"
+          },
+          {
+            "name": "Красноярск-03 Юности 39",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzVXyl",
+            "link2gis": "https://go.2gis.com/pFIgv"
+          },
+          {
+            "name": "Красноярск-09 Чернышевского 79",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzZY1~",
+            "link2gis": "https://go.2gis.com/mpWkk"
+          },
+          {
+            "name": "Красноярск-11 Имени газеты КР 135",
+            "yandexMaps": "https://yandex.by/maps/-/CLbz6Vy4",
+            "link2gis": "https://go.2gis.com/SUqj4"
+          }
+        ]
+      },
+      {
+        "id": "labytnangi",
+        "name": "Лабытнанги",
+        "establishments": [
+          {
+            "name": "Лабытнанги-01 Школьная 25",
+            "yandexMaps": "https://yandex.by/maps/-/CLbz6KpX",
+            "link2gis": "https://go.2gis.com/D8RvI"
+          }
+        ]
+      },
+      {
+        "id": "langepas",
+        "name": "Лангепас",
+        "establishments": [
+          {
+            "name": "Лангепас-01 Комсомольская 10А/2",
+            "yandexMaps": "https://yandex.by/maps/-/CLbz6DY2",
+            "link2gis": "https://go.2gis.com/uNVXk"
+          }
+        ]
+      },
+      {
+        "id": "lyubertsy",
+        "name": "Люберцы",
+        "establishments": [
+          {
+            "name": "Люберцы-01 Юности 3",
+            "yandexMaps": "https://yandex.by/maps/-/CLbz6T-C",
+            "link2gis": "https://go.2gis.com/q1xuY"
+          }
+        ]
+      },
+      {
+        "id": "maykop",
+        "name": "Майкоп",
+        "establishments": [
+          {
+            "name": "Майкоп-01 Чкалова 71",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzbIM~",
+            "link2gis": "https://go.2gis.com/E0I3y"
+          }
+        ]
+      },
+      {
+        "id": "megion",
+        "name": "Мегион",
+        "establishments": [
+          {
+            "name": "Мегион-01 Заречная 15/3",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzbYKk",
+            "link2gis": "https://go.2gis.com/BCO2R"
+          }
+        ]
+      },
+      {
+        "id": "mezhdurechensk",
+        "name": "Междуреченск",
+        "establishments": [
+          {
+            "name": "Междуреченск-01 Коммунистический 8",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzbJpH",
+            "link2gis": "https://go.2gis.com/vQkAi"
+          }
+        ]
+      },
+      {
+        "id": "muravlenko",
+        "name": "Муравленко",
+        "establishments": [
+          {
+            "name": "Муравленко-01 Муравленко 12 Б",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzbWZQ",
+            "link2gis": "https://go.2gis.com/12301"
+          }
+        ]
+      },
+      {
+        "id": "nadym",
+        "name": "Надым",
+        "establishments": [
+          {
+            "name": "Надым-01 проспект Ленинградский 10",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzbP4i",
+            "link2gis": "https://go.2gis.com/iKe8p"
+          },
+          {
+            "name": "Надым-02 Игоря Шаповалова 8/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzfA5z",
+            "link2gis": "https://go.2gis.com/E3u9n"
+          }
+        ]
+      },
+      {
+        "id": "nakhodka",
+        "name": "Находка",
+        "establishments": [
+          {
+            "name": "Находка-01 пр. Находкинский 102",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzfQZU",
+            "link2gis": "https://go.2gis.com/k4ev4"
+          },
+          {
+            "name": "Находка-03 Малиновского 21а",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzfFMB",
+            "link2gis": "https://go.2gis.com/OWw0B"
+          }
+        ]
+      },
+      {
+        "id": "nefteyugansk",
+        "name": "Нефтеюганск",
+        "establishments": [
+          {
+            "name": "Нефтеюганск-01 мкр 16а 62",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzfRow",
+            "link2gis": "https://go.2gis.com/dt8na"
+          },
+          {
+            "name": "Нефтеюганск-02 Ленина 33",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzfCMe",
+            "link2gis": null
+          }
+        ]
+      },
+      {
+        "id": "nizhnevartovsk",
+        "name": "Нижневартовск",
+        "establishments": [
+          {
+            "name": "Нижневартовск-04 Профсоюзная 2",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzfS6m",
+            "link2gis": "https://go.2gis.com/GmcNz"
+          }
+        ]
+      },
+      {
+        "id": "novokuznetsk",
+        "name": "Новокузнецк",
+        "establishments": [
+          {
+            "name": "Новокузнецк-03 Ленина 35",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzjFZu",
+            "link2gis": "https://go.2gis.com/0UppH"
+          },
+          {
+            "name": "Новокузнецк-04 Тореза 10",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzzHy5",
+            "link2gis": "https://go.2gis.com/pL7JS"
+          },
+          {
+            "name": "Новокузнецк-06 Кирова 21",
+            "yandexMaps": "https://yandex.by/maps/-/CLbzz-6t",
+            "link2gis": "https://go.2gis.com/zemI6"
+          },
+          {
+            "name": "Новокузнецк-07 Разведчиков 52",
+            "yandexMaps": "https://yandex.by/maps/-/CLbz7Q5~",
+            "link2gis": "https://go.2gis.com/7x9cz"
+          },
+          {
+            "name": "Новокузнецк-08 Новоселов 23А",
+            "yandexMaps": "https://yandex.by/maps/-/CLbz78oz",
+            "link2gis": "https://go.2gis.com/pdcGz"
+          }
+        ]
+      },
+      {
+        "id": "novyy-urengoy",
+        "name": "Новый Уренгой",
+        "establishments": [
+          {
+            "name": "Новый Уренгой-02 Оптимистов 4/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLbz7TjH",
+            "link2gis": "https://go.2gis.com/VecpQ"
+          },
+          {
+            "name": "Новый Уренгой-03 Советский 5/3",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7AI4m",
+            "link2gis": "https://go.2gis.com/5Ib2s"
+          }
+        ]
+      },
+      {
+        "id": "norilsk",
+        "name": "Норильск",
+        "establishments": [
+          {
+            "name": "Норильск-01 Талнахская 74",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7A416",
+            "link2gis": "https://go.2gis.com/KBqqx"
+          },
+          {
+            "name": "Норильск-02 Советская 5",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7ANnc",
+            "link2gis": "https://go.2gis.com/Kvgmt"
+          }
+        ]
+      },
+      {
+        "id": "noyabrsk",
+        "name": "Ноябрьск",
+        "establishments": [
+          {
+            "name": "Ноябрьск-02 Советская 81/2",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7A6lm",
+            "link2gis": null
+          }
+        ]
+      },
+      {
+        "id": "nyagan",
+        "name": "Нягань",
+        "establishments": [
+          {
+            "name": "Нягань-01 4 мкр 15 к2",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7AS3b",
+            "link2gis": "https://go.2gis.com/ICNGY"
+          }
+        ]
+      },
+      {
+        "id": "omsk",
+        "name": "Омск",
+        "establishments": [
+          {
+            "name": "Омск-01 Культуры 7",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7AL6G",
+            "link2gis": "https://go.2gis.com/kow9D"
+          },
+          {
+            "name": "Омск-02, ул. 70 лет Октября, 24/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7A24c",
+            "link2gis": "https://go.2gis.com/XCAOZ"
+          },
+          {
+            "name": "Омск-04 ул. Герцена, 12",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7EIYL",
+            "link2gis": "https://go.2gis.com/eKXTE"
+          },
+          {
+            "name": "Омск-05 ул. Маяковского,85",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7EUl3",
+            "link2gis": "https://go.2gis.com/7LSZE"
+          }
+        ]
+      },
+      {
+        "id": "prokopyevsk",
+        "name": "Прокопьевск",
+        "establishments": [
+          {
+            "name": "Прокопьевск-01 Гагарина 26",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7IYKn",
+            "link2gis": "https://go.2gis.com/DSYr6"
+          }
+        ]
+      },
+      {
+        "id": "pyt-yakh",
+        "name": "Пыть-Ях",
+        "establishments": [
+          {
+            "name": "Пыть-Ях-01 мкр 2 15",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7IZk0",
+            "link2gis": "https://go.2gis.com/N4rfl"
+          }
+        ]
+      },
+      {
+        "id": "raduzhnyy",
+        "name": "Радужный",
+        "establishments": [
+          {
+            "name": "Радужный-01 мкр 7 12",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7IK0d",
+            "link2gis": "https://go.2gis.com/WzG0A"
+          }
+        ]
+      },
+      {
+        "id": "rostov-na-donu",
+        "name": "Ростов-на-Дону",
+        "establishments": [
+          {
+            "name": "Ростов-на-Дону-06 Металлургическая 117/62",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7I02W",
+            "link2gis": "https://go.2gis.com/wh79P"
+          },
+          {
+            "name": "Ростов-на-Дону-07 339-й Стрелковой Дивизии 5/60Б",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7IL2P",
+            "link2gis": "https://go.2gis.com/qrUel"
+          },
+          {
+            "name": "Ростов-на-Дону-08 Буденовский 68",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7I21I",
+            "link2gis": "https://go.2gis.com/UnejC"
+          },
+          {
+            "name": "Ростов-на-Дону-10 бульвар Комарова 20/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7MI9v",
+            "link2gis": "https://go.2gis.com/BwGCX"
+          }
+        ]
+      },
+      {
+        "id": "salekhard",
+        "name": "Салехард",
+        "establishments": [
+          {
+            "name": "Салехард-01 Свердлова 41",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7MU12",
+            "link2gis": "https://go.2gis.com/3sYoa"
+          }
+        ]
+      },
+      {
+        "id": "seversk",
+        "name": "Северск",
+        "establishments": [
+          {
+            "name": "Северск-02 Коммунистический 50",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7MF6o",
+            "link2gis": "https://go.2gis.com/vTqn2"
+          }
+        ]
+      },
+      {
+        "id": "sochi",
+        "name": "Сочи",
+        "establishments": [
+          {
+            "name": "Сочи-01 Горького 20а",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7M0P4",
+            "link2gis": "https://go.2gis.com/bN8ga"
+          },
+          {
+            "name": "Сочи-04 Адлер Ленина 73",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7MLot",
+            "link2gis": "https://go.2gis.com/FkzKS"
+          }
+        ]
+      },
+      {
+        "id": "strezhevoy",
+        "name": "Стрежевой",
+        "establishments": [
+          {
+            "name": "Стрежевой-01 мкр 1 176",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7M2PD",
+            "link2gis": "https://go.2gis.com/Y8NTq"
+          }
+        ]
+      },
+      {
+        "id": "surgut",
+        "name": "Сургут",
+        "establishments": [
+          {
+            "name": "Сургут-08 Набережный 12/2",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7QE-j",
+            "link2gis": "https://go.2gis.com/oZzqT"
+          }
+        ]
+      },
+      {
+        "id": "tobolsk",
+        "name": "Тобольск",
+        "establishments": [
+          {
+            "name": "Тобольск-03 7А микрорайон 12А",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7QFMB",
+            "link2gis": "https://go.2gis.com/ajkM5"
+          },
+          {
+            "name": "Тобольск-06 8-й микрорайон 8Б",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7QR1z",
+            "link2gis": "https://go.2gis.com/xpsGv"
+          }
+        ]
+      },
+      {
+        "id": "tomsk",
+        "name": "Томск",
+        "establishments": [
+          {
+            "name": "Томск-02 Учебная 20",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7QC9a",
+            "link2gis": "https://go.2gis.com/vb8Sv"
+          },
+          {
+            "name": "Томск-03 79 Гвардейской дивизии 24",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7QS4p",
+            "link2gis": "https://go.2gis.com/7VTZx"
+          },
+          {
+            "name": "Томск-04 Иркутский 32",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7Q8KC",
+            "link2gis": "https://go.2gis.com/kG98t"
+          },
+          {
+            "name": "Томск-06 пер. 1905 года 11",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7QL5n",
+            "link2gis": "https://go.2gis.com/hnNhN"
+          }
+        ]
+      },
+      {
+        "id": "tyumen",
+        "name": "Тюмень",
+        "establishments": [
+          {
+            "name": "Тюмень-22 30 лет Победы 132-1",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7QXp-",
+            "link2gis": "https://go.2gis.com/FeNDN"
+          },
+          {
+            "name": "Тюмень-24 Ямская 104",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7UEML",
+            "link2gis": "https://go.2gis.com/PznWE"
+          }
+        ]
+      },
+      {
+        "id": "uray",
+        "name": "Урай",
+        "establishments": [
+          {
+            "name": "Урай-01 мкр 2 61",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7UM3d",
+            "link2gis": null
+          }
+        ]
+      },
+      {
+        "id": "ussuriysk",
+        "name": "Уссурийск",
+        "establishments": [
+          {
+            "name": "Уссурийск-01 Некрасова 53",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7UJMo",
+            "link2gis": "https://go.2gis.com/mhaht"
+          }
+        ]
+      },
+      {
+        "id": "khabarovsk",
+        "name": "Хабаровск",
+        "establishments": [
+          {
+            "name": "Хабаровск-01 Суворова 25/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7U62j",
+            "link2gis": "https://go.2gis.com/IyBF7"
+          },
+          {
+            "name": "Хабаровск-02 Ленинградская 28/9",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7UO4Q",
+            "link2gis": "https://go.2gis.com/CtJ1q"
+          },
+          {
+            "name": "Хабаровск-05 Карла Маркса 200/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7U0oq",
+            "link2gis": "https://go.2gis.com/na8uk"
+          },
+          {
+            "name": "Хабаровск-06 Амурский бульвар 62",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7ULKC",
+            "link2gis": "https://go.2gis.com/xcu6U"
+          },
+          {
+            "name": "Хабаровск-07 Тихоокеанская 182 б",
+            "yandexMaps": null,
+            "link2gis": "https://go.2gis.com/BkyCs"
+          }
+        ]
+      },
+      {
+        "id": "khanty-mansiysk",
+        "name": "Ханты-Мансийск",
+        "establishments": [
+          {
+            "name": "Ханты-Мансийск-01 Мира 52",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7YE0c",
+            "link2gis": "https://go.2gis.com/PMZG4"
+          },
+          {
+            "name": "Ханты-Мансийск-02 Самаровская 1/4",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7YUyk",
+            "link2gis": "https://go.2gis.com/0Jr8P"
+          }
+        ]
+      },
+      {
+        "id": "chita",
+        "name": "Чита",
+        "establishments": [
+          {
+            "name": "Чита-01 Бутина 42а",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7YZzz",
+            "link2gis": "https://go.2gis.com/gyLeS"
+          }
+        ]
+      },
+      {
+        "id": "yugorsk",
+        "name": "Югорск",
+        "establishments": [
+          {
+            "name": "Югорск-01 Ленина 14",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7YO-d",
+            "link2gis": "https://go.2gis.com/lBY2T"
+          }
+        ]
+      },
+      {
+        "id": "yalutorovsk",
+        "name": "Ялуторовск",
+        "establishments": [
+          {
+            "name": "Ялуторовск-01 Ленина 17",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7Y86w",
+            "link2gis": "https://go.2gis.com/VwwrZ"
+          }
+        ]
+      },
+      {
+        "id": "yaroslavl",
+        "name": "Ярославль",
+        "establishments": [
+          {
+            "name": "Ярославль-01 Большая Федоровская 29",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7YLjV",
+            "link2gis": "https://go.2gis.com/KuzaY"
+          },
+          {
+            "name": "Ярославль-03 Урицкого 65",
+            "yandexMaps": "https://yandex.by/maps/-/CLb7YX0s",
+            "link2gis": "https://go.2gis.com/vxTBC"
+          },
+          {
+            "name": "Ярославль-04 Машиностроителей 30/18",
+            "yandexMaps": "https://yandex.by/maps/-/CLb74AZd",
+            "link2gis": "https://go.2gis.com/5AazJ"
+          },
+          {
+            "name": "Ярославль-05 Ньютона 28",
+            "yandexMaps": "https://yandex.by/maps/-/CLb74Min",
+            "link2gis": "https://go.2gis.com/ixD11"
           }
         ]
       }
     ],
     "reviewSites": [
-      { "name": "Flamp", "url": "https://www.flamp.ru" },
-      { "name": "2GIS", "url": "https://2gis.ru" }
+      { "name": "2GIS", "url": "https://2gis.ru" },
+      { "name": "Google", "url": "https://www.google.com/maps" }
     ]
   },
   "mir-sushi": {
     "cities": [
       {
-        "id": "ekaterinburg",
-        "name": "Екатеринбург",
+        "id": "almetyevsk",
+        "name": "Альметьевск",
         "establishments": [
           {
-            "name": "Мир Суши, ул. 8 Марта",
-            "yandexMaps": "https://yandex.ru/maps/?text=Мир Суши Екатеринбург 8 Марта",
-            "link2gis": "https://2gis.ru/ekaterinburg"
-          },
-          {
-            "name": "Мир Суши, ул. Малышева",
-            "yandexMaps": "https://yandex.ru/maps/?text=Мир Суши Екатеринбург Малышева",
-            "link2gis": "https://2gis.ru/ekaterinburg"
+            "name": "Альметьевск-01 Ленина 101",
+            "yandexMaps": "https://yandex.by/maps/-/CLCBNElz",
+            "link2gis": ""
           }
         ]
       },
       {
-        "id": "chelyabinsk",
-        "name": "Челябинск",
+        "id": "achinsk",
+        "name": "Ачинск",
         "establishments": [
           {
-            "name": "Мир Суши, пр. Ленина",
-            "yandexMaps": "https://yandex.ru/maps/?text=Мир Суши Челябинск Ленина",
-            "link2gis": "https://2gis.ru/chelyabinsk"
+            "name": "Ачинск-01 мкр 1 37а",
+            "yandexMaps": "https://clck.ru/3P7yNK",
+            "link2gis": "удален"
+          }
+        ]
+      },
+      {
+        "id": "barnaul",
+        "name": "Барнаул",
+        "establishments": [
+          {
+            "name": "Барнаул-01 Ленина 113",
+            "yandexMaps": "https://clck.ru/3P7yXQ",
+            "link2gis": "https://clck.ru/3P7ybd"
+          },
+          {
+            "name": "Барнаул-02 Ленина 22",
+            "yandexMaps": "https://clck.ru/3P7ykS",
+            "link2gis": "https://clck.ru/3P7yfS"
+          },
+          {
+            "name": "Барнаул-03 ул. Балтийская, 103",
+            "yandexMaps": "https://yandex.ru/maps/-/CLU5mB0o",
+            "link2gis": "https://go.2gis.com/8hhQV"
+          },
+          {
+            "name": "Барнаул-05 ул. Юрина, 202 (НОВАЯ)",
+            "yandexMaps": "https://yandex.ru/maps/-/CLU5mSOL",
+            "link2gis": "https://go.2gis.com/sE37Q"
+          }
+        ]
+      },
+      {
+        "id": "beloyarskiy",
+        "name": "Белоярский",
+        "establishments": [
+          {
+            "name": "Белоярский-01 Мира 1",
+            "yandexMaps": "https://yandex.ru/maps/-/CLU5mX7o",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "berezniki",
+        "name": "Березники",
+        "establishments": [
+          {
+            "name": "Березники-01 Мира 83",
+            "yandexMaps": "https://yandex.ru/maps/-/CLU5qF0s",
+            "link2gis": "https://go.2gis.com/1p5dW"
+          }
+        ]
+      },
+      {
+        "id": "blagoveshchensk",
+        "name": "Благовещенск",
+        "establishments": [
+          {
+            "name": "Благовещенск-01 ул 50 лет Октября, 24/1",
+            "yandexMaps": "https://yandex.ru/maps/-/CLU5iIL-",
+            "link2gis": "https://go.2gis.com/tzDT9"
+          }
+        ]
+      },
+      {
+        "id": "verkhnyaya-pyshma",
+        "name": "Верхняя Пышма",
+        "establishments": [
+          {
+            "name": "Верхняя Пышма-01 Успенский 48",
+            "yandexMaps": "https://yandex.ru/maps/-/CLU5JYI4",
+            "link2gis": "https://go.2gis.com/KjiqX"
+          }
+        ]
+      },
+      {
+        "id": "verkhnyaya-salda",
+        "name": "Верхняя Салда",
+        "establishments": [
+          {
+            "name": "Верхняя Салда-01 Спортивная 2",
+            "yandexMaps": "https://yandex.ru/maps/-/CLU5JPZE",
+            "link2gis": "https://go.2gis.com/EnAfk"
+          }
+        ]
+      },
+      {
+        "id": "gubkinskiy",
+        "name": "Губкинский",
+        "establishments": [
+          {
+            "name": "Губкинский-01 мкр 12 39",
+            "yandexMaps": "https://yandex.ru/maps/-/CLU5NNom",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "yekaterinburg",
+        "name": "Екатеринбург",
+        "establishments": [
+          {
+            "name": "Екатеринбург-09 Крауля 69",
+            "yandexMaps": "https://yandex.ru/maps/-/CLU5R6L4",
+            "link2gis": "https://go.2gis.com/oufDD"
+          },
+          {
+            "name": "Екатеринбург-10 Восточная 98",
+            "yandexMaps": "https://yandex.ru/maps/-/CLU5V4iG",
+            "link2gis": ""
+          },
+          {
+            "name": "Екатеринбург-11 Челюскинцев 19",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUBVF--",
+            "link2gis": "https://go.2gis.com/PaJCU"
+          },
+          {
+            "name": "Екатеринбург-13 Титова 12",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUBZZ4Y",
+            "link2gis": "https://go.2gis.com/mYUZD"
+          },
+          {
+            "name": "Екатеринбург-16 Вильгельма де Геннина 37",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUB6Z1k",
+            "link2gis": "https://go.2gis.com/Rx2AI"
+          },
+          {
+            "name": "Екатеринбург-21 Победы 102",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUBbYkT",
+            "link2gis": "https://go.2gis.com/7hK0D"
+          }
+        ]
+      },
+      {
+        "id": "izhevsk",
+        "name": "Ижевск",
+        "establishments": [
+          {
+            "name": "Ижевск-03 Молодежная 107в",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUBfIMV",
+            "link2gis": "https://go.2gis.com/4UOEo"
+          }
+        ]
+      },
+      {
+        "id": "ishim",
+        "name": "Ишим",
+        "establishments": [
+          {
+            "name": "Ишим-01 Маркса 29",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUFiSmP",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "kamensk-uralskiy",
+        "name": "Каменск-Уральский",
+        "establishments": [
+          {
+            "name": "Каменск-Уральский-01 Победы 87а",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUFyVMm",
+            "link2gis": "https://go.2gis.com/bqgdf"
+          },
+          {
+            "name": "Каменск-Уральский-03 Алюминевая 75",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUbMH7h",
+            "link2gis": "https://go.2gis.com/4tPxC"
+          }
+        ]
+      },
+      {
+        "id": "kemerovo",
+        "name": "Кемерово",
+        "establishments": [
+          {
+            "name": "Кемерово-04 Строителей 42",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUbY06X",
+            "link2gis": "https://go.2gis.com/u8cuR"
+          },
+          {
+            "name": "Кемерово-05 Радищева 4",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUb4YyI",
+            "link2gis": "https://go.2gis.com/qvZz6"
+          },
+          {
+            "name": "Кемерово-10 проспект Шахтеров 58А",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUbiBYy",
+            "link2gis": "https://go.2gis.com/X0Nyt"
+          }
+        ]
+      },
+      {
+        "id": "kogalym",
+        "name": "Когалым",
+        "establishments": [
+          {
+            "name": "Когалым-01 Мира 2",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUbiHPE",
+            "link2gis": "https://go.2gis.com/BBToR"
+          }
+        ]
+      },
+      {
+        "id": "komsomolsk-na-amure",
+        "name": "Комсомольск-на-Амуре",
+        "establishments": [
+          {
+            "name": "Комсомольск-на-Амуре-02 Мира 47",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUbmWKR",
+            "link2gis": ""
+          },
+          {
+            "name": "Комсомольск-на-Амуре-03 Лазо 7",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUbqYz8",
+            "link2gis": "-"
+          },
+          {
+            "name": "Комсомольск-на-Амуре-04 ул Вокзальная 91",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUbqW6l",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "krasnodar",
+        "name": "Краснодар",
+        "establishments": [
+          {
+            "name": "Краснодар-08 Метальникова 3",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUbyGOU",
+            "link2gis": "https://go.2gis.com/7lcDP"
+          },
+          {
+            "name": "Краснодар-09 Стасова 186",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUbJYlM",
+            "link2gis": "удален"
+          },
+          {
+            "name": "Краснодар-11 Яна Полуяна 39",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUbJ26u",
+            "link2gis": "удален"
+          },
+          {
+            "name": "Краснодар-13 Восточно-Кругликовская 24",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUbN81g",
+            "link2gis": "https://go.2gis.com/OeBWh"
+          },
+          {
+            "name": "Краснодар-15 Западный обход 45 стр.3 пом.1110/1",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUbR65D",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "krasnoyarsk",
+        "name": "Красноярск",
+        "establishments": [
+          {
+            "name": "Красноярск-01 Молоково 1 копус 3",
+            "yandexMaps": "https://yandex.by/maps/-/CLhkVWLw",
+            "link2gis": "https://go.2gis.com/keBTk"
+          },
+          {
+            "name": "Красноярск-03 Юности 39",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUfMEPF",
+            "link2gis": "https://go.2gis.com/219K2"
+          },
+          {
+            "name": "Красноярск-09 Чернышевского 79",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUfUJPW",
+            "link2gis": "https://go.2gis.com/ais3n"
+          },
+          {
+            "name": "Красноярск-11 Имени газеты КР 135",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUfaGIJ",
+            "link2gis": "https://go.2gis.com/va2Zr"
+          }
+        ]
+      },
+      {
+        "id": "labytnangi",
+        "name": "Лабытнанги",
+        "establishments": [
+          {
+            "name": "Лабытнанги-01 Школьная 25",
+            "yandexMaps": "https://yandex.ru/maps/-/CLUfiUJo",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "langepas",
+        "name": "Лангепас",
+        "establishments": [
+          {
+            "name": "Лангепас-01 Комсомольская 10А/2",
+            "yandexMaps": "https://yandex.by/maps/-/CLhkZFn4",
+            "link2gis": "https://go.2gis.com/ngk1M"
+          }
+        ]
+      },
+      {
+        "id": "lyubertsy",
+        "name": "Люберцы",
+        "establishments": [
+          {
+            "name": "Люберцы-01 Юности 3",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/OYSyQ"
+          }
+        ]
+      },
+      {
+        "id": "maykop",
+        "name": "Майкоп",
+        "establishments": [
+          {
+            "name": "Майкоп-01 Чкалова 71",
+            "yandexMaps": "https://yandex.by/maps/-/CLUWfD~b",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "megion",
+        "name": "Мегион",
+        "establishments": [
+          {
+            "name": "Мегион-01 Заречная 15/3",
+            "yandexMaps": "https://yandex.by/maps/-/CLhk6I~K",
+            "link2gis": "https://go.2gis.com/gGvl9"
+          }
+        ]
+      },
+      {
+        "id": "mezhdurechensk",
+        "name": "Междуреченск",
+        "establishments": [
+          {
+            "name": "Междуреченск-01 Коммунистический 8",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkuI0d",
+            "link2gis": "https://go.2gis.com/bPTIY"
+          }
+        ]
+      },
+      {
+        "id": "miass",
+        "name": "Миасс",
+        "establishments": [
+          {
+            "name": "Миасс-02 Автозаводцев 32/Б",
+            "yandexMaps": "https://yandex.by/maps/-/CLUku-kZ",
+            "link2gis": "https://go.2gis.com/Vcy7F"
+          }
+        ]
+      },
+      {
+        "id": "muravlenko",
+        "name": "Муравленко",
+        "establishments": [
+          {
+            "name": "Муравленко-01 Муравленко 12 Б",
+            "yandexMaps": "https://yandex.by/maps/-/CLUk5UMB",
+            "link2gis": "https://go.2gis.com/OsUdg"
+          }
+        ]
+      },
+      {
+        "id": "nadym",
+        "name": "Надым",
+        "establishments": [
+          {
+            "name": "Надым-01 проспект Ленинградский 10",
+            "yandexMaps": "https://yandex.by/maps/-/CLUk5G0w",
+            "link2gis": "https://go.2gis.com/eEnH0"
+          },
+          {
+            "name": "Надым-02 Игоря Шаповалова 8/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkBOYT",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "nakhodka",
+        "name": "Находка",
+        "establishments": [
+          {
+            "name": "Находка-01 пр. Находкинский 102",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkFIME",
+            "link2gis": "https://go.2gis.com/qZElT"
+          },
+          {
+            "name": "Находка-03 Малиновского 21а",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkF-6I",
+            "link2gis": "https://go.2gis.com/yUMsA"
+          }
+        ]
+      },
+      {
+        "id": "nefteyugansk",
+        "name": "Нефтеюганск",
+        "establishments": [
+          {
+            "name": "Нефтеюганск-01 мкр 16а 62",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkJDKV",
+            "link2gis": "https://go.2gis.com/UUbrj"
+          },
+          {
+            "name": "Нефтеюганск-02 Ленина 33",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkNCyv",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "nizhnevartovsk",
+        "name": "Нижневартовск",
+        "establishments": [
+          {
+            "name": "Нижневартовск-04 Профсоюзная 2",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkR-Ii",
+            "link2gis": "https://go.2gis.com/KHw4l"
+          }
+        ]
+      },
+      {
+        "id": "nizhnekamsk",
+        "name": "Нижнекамск",
+        "establishments": [
+          {
+            "name": "Нижнекамск-02 Гагарина 24",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkVVKm",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "nizhniy-novgorod",
+        "name": "Нижний Новгород",
+        "establishments": [
+          {
+            "name": "Нижний Новгород-01 Кораблестроителей 3",
+            "yandexMaps": "https://yandex.by/maps/-/CLUk6P~w",
+            "link2gis": "https://go.2gis.com/w5Kv3"
+          },
+          {
+            "name": "Нижний Новгород-02 ул. Горького 148",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkb42l",
+            "link2gis": "https://go.2gis.com/goy9S"
+          },
+          {
+            "name": "Нижний Новгород-03 Комсомольская 9",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkf-Zi",
+            "link2gis": "https://go.2gis.com/zjBXo"
+          }
+        ]
+      },
+      {
+        "id": "novokuznetsk",
+        "name": "Новокузнецк",
+        "establishments": [
+          {
+            "name": "Новокузнецк-03 Ленина 35",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkjX9Q",
+            "link2gis": "https://go.2gis.com/ejTRb"
+          },
+          {
+            "name": "Новокузнецк-04 Тореза 10",
+            "yandexMaps": "https://yandex.by/maps/-/CLUknPiv",
+            "link2gis": "https://go.2gis.com/zrQL6"
+          },
+          {
+            "name": "Новокузнецк-06 Кирова 21",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkrKZ6",
+            "link2gis": "https://go.2gis.com/8GBLc"
+          },
+          {
+            "name": "Новокузнецк-07 Разведчиков 52",
+            "yandexMaps": "https://yandex.by/maps/-/CLUkvF~p",
+            "link2gis": "https://go.2gis.com/8jWlc"
+          },
+          {
+            "name": "Новокузнецк-08 Новоселов 23А",
+            "yandexMaps": "https://yandex.by/maps/-/CLUoA27G",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "novy-urengoy",
+        "name": "Новый Уренгой",
+        "establishments": [
+          {
+            "name": "Новый Уренгой-02 Оптимистов 4/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLUoIMz~",
+            "link2gis": "https://go.2gis.com/rH90o"
+          },
+          {
+            "name": "Новый Уренгой-03 Советский 5/3",
+            "yandexMaps": "https://yandex.by/maps/-/CLUoMBnF",
+            "link2gis": "https://go.2gis.com/ODrK2"
+          }
+        ]
+      },
+      {
+        "id": "norilsk",
+        "name": "Норильск",
+        "establishments": [
+          {
+            "name": "Норильск-01 Талнахская 74",
+            "yandexMaps": "https://yandex.by/maps/-/CLUoQJLb",
+            "link2gis": "https://go.2gis.com/YiMzS"
+          },
+          {
+            "name": "Норильск-02 Советская 5",
+            "yandexMaps": "https://yandex.by/maps/-/CLUoQ-pl",
+            "link2gis": "https://go.2gis.com/xNDEM"
+          }
+        ]
+      },
+      {
+        "id": "noyabrsk",
+        "name": "Ноябрьск",
+        "establishments": [
+          {
+            "name": "Ноябрьск-02 Советская 81/2",
+            "yandexMaps": "https://yandex.by/maps/-/CLUoUDJ4",
+            "link2gis": "https://go.2gis.com/EY1R9"
+          }
+        ]
+      },
+      {
+        "id": "nyagan",
+        "name": "Нягань",
+        "establishments": [
+          {
+            "name": "Нягань-01 4 мкр 15 к2",
+            "yandexMaps": "https://yandex.by/maps/-/CLUoYC58",
+            "link2gis": "https://go.2gis.com/oFT4o"
+          }
+        ]
+      },
+      {
+        "id": "omsk",
+        "name": "Омск",
+        "establishments": [
+          {
+            "name": "Омск-01 Культуры 7",
+            "yandexMaps": "https://yandex.by/maps/-/CLU~fRij",
+            "link2gis": "https://go.2gis.com/HGUsS"
+          },
+          {
+            "name": "Омск-02, ул. 70 лет Октября, 24/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLU~fLOr",
+            "link2gis": "https://go.2gis.com/UQ9YH"
+          },
+          {
+            "name": "Омск-04 ул. Герцена, 12",
+            "yandexMaps": "https://yandex.by/maps/-/CLU~jDOR",
+            "link2gis": "https://go.2gis.com/CsMOY"
+          },
+          {
+            "name": "Омск-05 ул. Маяковского,85",
+            "yandexMaps": "https://yandex.by/maps/-/CLU~rDKB",
+            "link2gis": "https://go.2gis.com/ozBaI"
+          }
+        ]
+      },
+      {
+        "id": "perm",
+        "name": "Пермь",
+        "establishments": [
+          {
+            "name": "Пермь-04 Рыбалко 113",
+            "yandexMaps": "https://yandex.by/maps/-/CLU~vApk",
+            "link2gis": "https://go.2gis.com/AF6IH"
+          },
+          {
+            "name": "Пермь-05 Революции 2а",
+            "yandexMaps": "https://yandex.by/maps/-/CLU~vOOH",
+            "link2gis": "-"
+          },
+          {
+            "name": "Пермь-07 Солдатова 28",
+            "yandexMaps": "https://yandex.by/maps/-/CLU~zP31",
+            "link2gis": "https://go.2gis.com/vKwjR"
+          },
+          {
+            "name": "Пермь-08 Мира 51",
+            "yandexMaps": "https://yandex.by/maps/-/CLU~7TLA",
+            "link2gis": "https://go.2gis.com/qq09h"
+          },
+          {
+            "name": "Пермь-09 Парковый 33",
+            "yandexMaps": "https://yandex.by/maps/-/CLaAAO~L",
+            "link2gis": "-"
+          },
+          {
+            "name": "Пермь-11 Докучаева 42",
+            "yandexMaps": "https://yandex.by/maps/-/CLaAA-Nl",
+            "link2gis": "-"
+          },
+          {
+            "name": "Пермь-12 ул. Юрша 84",
+            "yandexMaps": "https://yandex.by/maps/-/CLaAIUO3",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "prokopyevsk",
+        "name": "Прокопьевск",
+        "establishments": [
+          {
+            "name": "Прокопьевск-01 Гагарина 26",
+            "yandexMaps": "https://yandex.by/maps/-/CLaAI-no",
+            "link2gis": "удален"
+          }
+        ]
+      },
+      {
+        "id": "pyt-yakh",
+        "name": "Пыть-Ях",
+        "establishments": [
+          {
+            "name": "Пыть-Ях-01 мкр 2 15",
+            "yandexMaps": "https://yandex.by/maps/-/CLhoQA7D",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "raduzhnyy",
+        "name": "Радужный",
+        "establishments": [
+          {
+            "name": "Радужный-01 мкр 7 12",
+            "yandexMaps": "https://yandex.by/maps/-/CLhoQCmc",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "rostov-na-donu",
+        "name": "Ростов-на-Дону",
+        "establishments": [
+          {
+            "name": "Ростов-на-Дону-06 Металлургическая 117/62",
+            "yandexMaps": "https://yandex.by/maps/-/CLhoQXlq",
+            "link2gis": "https://go.2gis.com/jt1qt"
+          },
+          {
+            "name": "Ростов-на-Дону-07 339-й Стрелковой Дивизии 5/60Б",
+            "yandexMaps": "https://yandex.by/maps/-/CLhoUGzv",
+            "link2gis": "https://go.2gis.com/w5Vve"
+          },
+          {
+            "name": "Ростов-на-Дону-08 Буденовский 68",
+            "yandexMaps": "https://yandex.by/maps/-/CLhoYMIF",
+            "link2gis": "https://go.2gis.com/01vpf"
+          },
+          {
+            "name": "Ростов-на-Дону-10 бульвар Комарова 20/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLhoUDOD",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "salekhard",
+        "name": "Салехард",
+        "establishments": [
+          {
+            "name": "Салехард-01 Свердлова 41",
+            "yandexMaps": "https://yandex.by/maps/-/CLhoYGJ-",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "seversk",
+        "name": "Северск",
+        "establishments": [
+          {
+            "name": "Северск-02 Коммунистический 50",
+            "yandexMaps": "https://yandex.by/maps/-/CLaAaY84",
+            "link2gis": "https://go.2gis.com/VzYjf"
+          }
+        ]
+      },
+      {
+        "id": "serov",
+        "name": "Серов",
+        "establishments": [
+          {
+            "name": "Серов-01 Ленина 142",
+            "yandexMaps": "https://yandex.by/maps/-/CLaAa-Mc",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "solikamsk",
+        "name": "Соликамск",
+        "establishments": [
+          {
+            "name": "Соликамск-01 Матросова 63",
+            "yandexMaps": "https://yandex.by/maps/-/CLaAeHOC",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "sochi",
+        "name": "Сочи",
+        "establishments": [
+          {
+            "name": "Сочи-01 Горького 20а",
+            "yandexMaps": "https://yandex.by/maps/-/CLaAuMl3",
+            "link2gis": "https://go.2gis.com/yxFkY"
+          }
+        ]
+      },
+      {
+        "id": "adler",
+        "name": "Адлер",
+        "establishments": [
+          {
+            "name": "Сочи-04 Адлер Ленина 73",
+            "yandexMaps": "https://yandex.by/maps/-/CLho4Rpi",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "strezhevoy",
+        "name": "Стрежевой",
+        "establishments": [
+          {
+            "name": "Стрежевой-01 мкр 1 176",
+            "yandexMaps": "https://yandex.by/maps/-/CLhoZFi5",
+            "link2gis": "https://go.2gis.com/Z21ec"
+          }
+        ]
+      },
+      {
+        "id": "surgut",
+        "name": "Сургут",
+        "establishments": [
+          {
+            "name": "Сургут-08 Набережный 12/2",
+            "yandexMaps": "https://yandex.by/maps/-/CLhoZAlu",
+            "link2gis": "https://go.2gis.com/lKw1r"
+          },
+          {
+            "name": "Сургут-10 Тюменский тракт 2",
+            "yandexMaps": "https://yandex.by/maps/-/CLhoVBLj",
+            "link2gis": "https://go.2gis.com/62kRs"
+          }
+        ]
+      },
+      {
+        "id": "syktyvkar",
+        "name": "Сыктывкар",
+        "establishments": [
+          {
+            "name": "Сыктывкар-04 Первомайская 85/2",
+            "yandexMaps": "https://yandex.by/maps/-/CLhoZWp2",
+            "link2gis": "https://go.2gis.com/AtWXf"
+          }
+        ]
+      },
+      {
+        "id": "tobolsk",
+        "name": "Тобольск",
+        "establishments": [
+          {
+            "name": "Тобольск-03 7А микрорайон 12А",
+            "yandexMaps": "https://yandex.by/maps/-/CLaAVHmQ",
+            "link2gis": "https://go.2gis.com/4EWPv"
+          },
+          {
+            "name": "Тобольск-06 8-й микрорайон 8Б",
+            "yandexMaps": "https://yandex.by/maps/-/CLaivZl7",
+            "link2gis": "https://go.2gis.com/THz9Q"
+          }
+        ]
+      },
+      {
+        "id": "tomsk",
+        "name": "Томск",
+        "establishments": [
+          {
+            "name": "Томск-02 Учебная 20",
+            "yandexMaps": "https://yandex.by/maps/-/CLaiv-y1",
+            "link2gis": "https://go.2gis.com/Z7VAp"
+          },
+          {
+            "name": "Томск-03 79 Гвардейской дивизии 24",
+            "yandexMaps": "https://yandex.by/maps/-/CLaiz6Im",
+            "link2gis": "https://go.2gis.com/w0NBs"
+          },
+          {
+            "name": "Томск-04 Иркутский 32",
+            "yandexMaps": "https://yandex.by/maps/-/CLai7Em-",
+            "link2gis": "https://go.2gis.com/h1ewN"
+          },
+          {
+            "name": "Томск-06 пер. 1905 года 11",
+            "yandexMaps": "https://yandex.by/maps/-/CLai70mi",
+            "link2gis": "https://go.2gis.com/VNkdr"
+          }
+        ]
+      },
+      {
+        "id": "tyumen",
+        "name": "Тюмень",
+        "establishments": [
+          {
+            "name": "Тюмень-20 Олимпийская 31",
+            "yandexMaps": "https://yandex.by/maps/-/CLamAYL8",
+            "link2gis": "https://go.2gis.com/Rbnn6"
+          }
+        ]
+      },
+      {
+        "id": "uray",
+        "name": "Урай",
+        "establishments": [
+          {
+            "name": "Урай-01 мкр 2 61",
+            "yandexMaps": "https://yandex.by/maps/-/CLhobMpt",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "usinsk",
+        "name": "Усинск",
+        "establishments": [
+          {
+            "name": "Усинск-01 60 лет Октября 5",
+            "yandexMaps": "https://yandex.by/maps/-/CLamAS0q",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "ussuriysk",
+        "name": "Уссурийск",
+        "establishments": [
+          {
+            "name": "Уссурийск-01 Некрасова 53",
+            "yandexMaps": "https://yandex.by/maps/-/CLamEPj3",
+            "link2gis": "https://go.2gis.com/a5tx0"
+          }
+        ]
+      },
+      {
+        "id": "ukhta",
+        "name": "Ухта",
+        "establishments": [
+          {
+            "name": "Ухта-01 30 лет Октября 12",
+            "yandexMaps": "https://yandex.by/maps/-/CLamIYLQ",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "khabarovsk",
+        "name": "Хабаровск",
+        "establishments": [
+          {
+            "name": "Хабаровск-01 Суворова 25/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLamIP84",
+            "link2gis": ""
+          },
+          {
+            "name": "Хабаровск-02 Ленинградская 28/9",
+            "yandexMaps": "https://yandex.by/maps/-/CLamMJpv",
+            "link2gis": "-"
+          },
+          {
+            "name": "Хабаровск-05 Карла Маркса 200/1",
+            "yandexMaps": "https://yandex.by/maps/-/CLamML71",
+            "link2gis": "https://go.2gis.com/IeSOg"
+          },
+          {
+            "name": "Хабаровск-06 Амурский бульвар 62",
+            "yandexMaps": "https://yandex.by/maps/-/CLamQUL3",
+            "link2gis": ""
+          },
+          {
+            "name": "Хабаровск-07 Тихоокеанская 182 б",
+            "yandexMaps": "https://yandex.by/maps/-/CLamQK-E",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "khanty-mansiysk",
+        "name": "Ханты-Мансийск",
+        "establishments": [
+          {
+            "name": "Ханты-Мансийск-01 Мира 52",
+            "yandexMaps": "https://yandex.by/maps/-/CLamUFyH",
+            "link2gis": "https://go.2gis.com/TmHj5"
+          },
+          {
+            "name": "Ханты-Мансийск-02 Самаровская 1/4",
+            "yandexMaps": "https://yandex.by/maps/-/CLamUL~B",
+            "link2gis": "https://go.2gis.com/IFhbp"
+          }
+        ]
+      },
+      {
+        "id": "cheboksary",
+        "name": "Чебоксары",
+        "establishments": [
+          {
+            "name": "Чебоксары-01 ул. Пролетарская 21/22",
+            "yandexMaps": "https://yandex.by/maps/-/CLamYSk6",
+            "link2gis": "удален"
+          },
+          {
+            "name": "Чебоксары-02 пр-т Максима Горького 38/2",
+            "yandexMaps": "https://yandex.by/maps/-/CLam4GYf",
+            "link2gis": "удален"
+          }
+        ]
+      },
+      {
+        "id": "chita",
+        "name": "Чита",
+        "establishments": [
+          {
+            "name": "Чита-01 Бутина 42а",
+            "yandexMaps": "https://yandex.by/maps/-/CLamaMzD",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "chusovoy",
+        "name": "Чусовой",
+        "establishments": [
+          {
+            "name": "Чусовой-01 50 лет ВЛКСМ 4",
+            "yandexMaps": "https://yandex.by/maps/-/CLama07X",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "yugorsk",
+        "name": "Югорск",
+        "establishments": [
+          {
+            "name": "Югорск-01 Ленина 14",
+            "yandexMaps": "https://yandex.by/maps/-/CLameY9w",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "yalutorovsk",
+        "name": "Ялуторовск",
+        "establishments": [
+          {
+            "name": "Ялуторовск-01 Ленина 17",
+            "yandexMaps": "https://yandex.by/maps/-/CLame0lw",
+            "link2gis": "-"
+          }
+        ]
+      },
+      {
+        "id": "yaroslavl",
+        "name": "Ярославль",
+        "establishments": [
+          {
+            "name": "Ярославль-01 Большая Федоровская 29",
+            "yandexMaps": "https://yandex.by/maps/-/CLamiCmf",
+            "link2gis": "https://go.2gis.com/36iVx"
+          },
+          {
+            "name": "Ярославль-03 Урицкого 65",
+            "yandexMaps": "https://yandex.by/maps/-/CLammFMd",
+            "link2gis": "https://go.2gis.com/RPLqA"
+          },
+          {
+            "name": "Ярославль-04 Машиностроителей 30/18",
+            "yandexMaps": "https://yandex.by/maps/-/CLhofT2H",
+            "link2gis": "-"
+          },
+          {
+            "name": "Ярославль-05 Ньютона 28",
+            "yandexMaps": "https://yandex.by/maps/-/CLamqWiU",
+            "link2gis": "https://go.2gis.com/DVrW6"
           }
         ]
       }
     ],
     "reviewSites": [
-      { "name": "Яндекс Карты", "url": "https://yandex.ru/maps" },
+      { "name": "2GIS", "url": "https://2gis.ru" },
       { "name": "Google", "url": "https://www.google.com/maps" }
     ]
   }
