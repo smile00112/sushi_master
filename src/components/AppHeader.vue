@@ -37,54 +37,42 @@ onMounted(() => {
   box-sizing: border-box;
   align-items: center;
   padding: 21px 24px;
-  background-color: var(--color-header-bg); /* Фон шапки */
+  background-color: var(--color-header-bg); 
   
 }
 
 @media (min-width: 500px) {
   .app-header {
-    border-radius: var(--radius-card) var(--radius-card) 0 0; /* Скругление верхних углов карточки */
+    border-radius: var(--radius-card) var(--radius-card) 0 0;
   }
 }
-/* .app-header.header-colored {
-  margin: -16px -16px 0 -16px;
-  padding: 12px 16px 16px;
-  background: var(--color-brand-primary);
-  color: var(--color-header-text);
-  
-}
-
-.app-header.header-colored .header-line {
-  border-color: rgba(255, 255, 255, 0.4);
-} */
 
 .app-header.header-colored .header-title {
-  color: var(--color-header-text); /* Цвет текста заголовка в цветной шапке */
+  color: var(--color-header-text);
 }
 
 .logo {
   width: 86.9px;
-  height: var(--color-header-height); /* Высота логотипа из темы */
+  height: var(--color-header-height); 
   object-fit: contain;
 }
 
 .header-line {
     width: 100%;
     max-width: 1px;
-    /* transform: rotate(90deg); */
     height: 26px;
-    border-left: 1px solid var(--color-header-text); /* Цвет вертикального разделителя */
+    border-left: 1px solid var(--color-header-text); 
     opacity: 0.5;
     margin: 0;
     padding: 0;
 }
 
 .header-title {
-  font-family: var(--font-family-base); /* Базовый шрифт темы */
+  font-family: var(--font-family-base);
   font-size: 10px;
   font-weight: 400;
   line-height: 1.33;
-  color: var(--color-header-text); /* Основной цвет текста в шапке */
+  color: var(--color-header-text);
   margin: 0;
   max-width: 200px;
   white-space: pre-line;

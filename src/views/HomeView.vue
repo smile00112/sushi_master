@@ -50,15 +50,17 @@ function selectCity(city) {
         </svg>
       </button>
       <div v-show="isListOpen" class="select-dropdown">
-        <button
-          v-for="city in cities"
-          :key="city.id"
-          type="button"
-          class="city-item"
-          @click="selectCity(city)"
-        >
-          {{ city.name }}
-        </button>
+        <div class="select-dropdown-container">
+          <button
+            v-for="city in cities"
+            :key="city.id"
+            type="button"
+            class="city-item"
+            @click="selectCity(city)"
+          >
+            {{ city.name }}
+          </button>
+        </div>
       </div>
     </div>
 
@@ -121,7 +123,7 @@ function selectCity(city) {
 .chevron {
   flex-shrink: 0;
   transition: transform 0.2s;
-  color: var(--color-dropdown-chewron); /* Цвет стрелки выпадающего списка */
+  color: var(--color-dropdown-chewron);
 }
 .select-block.open .chevron {
   transform: rotate(180deg);
@@ -133,40 +135,55 @@ function selectCity(city) {
   right: 0;
   z-index: 10;
   margin-top: -1px;
-  border: 1px solid var(--color-input-border); /* Базовая граница контейнера списка */
+  border: 1px solid var(--color-input-border); 
   border-top: none;
-  border-radius: 0 0 var(--radius-input) var(--radius-input); /* Скругление нижней части списка */
+  border-radius: 0 0 var(--radius-input) var(--radius-input); 
   background: #ffffff;
   box-shadow: var(--select-city-box-shadow);
-  border: var(--border-card); /* Тематическая рамка карточки (если задана) */
+  border: var(--border-card); 
   border-top-width: 0;
-  padding: 6px 5px 14px;
+  padding: 2px 0px 17px 5px;
+  max-height: 300px;
 
 }
+.select-dropdown-container {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.select-dropdown-container::-webkit-scrollbar {
+  width: 10px;
+  max-height: 5px;
+  background-color: var(--select-scrollbar-color);
+}
+.select-dropdown-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--color-dropdown-hover);
+}
+.select-dropdown-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
 .city-item {
   display: block;
   width: 100%;
   padding: 10px 12px;
   border: none;
-  border-radius: var(--select-item-border-radius); /* Скругление элементов в списке */
-  /* background: var(--color-bg-card); */
+  border-radius: var(--select-item-border-radius); 
   background-color: #ffffff;
   font-family: inherit;
   font-size: 16px;
-  color: var(--color-text-secondary); /* Вторичный цвет пункта */
+  color: var(--color-text-secondary); 
   text-align: left;
   cursor: pointer;
-  /* margin-bottom: 2px; */
   transition: background 0.2s, color 0.2s;
 }
 .city-item:last-child {
   margin-bottom: 0;
-  /* border-radius: 0 0 var(--radius-input) var(--radius-input); Скругление последнего пункта */
-
 }
-.city-item:hover {
-  background: var(--color-dropdown-hover); /* Фон пункта при наведении */
-  color: var(--color-dropdown-hover-text); /* Текст пункта при наведении */
+.city-item:hover, .city-item:focus, .city-item:active {
+  background: var(--color-dropdown-hover); 
+  color: var(--color-dropdown-hover-text); 
+  border: none;
 }
 .data-error {
   margin: 0 0 24px;

@@ -1,5 +1,39 @@
-# Vue 3 + Vite
+# mapsLinks
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Frontend-приложение на Vue 3 + Vite.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Публикация проекта (Apache/Beget)
+
+1. Установить зависимости:
+   - `npm install`
+2. Собрать production-версию:
+   - `npm run build`
+3. Загрузить содержимое папки `dist` в корень сайта на хостинге (например `public_html`).
+
+### Важно про роутинг
+
+Проект использует Vue Router в режиме history (`/city/tomsk` и т.п.).  
+При сборке автоматически создается файл `dist/.htaccess`, который перенаправляет все неизвестные маршруты на `index.html`.
+
+Это нужно, чтобы при обновлении страницы на вложенных URL не было ошибки `Not Found`.
+
+### Тема и переменная окружения VITE_THEME
+
+По умолчанию используется тема из переменной `VITE_THEME`. Значение задаётся в `.env` **перед сборкой** и встраивается в билд:
+
+```bash
+# .env
+VITE_THEME=spoke
+```
+
+Доступные темы: `default`, `spoke`, `sushi-gallery`, `mir-sushi`, `sushi_world`.
+
+- `VITE_THEME` — зашивается в сборку; это тема по умолчанию для сайта.
+- Для разных брендов/поддоменов нужно собрать отдельный билд с нужным значением в `.env`.
+- Переключение в рантайме: параметр URL `?theme=...` (например `?theme=spoke`) переопределяет тему на лету.
+
+### Что проверить после публикации
+
+- Открывается главная страница сайта.
+- Прямой переход по ссылке вида `/city/tomsk` работает.
+- Обновление страницы на вложенном маршруте не даёт `404 Not Found`.

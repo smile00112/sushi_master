@@ -95,7 +95,7 @@ function goToChooseMap(establishment) {
             <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
-        <div v-show="isRestaurantOpen" class="select-dropdown">
+        <div v-show="isRestaurantOpen" class="select-dropdown select-point">
           <button
             v-for="est in (city?.establishments || [])"
             :key="est.name"
@@ -135,11 +135,9 @@ function goToChooseMap(establishment) {
 .select-block .select-trigger{
   border: var(--color-input-border); 
 }
-
 .select-block.open .select-trigger{
   border-radius: var(--radius-input) var(--radius-input) 0 0;
 }
-
 .select-trigger {
   width: 100%;
   display: flex;
@@ -157,7 +155,6 @@ function goToChooseMap(establishment) {
   transition: background 0.2s ease;
   background-color: #ffffff;
 }
-
 .select-block.open .select-trigger {
   border-radius: calc(var(--radius-input) - 1px) calc(var(--radius-input) - 1px) 0 0;
   border-bottom-width: 0;
@@ -168,7 +165,7 @@ function goToChooseMap(establishment) {
 .chevron {
   flex-shrink: 0;
   transition: transform 0.2s;
-  color: var(--color-dropdown-chewron); /* Цвет стрелки выпадающего списка */
+  color: var(--color-dropdown-chewron);
 }
 .select-block.open .chevron {
   transform: rotate(180deg);
@@ -180,40 +177,64 @@ function goToChooseMap(establishment) {
   right: 0;
   z-index: 10;
   margin-top: -1px;
-  border: 1px solid var(--color-input-border); /* Базовая граница контейнера списка */
+  border: 1px solid var(--color-input-border);
   border-top: none;
-  border-radius: 0 0 var(--radius-input) var(--radius-input); /* Скругление нижней части списка */
+  border-radius: 0 0 var(--radius-input) var(--radius-input); 
   background: #ffffff;
   box-shadow: var(--select-city-box-shadow);
-  border: var(--border-card); /* Тематическая рамка карточки (если задана) */
+  border: var(--border-card); 
   border-top-width: 0;
   padding: 6px 5px 14px;
-
+  max-height: 350px;
+  overflow-y: scroll;
+  z-index: 2;
+}
+.select-point{
+  z-index: 1;
+}
+.select-dropdown {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.select-dropdown::-webkit-scrollbar {
+  width: 10px;
+  max-height: 5px;
+  background-color: var(--select-scrollbar-color);
+}
+.select-dropdown::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--color-dropdown-hover);
+}
+.select-dropdown::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.select-dropdown.select-point {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+.select-dropdown.select-point::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 .city-item {
   display: block;
   width: 100%;
   padding: 10px 12px;
   border: none;
-  border-radius: var(--select-item-border-radius); /* Скругление элементов в списке */
-  /* background: var(--color-bg-card); */
+  border-radius: var(--select-item-border-radius); 
   background-color: #ffffff;
   font-family: inherit;
   font-size: 16px;
-  color: var(--color-text-secondary); /* Вторичный цвет пункта */
+  color: var(--color-text-secondary); 
   text-align: left;
   cursor: pointer;
-  /* margin-bottom: 2px; */
   transition: background 0.2s, color 0.2s;
 }
 .city-item:last-child {
   margin-bottom: 0;
-  /* border-radius: 0 0 var(--radius-input) var(--radius-input); Скругление последнего пункта */
-
 }
 .city-item:hover {
-  background: var(--color-dropdown-hover); /* Фон пункта при наведении */
-  color: var(--color-dropdown-hover-text); /* Текст пункта при наведении */
+  background: var(--color-dropdown-hover);
+  color: var(--color-dropdown-hover-text); 
 }
 .data-error {
   margin: 0 0 24px;

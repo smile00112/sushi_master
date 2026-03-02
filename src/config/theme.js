@@ -1,6 +1,6 @@
 /**
  * Theme configuration for quick design switching.
- * Set themeId to: 'default' | 'spoke' | 'sushi-gallery' | 'mir-sushi' | 'sushi_world'
+ * Set themeId to: 'default' | 'spoke' | 'sushi-gallery' | 'mir-sushi'
  */
 
 const themes = {
@@ -18,6 +18,7 @@ const themes = {
       dropdownHoverText: '#6d6d6d',
       headerBg: '#ffffff',
       inputBorder: '0.2px solid #BFCFFF',
+      selectScroolbarColor: '#fcfcfd33',
 
       
     },
@@ -79,7 +80,7 @@ const themes = {
       dropdownHoverText: '#fff',
       inputBorder: '0.2px solid #83BB43',
       headerBg: '#4CAF50',
-
+      selectScroolbarColor: '#f3ba9b',
     },
     header: {
       style: 'colored_bar',
@@ -143,6 +144,7 @@ const themes = {
       dropdownHoverText: '#fff',
       inputBorder: '#e0e0e0',
       headerBg: '#ffffff',
+      selectScroolbarColor: '#e692ae',
     },
     header: {
       style: 'white_minimal',
@@ -205,6 +207,7 @@ const themes = {
       dropdownHoverText: '#fff',
       inputBorder: '#e0e0e0',
       headerBg: '#2979A6',
+      selectScroolbarColor: '#f8cc89',
 
     },
     header: {
@@ -267,7 +270,7 @@ export function getRequestedThemeId() {
 
 /**
  * Apply theme to document by setting CSS custom properties.
- * @param {string} themeId - One of: 'default' | 'spoke' | 'sushi-gallery' | 'mir-sushi' | 'sushi_world'
+ * @param {string} themeId - One of: 'default' | 'spoke' | 'sushi-gallery' | 'mir-sushi' 
  */
 export function applyTheme(themeId = 'default') {
   const theme = themes[themeId] || themes.default
@@ -309,6 +312,7 @@ export function applyTheme(themeId = 'default') {
   root.style.setProperty('--map-button-border', theme.components?.mapButtonBorder  || 'none') // 
   root.style.setProperty('--map-button-box-shadow', theme.components?.mapButtonBoxShadow || '1px 4px 6.9px 1px #BFCFFF40') //
   root.style.setProperty('--select-city-box-shadow', theme.components?.cityBoxShadow || 'unset') //
+  root.style.setProperty('--select-scrollbar-color', theme.colors?.selectScroolbarColor || 'unset') //
 
 
   // Hero visual position variables

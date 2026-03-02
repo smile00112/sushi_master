@@ -46,8 +46,8 @@ onMounted(() => {
   text-align: right;
   position: absolute;
   bottom: 0;
-  left: var(--hero-image-left); /*50%*/
-  transform: var(--hero-image-translateX);/*translateX(-50%);*/
+  left: var(--hero-image-left);
+  transform: var(--hero-image-translateX);
   right: var(--hero-image-right);
 }
 .hero-image {

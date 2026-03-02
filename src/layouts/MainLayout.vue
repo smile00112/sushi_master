@@ -1,11 +1,13 @@
 <script setup>
 import AppHeader from '@/components/AppHeader.vue'
 import ThemeSwitcher from '@/components/ThemeSwitcher.vue'
+
+const isDev = import.meta.env.DEV
 </script>
 
 <template>
   <div class="main-layout">
-    <ThemeSwitcher />
+    <ThemeSwitcher v-if="isDev" />
     <main class="main-content">
       <AppHeader />
       <div class="main-body">
@@ -27,7 +29,6 @@ import ThemeSwitcher from '@/components/ThemeSwitcher.vue'
   max-width: 490px;
   margin: 0 auto;
   width: 100%;
-  /* padding: 16px 16px 24px; */
   box-sizing: border-box;
   background: var(--color-bg-card);
   border-radius: var(--radius-card);
