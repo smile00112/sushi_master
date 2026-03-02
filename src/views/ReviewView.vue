@@ -1,16 +1,19 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import HeroBlock from '@/components/HeroBlock.vue'
+import { loadThemeData } from '@/data/themeData'
 
 const reviewSites = ref([])
+const dataError = ref('')
 
 onMounted(async () => {
-  const res = await fetch('/data/cities.json')
-  const data = await res.json()
-  reviewSites.value = data.reviewSites || [
-    { name: '2GIS', url: 'https://2gis.ru' },
-    { name: 'Google', url: 'https://www.google.com/maps' }
-  ]
+  try {
+    const data = await loadThemeData()
+    reviewSites.value = data.reviewSites
+  } catch (error) {
+    reviewSites.value = []
+    dataError.value = error instanceof Error ? error.message : 'Ошибка загрузки данных.'
+  }
 })
 </script>
 
@@ -24,7 +27,8 @@ onMounted(async () => {
         Оставьте, пожалуйста, отзыв на любом из сайтов:
       </p>
     </div>
-    <div class="review-links">
+    <p v-if="dataError" class="data-error">{{ dataError }}</p>
+    <div v-else class="review-links">
       <a
         v-for="site in reviewSites"
         :key="site.name"
@@ -88,5 +92,10 @@ onMounted(async () => {
 .review-link-card:hover {
   background: var(--color-dropdown-hover);
   border-color: var(--color-link);
+}
+.data-error {
+  margin: 0 0 24px;
+  color: #c62828;
+  font-size: 14px;
 }
 </style>

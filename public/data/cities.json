@@ -1,68 +1,142 @@
 {
-  "cities": [
-    {
-      "id": "barnaul",
-      "name": "Барнаул",
-      "establishments": [
-        {
-          "name": "Суши Мастер, ул. Ленина",
-          "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Барнаул Ленина",
-          "link2gis": "https://2gis.ru/barnaul"
-        },
-        {
-          "name": "Суши Мастер, пр. Космонавтов",
-          "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Барнаул Космонавтов",
-          "link2gis": "https://2gis.ru/barnaul"
-        }
-      ]
-    },
-    {
-      "id": "beloyarskiy",
-      "name": "Белоярский",
-      "establishments": [
-        {
-          "name": "Суши Мастер, центр",
-          "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Белоярский",
-          "link2gis": "https://2gis.ru"
-        }
-      ]
-    },
-    {
-      "id": "berezniki",
-      "name": "Березники",
-      "establishments": [
-        {
-          "name": "Суши Мастер, ул. Пятилетки",
-          "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Березники",
-          "link2gis": "https://2gis.ru/berezniki"
-        }
-      ]
-    },
-    {
-      "id": "blagoveshchensk",
-      "name": "Благовещенск",
-      "establishments": [
-        {
-          "name": "Суши Мастер, ул. Ленина",
-          "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Благовещенск",
-          "link2gis": "https://2gis.ru/blagoveshchensk"
-        }
-      ]
-    },
-    {
-      "id": "verhnyaya-pyshma",
-      "name": "Верхняя Пышма",
-      "establishments": [
-        {
-          "name": "Суши Мастер, пр. Успенский",
-          "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Верхняя Пышма",
-          "link2gis": "https://2gis.ru/verhnyaya_pyshma"
-        }
-      ]
-    }
-  ],
-  "reviewSites": [
-    { "name": "2GIS", "url": "https://2gis.ru" },
-    { "name": "Google", "url": "https://www.google.com/maps" }
-  ]
+  "default": {
+    "cities": [
+      {
+        "id": "barnaul",
+        "name": "Барнаул",
+        "establishments": [
+          {
+            "name": "Суши Мастер, ул. Ленина",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Барнаул Ленина",
+            "link2gis": "https://2gis.ru/barnaul"
+          },
+          {
+            "name": "Суши Мастер, пр. Космонавтов",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Барнаул Космонавтов",
+            "link2gis": "https://2gis.ru/barnaul"
+          }
+        ]
+      },
+      {
+        "id": "beloyarskiy",
+        "name": "Белоярский",
+        "establishments": [
+          {
+            "name": "Суши Мастер, центр",
+            "yandexMaps": "https://yandex.ru/maps/?text=Суши Мастер Белоярский",
+            "link2gis": "https://2gis.ru"
+          }
+        ]
+      }
+    ],
+    "reviewSites": [
+      { "name": "2GIS", "url": "https://2gis.ru" },
+      { "name": "Google", "url": "https://www.google.com/maps" }
+    ]
+  },
+  "spoke": {
+    "cities": [
+      {
+        "id": "novosibirsk",
+        "name": "Новосибирск",
+        "establishments": [
+          {
+            "name": "Споке, Красный проспект",
+            "yandexMaps": "https://yandex.ru/maps/?text=Споке Новосибирск Красный проспект",
+            "link2gis": "https://2gis.ru/novosibirsk"
+          },
+          {
+            "name": "Споке, ул. Гоголя",
+            "yandexMaps": "https://yandex.ru/maps/?text=Споке Новосибирск Гоголя",
+            "link2gis": "https://2gis.ru/novosibirsk"
+          }
+        ]
+      },
+      {
+        "id": "tomsk",
+        "name": "Томск",
+        "establishments": [
+          {
+            "name": "Споке, пр. Ленина",
+            "yandexMaps": "https://yandex.ru/maps/?text=Споке Томск Ленина",
+            "link2gis": "https://2gis.ru/tomsk"
+          }
+        ]
+      }
+    ],
+    "reviewSites": [
+      { "name": "2GIS", "url": "https://2gis.ru" },
+      { "name": "Яндекс Карты", "url": "https://yandex.ru/maps" }
+    ]
+  },
+  "sushi-gallery": {
+    "cities": [
+      {
+        "id": "krasnoyarsk",
+        "name": "Красноярск",
+        "establishments": [
+          {
+            "name": "Галерея Суши, ул. Мира",
+            "yandexMaps": "https://yandex.ru/maps/?text=Галерея Суши Красноярск Мира",
+            "link2gis": "https://2gis.ru/krasnoyarsk"
+          },
+          {
+            "name": "Галерея Суши, ул. Весны",
+            "yandexMaps": "https://yandex.ru/maps/?text=Галерея Суши Красноярск Весны",
+            "link2gis": "https://2gis.ru/krasnoyarsk"
+          }
+        ]
+      },
+      {
+        "id": "irkutsk",
+        "name": "Иркутск",
+        "establishments": [
+          {
+            "name": "Галерея Суши, ул. Декабрьских Событий",
+            "yandexMaps": "https://yandex.ru/maps/?text=Галерея Суши Иркутск",
+            "link2gis": "https://2gis.ru/irkutsk"
+          }
+        ]
+      }
+    ],
+    "reviewSites": [
+      { "name": "Flamp", "url": "https://www.flamp.ru" },
+      { "name": "2GIS", "url": "https://2gis.ru" }
+    ]
+  },
+  "mir-sushi": {
+    "cities": [
+      {
+        "id": "ekaterinburg",
+        "name": "Екатеринбург",
+        "establishments": [
+          {
+            "name": "Мир Суши, ул. 8 Марта",
+            "yandexMaps": "https://yandex.ru/maps/?text=Мир Суши Екатеринбург 8 Марта",
+            "link2gis": "https://2gis.ru/ekaterinburg"
+          },
+          {
+            "name": "Мир Суши, ул. Малышева",
+            "yandexMaps": "https://yandex.ru/maps/?text=Мир Суши Екатеринбург Малышева",
+            "link2gis": "https://2gis.ru/ekaterinburg"
+          }
+        ]
+      },
+      {
+        "id": "chelyabinsk",
+        "name": "Челябинск",
+        "establishments": [
+          {
+            "name": "Мир Суши, пр. Ленина",
+            "yandexMaps": "https://yandex.ru/maps/?text=Мир Суши Челябинск Ленина",
+            "link2gis": "https://2gis.ru/chelyabinsk"
+          }
+        ]
+      }
+    ],
+    "reviewSites": [
+      { "name": "Яндекс Карты", "url": "https://yandex.ru/maps" },
+      { "name": "Google", "url": "https://www.google.com/maps" }
+    ]
+  }
 }

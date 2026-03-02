@@ -3,19 +3,25 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import HeroBlock from '@/components/HeroBlock.vue'
 import { getTheme } from '@/config/theme'
+import { loadThemeData } from '@/data/themeData'
 
 const router = useRouter()
 const cities = ref([])
 const isListOpen = ref(false)
-const  greeting = ref('')
+const greeting = ref('')
+const dataError = ref('')
 
 onMounted(async () => {
-  const res = await fetch('/data/cities.json')
-  const data = await res.json()
-  cities.value = data.cities || []
-  const theme = getTheme()
-  greeting.value = theme.desktop.text
+  try {
+    const data = await loadThemeData()
+    cities.value = data.cities
+  } catch (error) {
+    cities.value = []
+    dataError.value = error instanceof Error ? error.message : 'Ошибка загрузки данных.'
+  }
 
+  const theme = getTheme()
+  greeting.value = theme?.desktop?.text || ''
 })
 
 function selectCity(city) {
@@ -29,7 +35,9 @@ function selectCity(city) {
       {{ greeting }}
     </p>
 
-    <div class="select-block" :class="{ open: isListOpen }">
+    <p v-if="dataError" class="data-error">{{ dataError }}</p>
+
+    <div v-else class="select-block" :class="{ open: isListOpen }">
       <button
         type="button"
         class="select-trigger"
@@ -161,5 +169,10 @@ function selectCity(city) {
 .city-item:hover {
   background: var(--color-dropdown-hover); /* Фон пункта при наведении */
   color: var(--color-dropdown-hover-text); /* Текст пункта при наведении */
+}
+.data-error {
+  margin: 0 0 24px;
+  color: #c62828;
+  font-size: 14px;
 }
 </style>

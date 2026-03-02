@@ -3,11 +3,13 @@ import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import HeroBlock from '@/components/HeroBlock.vue'
 import { getTheme } from '@/config/theme'
+import { loadThemeData } from '@/data/themeData'
 
 const route = useRoute()
 const router = useRouter()
 const cities = ref([])
 const greeting = ref('')
+const dataError = ref('')
 const city = computed(() => {
   const id = route.params.cityId
   return cities.value.find((c) => c.id === id) || null
@@ -16,11 +18,16 @@ const isCityOpen = ref(false)
 const isRestaurantOpen = ref(false)
 
 onMounted(async () => {
-  const res = await fetch('/data/cities.json')
-  const data = await res.json()
-  cities.value = data.cities || []
+  try {
+    const data = await loadThemeData()
+    cities.value = data.cities
+  } catch (error) {
+    cities.value = []
+    dataError.value = error instanceof Error ? error.message : 'Ошибка загрузки данных.'
+  }
+
   const theme = getTheme()
-  greeting.value = theme.desktop.text
+  greeting.value = theme?.desktop?.text || ''
 })
 
 watch([city, cities], ([c]) => {
@@ -47,7 +54,9 @@ function goToChooseMap(establishment) {
       {{ greeting }}
     </p>
 
-    <div class="cards-row">
+    <p v-if="dataError" class="data-error">{{ dataError }}</p>
+
+    <div v-else class="cards-row">
       <div class="select-block" :class="{ open: isCityOpen }">
         <button
           type="button"
@@ -206,5 +215,10 @@ function goToChooseMap(establishment) {
 .city-item:hover {
   background: var(--color-dropdown-hover); /* Фон пункта при наведении */
   color: var(--color-dropdown-hover-text); /* Текст пункта при наведении */
+}
+.data-error {
+  margin: 0 0 24px;
+  color: #c62828;
+  font-size: 14px;
 }
 </style>

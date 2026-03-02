@@ -235,12 +235,26 @@ const themes = {
 }
 
 /**
+ * Resolve requested theme id from URL/env.
+ * This returns the raw requested value and does not validate against themes.
+ * @returns {string}
+ */
+export function getRequestedThemeId() {
+  return (
+    new URLSearchParams(window.location.search).get('theme') ||
+    import.meta.env.VITE_THEME ||
+    'default'
+  )
+}
+
+/**
  * Apply theme to document by setting CSS custom properties.
  * @param {string} themeId - One of: 'default' | 'spoke' | 'sushi-gallery' | 'mir-sushi' | 'sushi_world'
  */
 export function applyTheme(themeId = 'default') {
   const theme = themes[themeId] || themes.default
   const root = document.documentElement
+  root.dataset.themeId = themeId
 
   // Colors (CSS custom properties for component styles)
   root.style.setProperty('--color-brand-primary', theme.colors.brandPrimary)
@@ -310,6 +324,15 @@ export function getTheme() {
   } catch {
     return null
   }
+}
+
+/**
+ * Get requested theme id stored by applyTheme().
+ * Falls back to URL/env when data attribute is absent.
+ * @returns {string}
+ */
+export function getThemeId() {
+  return document.documentElement.dataset.themeId || getRequestedThemeId()
 }
 
 export { themes }

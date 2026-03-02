@@ -3,11 +3,13 @@ import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import HeroBlock from '@/components/HeroBlock.vue'
 import { getTheme } from '@/config/theme'
+import { loadThemeData } from '@/data/themeData'
 
 const route = useRoute()
 const router = useRouter()
 const cities = ref([])
 const textFinish = ref('')
+const dataError = ref('')
 
 const cityId = computed(() => route.query.cityId || '')
 const establishmentName = computed(() => route.query.establishment || '')
@@ -19,11 +21,16 @@ const establishment = computed(() => {
 })
 
 onMounted(async () => {
-  const res = await fetch('/data/cities.json')
-  const data = await res.json()
-  cities.value = data.cities || []
+  try {
+    const data = await loadThemeData()
+    cities.value = data.cities
+  } catch (error) {
+    cities.value = []
+    dataError.value = error instanceof Error ? error.message : 'Ошибка загрузки данных.'
+  }
+
   const theme = getTheme()
-  textFinish.value = theme.desktop.textFinish || ''
+  textFinish.value = theme?.desktop?.textFinish || ''
 
 })
 
@@ -52,6 +59,9 @@ function open2gis() {
       {{ textFinish }}
     </p>
 
+    <p v-if="dataError" class="data-error">{{ dataError }}</p>
+
+    <template v-else>
     <p v-if="establishment" class="establishment-name">{{ establishment.name }}</p>
     <p class="choose-label">Обычно люди не находят времени оставить отзывы, если им все понравилось.<br>А вы нашли. Мы это ценим.<br>Оставьте, пожалуйста, отзыв на любом из сайтов:</p>
 
@@ -74,6 +84,7 @@ function open2gis() {
         
     </a>
     </div>
+    </template>
 
     <HeroBlock caption="куда открыть?" />
   </div>
@@ -148,5 +159,10 @@ function open2gis() {
 .map-link-card:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+.data-error {
+  margin: 0 0 24px;
+  color: #c62828;
+  font-size: 14px;
 }
 </style>
