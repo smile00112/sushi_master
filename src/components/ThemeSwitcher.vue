@@ -13,10 +13,10 @@ const isOpen = ref(true)
 function selectTheme(id) {
   applyTheme(id)
   const url = new URL(window.location.href)
+  url.pathname = '/'
   url.searchParams.set('theme', id)
-  window.history.replaceState({}, '', url)
-  // Перезагрузка для обновления header/layout/hero (читают тему в onMounted)
-  window.location.reload()
+  // Переход на главную + полное обновление для onMounted-зависимых блоков темы
+  window.location.assign(url.toString())
 }
 </script>
 

@@ -16,6 +16,7 @@ const city = computed(() => {
 })
 const isCityOpen = ref(false)
 const isRestaurantOpen = ref(false)
+const isAnySelectOpen = computed(() => isCityOpen.value || isRestaurantOpen.value)
 
 onMounted(async () => {
   try {
@@ -108,7 +109,7 @@ function goToChooseMap(establishment) {
       </div>
     </div>
 
-    <HeroBlock caption="а ресторан?" />
+    <HeroBlock v-show="!isAnySelectOpen" caption="а ресторан?" />
   </div>
 </template>
 

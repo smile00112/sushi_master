@@ -114,10 +114,10 @@ function open2gis() {
 }
 .choose-label {
   font-family: var(--font-family-base);
-  font-size: 16px;
+  font-size: var(--finish-comment-text-size);;
   color: var(--color-text-secondary);
   margin: 0 0 51px;
-  line-height: 1;
+  line-height: var(--finish-comment-text-line-height);
   /* max-width: 350px; */
 }
 .map-links {

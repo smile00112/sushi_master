@@ -81,11 +81,12 @@ onMounted(() => {
 
 .header-title {
   font-family: var(--font-family-base); /* Базовый шрифт темы */
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   line-height: 1.33;
   color: var(--color-header-text); /* Основной цвет текста в шапке */
   margin: 0;
-  max-width: 150px;
+  max-width: 200px;
+  white-space: pre-line;
 }
 </style>

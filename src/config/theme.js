@@ -25,7 +25,7 @@ const themes = {
       brandColor: 'transparent',
       textColor: '#6d6d6d',
       logoUrl: '/images/logo.png',
-      brandTitle: 'Центр оценки качества ресторанов Суши Мастер',
+      brandTitle: 'Центр оценки качества\nресторанов Суши Мастер',
     },
     desktop: {
       bgType: 'image',
@@ -83,7 +83,7 @@ const themes = {
       brandColor: '#4CAF50',
       textColor: '#fff',
       logoUrl: '/images/spoke_logo.png',
-      brandTitle: 'Центр оценки качества ресторанов Споке',
+      brandTitle: 'Центр оценки качества \nресторанов Споке',
     },
     desktop: {
       bgType: 'image',
@@ -118,6 +118,8 @@ const themes = {
       shadowCardDesktop: '0 4px 24px rgba(0, 0, 0, 0.15)',
       SelectItemBorderRadius: '20px',
       greetingTextSize: '28px',
+      finishCommentTextSize: '16px',
+      finishCommentTextLineHeight: '100%',
     },
   },
   'sushi-gallery': {
@@ -141,7 +143,7 @@ const themes = {
       brandColor: 'transparent',
       textColor: '#2e2d31',
       logoUrl: '/images/sushi-gallery_logo.png',
-      brandTitle: 'Центр оценки качества ресторанов Галерея Суши',
+      brandTitle: 'Центр оценки качества \nресторанов Галерея Суши',
     },
     desktop: {
       bgType: 'image',
@@ -197,7 +199,7 @@ const themes = {
       brandColor: '#2196F3',
       textColor: '#fff',
       logoUrl: '/images/sushi-world-logo.png',
-      brandTitle: 'Центр оценки качества Мир суши',
+      brandTitle: 'Центр оценки качества \nресторанов Мир Суши',
     },
     desktop: {
       bgType: 'image',
@@ -205,7 +207,7 @@ const themes = {
       bgImage: '/images/theme-sushi_world/sushi-world-bg.webp',
       bgGradient: '',
       bgOverlay: 'none',
-      text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Мир суши' ,
+      text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Мир Суши' ,
       textFinish: 'Оставьте отзыв\nо нашей работе ' 
     },
     hero: {
@@ -286,6 +288,8 @@ export function applyTheme(themeId = 'default') {
   root.style.setProperty('--shadow-card-desktop', theme.components.shadowCardDesktop) // Card shadow on desktop
   root.style.setProperty('--select-item-border-radius', theme.components?.SelectItemBorderRadius || '3px') // Dropdown item corners radius
   root.style.setProperty('--greeting-text-size', theme.components?.greetingTextSize || '20px') // Dropdown item corners radius
+  root.style.setProperty('--finish-comment-text-size', theme.components?.finishCommentTextSize || '14px') // Dropdown item corners radius
+  root.style.setProperty('--finish-comment-line-height', theme.components?.finishCommentTextLineHeight || '1.33') // Dropdown item corners radius
 
   // Hero visual position variables
   root.style.setProperty('--hero-image-width', theme.hero.imageWidth) // Hero image width

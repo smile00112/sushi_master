@@ -62,7 +62,7 @@ function selectCity(city) {
       </div>
     </div>
 
-    <HeroBlock caption="Ваш город?" />
+    <HeroBlock caption="Ваш город?"  v-if="!isListOpen"/>
   </div>
 </template>
 
