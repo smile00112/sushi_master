@@ -1143,7 +1143,7 @@
       { "name": "Яндекс Карты", "url": "https://yandex.ru/maps" }
     ]
   },
-  "sushi-gallery": {
+  "sushi_gallery": {
     "cities": [
       {
         "id": "achinsk",
@@ -1894,7 +1894,7 @@
       { "name": "Google", "url": "https://www.google.com/maps" }
     ]
   },
-  "mir-sushi": {
+  "mir_sushi": {
     "cities": [
       {
         "id": "almetyevsk",

@@ -1,6 +1,6 @@
 /**
  * Theme configuration for quick design switching.
- * Set themeId to: 'default' | 'spoke' | 'sushi-gallery' | 'mir-sushi'
+ * Set themeId to: 'default' | 'spoke' | 'sushi_gallery' | 'mir_sushi'
  */
 
 const themes = {
@@ -129,7 +129,7 @@ const themes = {
       mapButtonBoxShadow: 'unset',
     },
   },
-  'sushi-gallery': {
+  'sushi_gallery': {
     colors: {
       brandPrimary: 'transparent',
       brandAccent: '#E91E63',
@@ -150,13 +150,13 @@ const themes = {
       style: 'white_minimal',
       brandColor: 'transparent',
       textColor: '#2e2d31',
-      logoUrl: '/images/sushi-gallery_logo.png',
+      logoUrl: '/images/sushi_gallery_logo.png',
       brandTitle: 'Центр оценки качества \nресторанов Галерея Суши',
     },
     desktop: {
       bgType: 'image',
       bgColor: '#e0e0e0',
-      bgImage: '/images/theme-sushi-gallery/sushi-gallery-bg.webp',
+      bgImage: '/images/theme-sushi_gallery/sushi_gallery-bg.webp',
       bgGradient: 'linear-gradient(90deg, #ffc8dd 0%, #b8e0d2 100%)',
       bgOverlay: 'none',
       text: 'Здравствуйте!\nВы на странице оценки качества ресторанов Галерея Суши' ,
@@ -189,7 +189,7 @@ const themes = {
 
     },
   },
-  'mir-sushi': {
+  'mir_sushi': {
     colors: {
       // cardBorder: '0.2px solid #83BB43',      
       // mapButtonBorder: '0.8px solid #83BB43',
@@ -270,7 +270,7 @@ export function getRequestedThemeId() {
 
 /**
  * Apply theme to document by setting CSS custom properties.
- * @param {string} themeId - One of: 'default' | 'spoke' | 'sushi-gallery' | 'mir-sushi' 
+ * @param {string} themeId - One of: 'default' | 'spoke' | 'sushi_gallery' | 'mir_sushi' 
  */
 export function applyTheme(themeId = 'default') {
   const theme = themes[themeId] || themes.default

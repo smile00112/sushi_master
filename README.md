@@ -26,7 +26,7 @@ Frontend-приложение на Vue 3 + Vite.
 VITE_THEME=spoke
 ```
 
-Доступные темы: `default`, `spoke`, `sushi-gallery`, `mir-sushi`, `sushi_world`.
+Доступные темы: `default`, `spoke`, `sushi_gallery`, `mir_sushi`.
 
 - `VITE_THEME` — зашивается в сборку; это тема по умолчанию для сайта.
 - Для разных брендов/поддоменов нужно собрать отдельный билд с нужным значением в `.env`.

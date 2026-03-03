@@ -5,8 +5,8 @@ import { applyTheme } from '@/config/theme'
 const themes = [
   { id: 'default', label: 'Default' },
   { id: 'spoke', label: 'Spoke' },
-  { id: 'sushi-gallery', label: 'Sushi Gallery' },
-  { id: 'mir-sushi', label: 'Mir Sushi' },
+  { id: 'sushi_gallery', label: 'Sushi Gallery' },
+  { id: 'mir_sushi', label: 'Mir Sushi' },
 ]
 const isOpen = ref(true)
 
