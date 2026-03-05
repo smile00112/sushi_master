@@ -1111,36 +1111,570 @@
   "spoke": {
     "cities": [
       {
-        "id": "novosibirsk",
-        "name": "Новосибирск",
+        "id": "adler",
+        "name": "Адлер",
         "establishments": [
           {
-            "name": "Споке, Красный проспект",
-            "yandexMaps": "https://yandex.ru/maps/?text=Споке Новосибирск Красный проспект",
-            "link2gis": "https://2gis.ru/novosibirsk"
-          },
-          {
-            "name": "Споке, ул. Гоголя",
-            "yandexMaps": "https://yandex.ru/maps/?text=Споке Новосибирск Гоголя",
-            "link2gis": "https://2gis.ru/novosibirsk"
+            "name": "Суши Мастер, Сочи-04 Адлер Ленина 73",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/Sf64K"
           }
         ]
       },
       {
-        "id": "tomsk",
-        "name": "Томск",
+        "id": "barnaul",
+        "name": "Барнаул",
         "establishments": [
           {
-            "name": "Споке, пр. Ленина",
-            "yandexMaps": "https://yandex.ru/maps/?text=Споке Томск Ленина",
-            "link2gis": "https://2gis.ru/tomsk"
+            "name": "Суши Мастер, Ленина 113",
+            "yandexMaps": "https://yandex.by/maps/-/CPe4VHjJ",
+            "link2gis": "https://go.2gis.com/aoxh4"
+          },
+          {
+            "name": "Суши Мастер, Ленина 22",
+            "yandexMaps": "https://yandex.by/maps/-/CPe4ZJO1",
+            "link2gis": "https://go.2gis.com/6OPgh"
+          },
+          {
+            "name": "Суши Мастер, ул. Балтийская, 103",
+            "yandexMaps": "https://yandex.by/maps/-/CPe4Z0jh",
+            "link2gis": "https://go.2gis.com/zEJJt"
+          },
+          {
+            "name": "Суши Мастер, ул. Юрина, 202 (НОВАЯ)",
+            "yandexMaps": "https://yandex.by/maps/-/CPe46I12",
+            "link2gis": "https://go.2gis.com/D9kpf"
+          }
+        ]
+      },
+      {
+        "id": "blagoveshchensk",
+        "name": "Благовещенск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, ул 50 лет Октября, 24/1",
+            "yandexMaps": "",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "ekaterinburg",
+        "name": "Екатеринбург",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Крауля 69",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/0nunY"
+          },
+          {
+            "name": "Суши Мастер, Восточная 98",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/ziUBo"
+          },
+          {
+            "name": "Суши Мастер, Титова 12",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/ZwFFs"
+          },
+          {
+            "name": "Суши Мастер, Вильгельма де Геннина 37",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/RuWrb"
+          },
+          {
+            "name": "Суши Мастер, Победы 102/Челюскинцев",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/ON6zS"
+          }
+        ]
+      },
+      {
+        "id": "kemerovo",
+        "name": "Кемерово",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Строителей 42",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/eAEfD"
+          },
+          {
+            "name": "Суши Мастер, проспект Шахтеров 58А",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/gJxiM"
+          }
+        ]
+      },
+      {
+        "id": "komsomolsk-na-amure",
+        "name": "Комсомольск-на-Амуре",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Мира 47",
+            "yandexMaps": "",
+            "link2gis": ""
+          },
+          {
+            "name": "Суши Мастер, Лазо 7",
+            "yandexMaps": "",
+            "link2gis": ""
+          },
+          {
+            "name": "Суши Мастер, ул Вокзальная 91",
+            "yandexMaps": "",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "krasnodar",
+        "name": "Краснодар",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Метальникова 3",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/m3Li6"
+          },
+          {
+            "name": "Суши Мастер, Стасова 186",
+            "yandexMaps": "",
+            "link2gis": ""
+          },
+          {
+            "name": "Суши Мастер, Яна Полуяна 39",
+            "yandexMaps": "",
+            "link2gis": ""
+          },
+          {
+            "name": "Суши Мастер, Восточно-Кругликовская 24",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/0zTsC"
+          },
+          {
+            "name": "Суши Мастер, Западный обход 45 стр.3 пом.1110/1",
+            "yandexMaps": "",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "nahodka",
+        "name": "Находка",
+        "establishments": [
+          {
+            "name": "Суши Мастер, пр. Находкинский 102",
+            "yandexMaps": "https://yandex.by/maps/-/CPe4jYJt",
+            "link2gis": "https://go.2gis.com/dLfnr"
+          },
+          {
+            "name": "Суши Мастер, Малиновского 21а",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/huGQ3"
+          }
+        ]
+      },
+      {
+        "id": "nefteyugansk",
+        "name": "Нефтеюганск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, мкр 16а 62",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/0fJOr"
+          },
+          {
+            "name": "Суши Мастер, Ленина 33",
+            "yandexMaps": "",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "nizhnevartovsk",
+        "name": "Нижневартовск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Дзержинского 9/1",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/bv3Af"
+          },
+          {
+            "name": "Суши Мастер, Мира 93",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/1mMJs"
+          }
+        ]
+      },
+      {
+        "id": "nizhniy-novgorod",
+        "name": "Нижний Новгород",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Кораблестроителей 3",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/dCnoj"
+          },
+          {
+            "name": "Суши Мастер, Комсомольская 9",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/UbtsZ"
+          }
+        ]
+      },
+      {
+        "id": "novokuzneck",
+        "name": "Новокузнецк",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Ленина 35",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/Xo9Xn"
+          },
+          {
+            "name": "Суши Мастер, Тореза 10",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/8yAIH"
+          },
+          {
+            "name": "Суши Мастер, Кирова 21",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/EAuVo"
+          },
+          {
+            "name": "Суши Мастер, Разведчиков 52",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/LUTAZ"
+          },
+          {
+            "name": "Суши Мастер, Новоселов 23А",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/BRlTH"
+          }
+        ]
+      },
+      {
+        "id": "novyy-urengoy",
+        "name": "Новый Уренгой",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Оптимистов 4/1",
+            "yandexMaps": "https://yandex.by/maps/-/CPeaeO5K",
+            "link2gis": "https://go.2gis.com/DoYE7"
+          },
+          {
+            "name": "Суши Мастер, Советский 5/3",
+            "yandexMaps": "https://yandex.by/maps/-/CPeaeL~q",
+            "link2gis": "https://go.2gis.com/YrPfl"
+          }
+        ]
+      },
+      {
+        "id": "omsk",
+        "name": "Омск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Культуры 7",
+            "yandexMaps": "https://yandex.by/maps/-/CPeaiC3l",
+            "link2gis": "https://go.2gis.com/Vghvz"
+          },
+          {
+            "name": "Суши Мастер, ул. 70 лет Октября, 24/1",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/epNHR"
+          },
+          {
+            "name": "Суши Мастер, ул. Герцена, 12",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/alWXg"
+          },
+          {
+            "name": "Суши Мастер, ул. Маяковского,85",
+            "yandexMaps": "",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "perm",
+        "name": "Пермь",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Рыбалко 113",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/51DAc"
+          },
+          {
+            "name": "Суши Мастер, Революции 2а",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/cAz0n"
+          },
+          {
+            "name": "Суши Мастер, Солдатова 28",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/kimvf"
+          },
+          {
+            "name": "Суши Мастер, Мира 51",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/UCJPh"
+          },
+          {
+            "name": "Суши Мастер, Парковый 33",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/8aoQ5"
+          },
+          {
+            "name": "Суши Мастер, Докучаева 42",
+            "yandexMaps": "",
+            "link2gis": ""
+          },
+          {
+            "name": "Суши Мастер, ул. Юрша 84",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/wbtNO"
+          }
+        ]
+      },
+      {
+        "id": "rostov-na-donu",
+        "name": "Ростов-на-Дону",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Металлургическая 117/62",
+            "yandexMaps": "https://yandex.by/maps/-/CPeaqQIN",
+            "link2gis": "https://go.2gis.com/RmGs5"
+          },
+          {
+            "name": "Суши Мастер, 339-й Стрелковой Дивизии 5/60Б",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/WggHl"
+          },
+          {
+            "name": "Суши Мастер, Буденовский 68",
+            "yandexMaps": "https://yandex.by/maps/-/CPeaq8N7",
+            "link2gis": "https://go.2gis.com/4APLf"
+          },
+          {
+            "name": "Суши Мастер, бульвар Комарова 20/1",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/aGEzz"
+          }
+        ]
+      },
+      {
+        "id": "sochi",
+        "name": "Сочи",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Советская д. 40 пом 1-4",
+            "yandexMaps": "",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "surgut",
+        "name": "Сургут",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Ленина 50",
+            "yandexMaps": "https://yandex.by/maps/-/CPeauDix",
+            "link2gis": "https://go.2gis.com/7ME87"
+          },
+          {
+            "name": "Суши Мастер, 30 лет Победы 41",
+            "yandexMaps": "",
+            "link2gis": ""
+          },
+          {
+            "name": "Суши Мастер, Геологическая 10",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/XnOSj"
+          },
+          {
+            "name": "Суши Мастер, Ленина 66",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/7xMyT"
+          },
+          {
+            "name": "Суши Мастер, Тюменский тракт 2",
+            "yandexMaps": "https://yandex.by/maps/-/CPeauPil",
+            "link2gis": "https://go.2gis.com/yaJk5"
+          }
+        ]
+      },
+      {
+        "id": "syktyvkar",
+        "name": "Сыктывкар",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Первомайская 85/2",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/FHVVp"
+          }
+        ]
+      },
+      {
+        "id": "tyumen",
+        "name": "Тюмень",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Газовиков 61",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/JbLav"
+          },
+          {
+            "name": "Суши Мастер, Ямская 102",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/xHphZ"
+          },
+          {
+            "name": "Суши Мастер, Республики 204 корп 7 помещение 4",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/y9sVc"
+          },
+          {
+            "name": "Суши Мастер, Артамонова 13",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/wa3Xu"
+          },
+          {
+            "name": "Суши Мастер, Беляева 29/1",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/7H5of"
+          },
+          {
+            "name": "Суши Мастер, Одесская 29 стр 1 помещ 7",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/e1tou"
+          },
+          {
+            "name": "Суши Мастер, Пермякова 50Б",
+            "yandexMaps": "https://yandex.by/maps/-/CPeayU4b",
+            "link2gis": "https://go.2gis.com/sLx2a"
+          },
+          {
+            "name": "Суши Мастер, Монтажников 47",
+            "yandexMaps": "https://yandex.by/maps/-/CPeayMJU",
+            "link2gis": "https://go.2gis.com/Kl8m8"
+          },
+          {
+            "name": "Суши Мастер, Обдорская 1к2 суши",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/YmtkU"
+          }
+        ]
+      },
+      {
+        "id": "ussuriysk",
+        "name": "Уссурийск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Некрасова 53",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/qzU40"
+          }
+        ]
+      },
+      {
+        "id": "habarovsk",
+        "name": "Хабаровск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Суворова 25/1",
+            "yandexMaps": "",
+            "link2gis": ""
+          },
+          {
+            "name": "Суши Мастер, Ленинградская 28/9",
+            "yandexMaps": "",
+            "link2gis": ""
+          },
+          {
+            "name": "Суши Мастер, Ленинградская 28/9",
+            "yandexMaps": "",
+            "link2gis": ""
+          },
+          {
+            "name": "Суши Мастер, Амурский бульвар 62",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/ONUXK"
+          },
+          {
+            "name": "Суши Мастер, Тихоокеанская 182 б",
+            "yandexMaps": "",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "hanty-mansiysk",
+        "name": "Ханты-Мансийск",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Мира 52",
+            "yandexMaps": "",
+            "link2gis": ""
+          },
+          {
+            "name": "Суши Мастер, Самаровская 1/4",
+            "yandexMaps": "",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "cheboksary",
+        "name": "Чебоксары",
+        "establishments": [
+          {
+            "name": "Суши Мастер, ул. Пролетарская 21/22",
+            "yandexMaps": "",
+            "link2gis": ""
+          },
+          {
+            "name": "Суши Мастер, пр-т Максима Горького 38/2",
+            "yandexMaps": "",
+            "link2gis": ""
+          }
+        ]
+      },
+      {
+        "id": "chita",
+        "name": "Чита",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Бутина 42а",
+            "yandexMaps": "https://yandex.by/maps/-/CPeaBCYD",
+            "link2gis": "https://go.2gis.com/BGAKA"
+          }
+        ]
+      },
+      {
+        "id": "yaroslavl",
+        "name": "Ярославль",
+        "establishments": [
+          {
+            "name": "Суши Мастер, Большая Федоровская 29",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/zplR7"
+          },
+          {
+            "name": "Суши Мастер, Урицкого 65",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/YnDOb"
+          },
+          {
+            "name": "Суши Мастер, Ньютона 28",
+            "yandexMaps": "",
+            "link2gis": "https://go.2gis.com/qz68B"
           }
         ]
       }
     ],
     "reviewSites": [
       { "name": "2GIS", "url": "https://2gis.ru" },
-      { "name": "Яндекс Карты", "url": "https://yandex.ru/maps" }
+      { "name": "Google", "url": "https://www.google.com/maps" }
     ]
   },
   "sushi_gallery": {

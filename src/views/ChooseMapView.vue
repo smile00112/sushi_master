@@ -71,6 +71,7 @@ function open2gis() {
           class="map-a-card"
           :disabled="!establishment?.yandexMaps"
           @click="openYandex"
+          v-if="establishment?.yandexMaps"
         > 
           <svg width="104" height="30" class="map-link-card" viewBox="0 0 104 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6754 3.47597H10.6652C6.97986 3.47597 5.05342 5.31866 5.05342 8.05476C5.05342 11.1538 6.39355 12.5917 9.14362 14.4483L11.4051 15.956L4.85798 25.6719H0L5.87704 16.989C2.49879 14.5879 0.600268 12.2566 0.600268 8.30604C0.600268 3.35033 4.06228 0 10.6373 0H17.1705V25.6719H12.6754V3.47597Z" fill="#E63F0C"/>
@@ -87,6 +88,8 @@ function open2gis() {
           class="map-a-card"
           :disabled="!establishment?.link2gis"
           @click="open2gis"
+          v-if="establishment?.link2gis"
+
         >
         <svg width="101" height="33" viewBox="0 0 101 33" class="map-link-card" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_605_262)">
