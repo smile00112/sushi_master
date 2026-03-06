@@ -7,7 +7,7 @@ const isDev = import.meta.env.DEV
 
 <template>
   <div class="main-layout">
-    <ThemeSwitcher  />
+    <ThemeSwitcher  v-if="isDev"  />
     <main class="main-content">
       <AppHeader />
       <div class="main-body">
