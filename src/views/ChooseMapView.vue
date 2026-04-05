@@ -153,6 +153,9 @@ function open2gis() {
     justify-content: space-between;
     flex-direction: row;
 }
+.map-links .map-a-card {
+  cursor: pointer;
+}
 .map-a-card{
     display: flex;
     max-width: 45%;

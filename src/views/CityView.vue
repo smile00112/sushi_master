@@ -193,7 +193,7 @@ function goToChooseMap(establishment) {
   z-index: 1;
 }
 .select-dropdown {
-    max-height: 300px;
+    max-height: 260px;
     overflow-y: scroll;
 }
 .select-dropdown::-webkit-scrollbar {

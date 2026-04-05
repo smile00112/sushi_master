@@ -9,6 +9,7 @@ const router = useRouter()
 const cities = ref([])
 const isListOpen = ref(false)
 const greeting = ref('')
+const promoUrl = ref('')
 const dataError = ref('')
 
 onMounted(async () => {
@@ -22,6 +23,7 @@ onMounted(async () => {
 
   const theme = getTheme()
   greeting.value = theme?.desktop?.text || ''
+  promoUrl.value = theme?.desktop?.promoUrl || ''
 })
 
 function selectCity(city) {
@@ -31,8 +33,9 @@ function selectCity(city) {
 
 <template>
   <div class="screen screen-1">
-    <p class="greeting">
-      {{ greeting }}
+    <p class="greeting"
+    >
+      {{  greeting  }} <a v-if="promoUrl" :href="promoUrl" target="_blank">перейти</a>
     </p>
 
     <p v-if="dataError" class="data-error">{{ dataError }}</p>
@@ -143,11 +146,11 @@ function selectCity(city) {
   border: var(--border-card); 
   border-top-width: 0;
   padding: 2px 0px 17px 5px;
-  max-height: 300px;
+  max-height: 260px;
 
 }
 .select-dropdown-container {
-    max-height: 300px;
+    max-height: 260px;
     overflow-y: scroll;
 }
 .select-dropdown-container::-webkit-scrollbar {
